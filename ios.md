@@ -23,7 +23,7 @@ In order to start with the development, first, you will need an Apple account fo
 
 ### DEBUGGING
 
-We use a few debugging tools to test Holton Monocle's functionalities.
+We use a few debugging tools to test functionalities.
 
 For the Native App, we use Xcode's debugging console to create breakpoints and test variables, API responses, and identify null objects which sometimes causes the crash.
 
