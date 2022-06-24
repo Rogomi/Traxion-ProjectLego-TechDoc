@@ -8,7 +8,7 @@
 
 ### INSTALLATION AND DEVELOPMENT
 
-In order to start with the development, first, you will need an Apple account for development. It must be under the team Rogomi, Inc. Then, open the Monocle.xcworkspace under the repository root directory. If possible, do a pods repo update in order to avoid missing library errors.
+In order to start with the development, first, you will need an Apple account for development. It must be under the team Rogomi, Inc. Then, open the .xcworkspace under the repository root directory. If possible, do a pods repo update in order to avoid missing library errors.
 
 ### PROGRAMMING LANGUAGE
 
