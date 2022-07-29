@@ -1,33 +1,36 @@
 [Back](README.md)
 
-# Traxion-ProjectLego
+# Traxion-ProjectLego UMS
 
 ## Technical Documentation
 
 ### GETTING STARTED
 
-
+UMS requires Xcode 13.0 and above for development. This project uses Swift 5 as the Programming Language, Storyboard for the Interface and CocoaPods and SPM for Third Party Libraries. The current Xcode version used for development is 13.4. The minimum iOS Version required is iOS 13.0
 
 ### INSTALLATION AND DEVELOPMENT
 
-In order to start with the development, first, you will need an Apple account for development. It must be under the team Rogomi, Inc. Then, open the .xcworkspace under the repository root directory. If possible, do a pods repo update in order to avoid missing library errors.
+In order to start with the development, first, you will need an Apple account for development. It must be under the team Rogomi, Inc. Then, open the Traxion-ProjectLego.xcworkspace under the repository root directory. If possible, do a pods repo update in order to avoid missing library errors. As well as update SPM to latest package versions.
 
 ### PROGRAMMING LANGUAGE
 
-
+UMS uses the latest Swift version, Swift 5, for development.
 
 ### MINIMUM VERSION
 
-
+UMS requires devices with at least iOS 13.0
 
 ### APPLICATION ID
 
+com.robinsonslandcorp.projectlego
 
 ### DEBUGGING
 
 We use a few debugging tools to test functionalities.
 
 For the Native App, we use Xcode's debugging console to create breakpoints and test variables, API responses, and identify null objects which sometimes causes the crash.
+
+To test the API before integrating for app usage, we use Postman. Postman is a very reliable REST API tool. We can test different HTTP Methods especially POST, PATCH, PUT, DELETE and GET. We can also add header variables to test SSO and token authentications.
 
 We also use iOS Simulator in order to test the apps in different screen sizes and iOS Versions.
 
@@ -47,7 +50,7 @@ Some of the third party libraries are installed using SPM
 #### Core Classes
 - **AppDelegate** - manages most of the pre-startup items like Firebase configurations, etc.
   ##### Configured items
-  
+  Firebase
     
 
 #### View Controllers
