@@ -22,14 +22,20 @@ Project LEGO Web uses JavaScript for development.
 The developers use Chrome Dev Tools and Vue.js Dev Tools. 
 
 ### UI LIBRARIES
+**Tailwind CSS** - A utility first CSS framework that can be composed to build any design, directly in your markup.
+**Vue Toaster** - Custom Utility CSS that allows an easy and simple toast message for vue.
 
 ### IMPORTANT CLASSES
 
 #### Initialization Classes
-- **main.js** - handles the initialization of Vue components
+- **main.js** - Handles the initialization of Vue components. Also contains initial navigation of the pages.
 
 #### Components
-
+- **LoginPage.vue** - Container that handles forms related to user login.
+- **LoginForm.vue** - Handles the user login.
+- **ForgotPasswordForm.vue** - Handles the forgot password function.
+- **ChangePassword.vue** - Handles the reset password function.
+- **UserList.vue** - Handles the display of different users of Project LEGO.
 
 ### ARCHITECTURE USED
 
