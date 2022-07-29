@@ -113,3 +113,13 @@ Some of the third party libraries are installed using SPM
 - `hideError` - hides the error message
 - `showError` - shows the error message
 
+
+
+
+##### **ResultChangePasswordViewController** - controls the behavior of the change password screen when from email
+
+###### **Methods and Calculated Variables**
+- `viewDidLoad` - sets the title of the `backButton` based on the `isProfile` variable
+- `didTapBackButton` - calls `goToLogin` or `popOrDismiss` depending on the value of `isProfile`
+- `goToLogin` - shows login screen
+
