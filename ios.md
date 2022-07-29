@@ -123,3 +123,19 @@ Some of the third party libraries are installed using SPM
 - `didTapBackButton` - calls `goToLogin` or `popOrDismiss` depending on the value of `isProfile`
 - `goToLogin` - shows login screen
 
+
+
+##### **UserAgreementViewController** - controls the behavior of the user agreement screen
+
+###### **Methods and Calculated Variables**
+- `var isTappable` - changes some buttons depending on the new value
+- `viewDidLoad` - assigns delegates 
+- `viewWillAppear` - calls `getAgreement`
+- `didTapAcceptButton` - calls `postUserLog`
+- `goToDashboard` - shows `DashboardViewController`
+- `didTapBackButton` - calls `sessionLogout`
+- `postUserLog` - calls endpoint to post user log
+- `getAgreement` - endpoint to get user agreement 
+- `scrollViewDidScroll`
+- `webView(...didFinish)` 
+
