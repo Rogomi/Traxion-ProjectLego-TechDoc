@@ -150,14 +150,43 @@ Some of the third party libraries are installed using SPM
 
 ##### **ProfileViewController** - controls the behavior of the user profile screen
 
+###### **Methods and Calculated Variables**
+- `viewWillAppear` - calls `getUser`
+- `getUser` - endpoint for getting user details
+- `didTapCameraButton` - navigates user to edit profile screen
+- `didTapEditButton` - navigates user to edit profile screen
+- `didTapTermsButton` - navigates user to terms and conditions screen
+- `didTapPrivacyButton` - navigates user to privacy policy screen
+- `didTapChangePasswordButton` - navigates user to change password screen
+- `didTapLogoutButton` - logs the user out and navigates to login screen
+
+
 
 
 ##### **EditProfileViewController** - controls the behavior of the edit user profile screen
 
+###### **Methods and Calculated Variables**
+- `viewWillAppear` - calls `getUser`
+- `getUser` - endpoint for getting user details
+- `didTapSaveButton` - calls `editUser`
+- `editUser` - endpoint for updating user details
+- `didTapImageButton` - calls `openPicker`
+- `openPicker` - opens camera/gallery picker for photo update
 
 
 ##### **AgreementViewController** - controls the behavior of the TNC, and privacy policy screens
 
+###### **Methods and Calculated Variables**
+- `var isPrivacyPolicy` - changes agreement type depending on the value
+- `viewWillAppear` - calls `getPrivacyPolicy` or `getTNC`
+- `getTNC` - calls endpoint to get terms and conditions
+- `getPrivacyPolicy` - calls endpoint to get privacy policy
 
 
 ##### **ChangePasswordUserViewController** - controls the behavior of the user change password screen
+
+###### **Methods and Calculated Variables**
+- `didTapChangePasswordButton` - calls `changePassword`
+- `changePassword` - calls the endpoint to change password
+- `hideError` - hides the error message
+- `showError` - shows the error message
