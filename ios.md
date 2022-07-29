@@ -139,3 +139,22 @@ Some of the third party libraries are installed using SPM
 - `scrollViewDidScroll`
 - `webView(...didFinish)` 
 
+
+
+##### **DashboardViewController** - controls the behavior of the user dashboard screen
+
+
+
+##### **ProfileViewController** - controls the behavior of the user profile screen
+
+
+
+##### **EditProfileViewController** - controls the behavior of the edit user profile screen
+
+
+
+##### **AgreementViewController** - controls the behavior of the TNC, and privacy policy screens
+
+
+
+##### **ChangePasswordUserViewController** - controls the behavior of the user change password screen
