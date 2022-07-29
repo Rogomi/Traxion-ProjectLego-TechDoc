@@ -73,23 +73,23 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   ##### Coomposable/ViewModel Methods
 
   
-- **ForgotPasswordScreen** - 
+- **ForgotPasswordScreen** - handles the display of forgot password
   ##### Coomposable/ViewModel Methods
   
   
-- **MainDashboardScreen** - 
+- **MainDashboardScreen** - handles the display of main dashboard; landing screen after login
   ##### Coomposable/ViewModel Methods
   
   
-- **UserProfileScreen** - 
+- **UserProfileScreen** - handles the display of user profile
   ##### Coomposable/ViewModel Methods
   
   
-- **PrivacyPolicyScreen** - 
+- **PrivacyPolicyScreen** - handles the display of privacy policy
   ##### Coomposable/ViewModel Methods
   
   
-- **TermsConditionScreen** - 
+- **TermsConditionScreen** - handles the display of terms and conditions
   ##### Coomposable/ViewModel Methods
   
 
