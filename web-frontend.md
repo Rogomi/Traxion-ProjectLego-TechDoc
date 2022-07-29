@@ -21,8 +21,7 @@ Project LEGO Web uses JavaScript for development.
 
 The developers use Chrome Dev Tools and Vue.js Dev Tools. 
 
-### UI Libraries
-
+### UI LIBRARIES
 
 ### IMPORTANT CLASSES
 
