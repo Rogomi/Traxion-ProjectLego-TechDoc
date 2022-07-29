@@ -47,5 +47,43 @@ Some of the third party libraries are installed using SPM
 #### Core Classes
 - **AppDelegate** - manages most of the pre-startup items like Firebase configurations, etc.
   ##### Configured items
+  
+    
 
 #### View Controllers
+  
+
+##### **LandingViewController** - controls the behavior of the splash screen
+
+###### **Methods and Calculated Variables**
+- `viewDidLoad` - calls rotate function
+- `viewDidAppear` - is calls `checkToken` and `goToLogin` depending on the situation
+- `checkToken` - checks if the token is still valid
+- `proceed` - shows `DashboardViewController`
+- `terms` - shows `UserAgreementViewController`
+- `goToLogin` - shows `LoginViewController`
+- `rotate` - makes the loading icon rotate
+
+
+##### **LoginViewController** - controls the behavior of the login screen
+
+###### **Methods and Calculated Variables**
+- `didTapLoginBtn` - checks if email and password is not empty and calls `login`
+- `didTapForgotBtn` - calls `goToForgotPassword` when the button  is tapped
+- `unwindToLogin` - marks the screen as an unwind point
+- `terms` - shows `UserAgreementViewController`
+- `goToForgotPassword` - shows `ForgotPasswordViewController`  
+- `goToDashboard` - shows `DashboardViewController`
+- `hideError` - hides the error message
+- `showError` - shows error message  
+- `login` - calls the back-end endpoint to login using the credentials provided by the user
+
+
+
+##### **ForgotPasswordViewController** - controls the behavior of the forgot password screen
+
+###### **Methods and Calculated Variables**
+- `didTapEmailBtn` - calls `forgotPassword`
+- `didTapBackBtn` - goes back to login
+- `goToResult` - shows `ResultForgotPasswordViewController` and passes information whether it is a success or not
+- `forgotPassword` - calls the endpoint to send an email to the email provided
