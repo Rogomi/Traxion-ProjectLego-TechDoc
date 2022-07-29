@@ -87,3 +87,29 @@ Some of the third party libraries are installed using SPM
 - `didTapBackBtn` - goes back to login
 - `goToResult` - shows `ResultForgotPasswordViewController` and passes information whether it is a success or not
 - `forgotPassword` - calls the endpoint to send an email to the email provided
+
+
+
+
+##### **ResultForgotPasswordViewController** - controls the behavior of the result screen
+
+###### **Methods and Calculated Variables**
+- `var success` - changes the value of the `message` variable when set to true
+- `viewDidLoad` - calls `setup()` when view is loaded
+- `viewWillAppear` - calls `setup()` when view is loaded
+- `didTapMainButton` - calls `backToLogin` when success and `popOrDismiss` otherwise
+- `didTapSecondaryButton` - calls `backToLogin`
+- `backToLogin` - goes back to login screen
+- `setup` - sets up the appearance of the screen depending if the result is success 
+
+
+
+
+##### **ChangePasswordEmailViewController** - controls the behavior of the change password screen when from email
+
+###### **Methods and Calculated Variables**
+- `didTapChangePasswordButton` - calls `changePassword`
+- `changePassword` - calls the endpoint to change password
+- `hideError` - hides the error message
+- `showError` - shows the error message
+
