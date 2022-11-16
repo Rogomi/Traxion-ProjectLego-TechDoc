@@ -44,6 +44,19 @@ Most of the third party libraries are installed using CocoaPods. They can be add
 Some of the third party libraries are installed using SPM
 
 ##### Important Libraries
+**Alamofire** - For Web API Communications  
+**SwiftyJSON** - To ease up processing of response data  
+**ObjectMapper** - To easily create models for response data  
+**Apollo** - To communicate with the GraphQL API
+
+##### UI Libraries
+**IQKeyboardManagerSwift** - To automatically scroll up the UITextView on screen when the keyboard is up.  
+**IBAnimatable** - To easily add special UI Designs on specific views, and see them reflected on the Interface Builder. Also has methods to animate views. 
+**InitialsImageView** - To easily use letters in profile icon incase profile image is unavailable.  
+**Pulley** - Pull down UI.  
+**TLPhotoPicker** - Used to select multiple images.  
+**MBProgressHUD** - Used to add heads up display on screen to indicate loading while user is waiting for data to be loaded from the API.  
+**Kingfisher** - To easily load Images from URL and has caching functions.  
 
 ### ACTIVITIES AND CONTROLLERS  
 
