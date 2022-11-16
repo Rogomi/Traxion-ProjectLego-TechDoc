@@ -58,6 +58,10 @@ Some of the third party libraries are installed using SPM
 **MBProgressHUD** - Used to add heads up display on screen to indicate loading while user is waiting for data to be loaded from the API.  
 **Kingfisher** - To easily load Images from URL and has caching functions.  
 
+### ARCHITECTURE
+
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png))
+
 ### ACTIVITIES AND CONTROLLERS  
 
 #### Core Classes
