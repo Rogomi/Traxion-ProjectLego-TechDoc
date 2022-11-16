@@ -51,7 +51,7 @@ Some of the third party libraries are installed using SPM
 
 ##### UI Libraries
 **IQKeyboardManagerSwift** - To automatically scroll up the UITextView on screen when the keyboard is up.  
-**IBAnimatable** - To easily add special UI Designs on specific views, and see them reflected on the Interface Builder. Also has methods to animate views. 
+**IBAnimatable** - To easily add special UI Designs on specific views, and see them reflected on the Interface Builder. Also has methods to animate views.  
 **InitialsImageView** - To easily use letters in profile icon incase profile image is unavailable.  
 **Pulley** - Pull down UI.  
 **TLPhotoPicker** - Used to select multiple images.  
