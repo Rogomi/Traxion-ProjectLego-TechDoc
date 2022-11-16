@@ -60,7 +60,7 @@ Some of the third party libraries are installed using SPM
 
 ### ARCHITECTURE
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png))
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
 
 ### ACTIVITIES AND CONTROLLERS  
 
