@@ -34,10 +34,6 @@ To test the API before integrating for app usage, we use Postman. Postman is a v
 
 We also use iOS Simulator in order to test the apps in different screen sizes and iOS Versions.
 
-### ARCHITECTURE
-
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
-
 
 ### THIRD-PARTY LIBRARIES
 
@@ -208,3 +204,10 @@ Some of the third party libraries are installed using SPM
 - `changePassword` - calls the endpoint to change password
 - `hideError` - hides the error message
 - `showError` - shows the error message
+
+
+### ARCHITECTURE
+
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
+
+
