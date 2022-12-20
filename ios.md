@@ -251,19 +251,19 @@ Some of the third party libraries are installed using SPM
 ##### **LegalViewController** - 
 
 ###### **Methods and Calculated Variables**
-- `isSeeAll`
-- `isEdit`
-- `didTapBackButton`
-- `didTapSeeAllButton`
-- `didTapKebabButton`
-- `didTapAddButton`
-- `didTapSaveButton`
-- `updateRealEstateTax`
-- `setupRestrictions`
-- `setupRealEstateTax`
-- `setupEditRealEstateTax`
-- `getLegalDetails`
-- `initLegalDetails`
+- `isSeeAll` - boolean value, hides the seeAll button if false
+- `isEdit` - boolean value, toggles the view for editing/viewing 
+- `didTapBackButton` - goes back to the previous screen if the button is tapped
+- `didTapSeeAllButton` - shows all the year covered values if tapped
+- `didTapKebabButton` - shows the menu if tapped
+- `didTapAddButton` - will add a year covered input if tapped
+- `didTapSaveButton` - collects all the current year covered values and calls `updateRealEstateTax`
+- `updateRealEstateTax` - calls an endpoint to save the real estate tax year covered
+- `setupRestrictions` - sets up restrictions based on department
+- `setupRealEstateTax` - sets up the initial view for the real estate tax
+- `setupEditRealEstateTax` - sets up the editing view for the real estate tax
+- `getLegalDetails` - calls and endpoint to get the legal details of the unit
+- `initLegalDetails` - initializes the legal details values
 
 
 
