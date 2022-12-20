@@ -439,6 +439,177 @@ Some of the third party libraries are installed using SPM
 - `didTapAddEditButton`
 - `didTapDeleteButton`
 
+
+
+##### **EditDisclaimerViewController** - 
+
+###### **Methods and Calculated Variables**
+- `editSuccess`
+- `didTapSaveButton`
+- `initLabels`
+- `textView - shouldChangeTextIn`
+
+
+
+##### **GalleryEditAddPhotoViewController** - 
+
+###### **Methods and Calculated Variables**
+- `uploadSuccess`
+- `didTapUploadButton`
+- `uploadPhotosV2`
+- `shouldDismissPhotoPicker`
+- `dismissPhotoPicker`
+- `photoPickerDidCancel`
+- `dismissComplete`
+- `didExceedMaximumNumberOfSelection`
+- `handleNoAlbumPermissions`
+- `handleNoCameraPermissions`
+- `askPermissions`
+- `setupPhotoPicker`
+- `tableView - numberOfRowsInSection`
+- `tableView - cellForRowAt`
+- `ImageUpload`
+
+
+
+##### **GalleryDeleteViewController** - 
+
+###### **Methods and Calculated Variables**
+- `delete`
+- `didTapCancelButton`
+- `didTapDeleteButton`
+
+
+
+##### **FailedMessageViewController** - 
+
+###### **Methods and Calculated Variables**
+- `alertTitle`
+- `alertMessage`
+- `didTapGotItButton`
+- `initLabels`
+
+
+
+##### **PaymentStatusViewController** - 
+
+###### **Methods and Calculated Variables**
+- `tableView - numberOfRowsInSection`
+- `tableView - cellForRowAt`
+- `PaymentObject`
+
+
+
+##### **SearchPulleyViewController** - 
+
+###### **Methods and Calculated Variables**
+- `setDrawerPosition`
+- `primaryVC`
+- `drawerVC`
+
+
+
+##### **SearchDrawerViewController** - 
+
+###### **Methods and Calculated Variables**
+- `position`
+- `setToHalf`
+- `selectedField`
+- `isSalesDepartment`
+- `setupFields`
+- `getProjects`
+- `getBuildings`
+- `getUnitTypes`
+- `getReferenceTypes`
+- `updateBuildings`
+- `textFieldChanged`
+- `tableView - numberOfRowsInSection`
+- `tableView - cellForRowAt`
+- `tableView - didSelectRowAt`
+- `PulleyDrawerViewControllerDelegate`
+
+
+
+##### **UnitSearchViewController** - 
+
+###### **Methods and Calculated Variables**
+- `showFields`
+- `didTapProjectsButton`
+- `didTapBuildingsButton`
+- `didTapSearchButton`
+- `setupProjects`
+- `setupBuildings`
+
+
+
+##### **AdvancedSearchViewController** - 
+
+###### **Methods and Calculated Variables**
+- `showFields`
+- `isSalesDepartment`
+- `didTapProjectsButton`
+- `didTapBuildingsButton`
+- `didTapUnitTypeButton`
+- `didTapProjectClassificationButton`
+- `didTapProjectStatusButton`
+- `didTapUnitStatusButton`
+- `didTapConstructionStatusButton`
+- `didTapPunchlistStatus`
+- `didTapKeyStatus`
+- `didTapViewingStatusButton`
+- `didTapTOQPunchlistButton`
+- `didTapSearchButton`
+- `changeViewsAlpha`
+- `setupSalesFields`
+- `setupProjects`
+- `setupReferences`
+- `setupBuildings`
+- `RangeSeekSliderDelegate`
+
+
+
+##### **ChangePasswordViewController** - 
+
+###### **Methods and Calculated Variables**
+- `rules`
+- `PasswordRules`
+- `newPasswordField - didSet` 
+- `newPasswordField - textFieldDidChange`
+- `updateReqs`
+- `setupRequirements`
+- `setupRuleDisplay`
+- `PasswordValidator`
+
+
+
+##### **StatusOptionsViewController** - 
+
+###### **Methods and Calculated Variables**
+- `setupOptions`
+- `StatusOptions`
+
+
+
+##### **EditViewController** - 
+
+###### **Methods and Calculated Variables**
+- `editOption`
+- `cancelOption`
+- `didTapEditButton`
+- `didTapCancelButton`
+
+
+
+##### **DeleteViewController** - 
+
+###### **Methods and Calculated Variables**
+- `confirmationText`
+- `deleteOption`
+- `didTapDeleteButton`
+- `didTapCancelButton`
+
+
+
 ### ARCHITECTURE
 
 ![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
