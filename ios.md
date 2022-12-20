@@ -209,43 +209,42 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **ConstructionStatusViewController** - 
+##### **ConstructionStatusViewController** - controls the behavior of the construction status screen
 
 ###### **Methods and Calculated Variables**
-- `isEdit`
-- `isAdd`
-- `setupRestrictions`
-- `didTapBackButton`
-- `didTapKebabButton`
-- `didConstructionStatusButton`
-- `didTapAddButton`
-- `didTapSaveButton`
-- `refreshData`
-- `getConstructionStatus`
-- `initConstructionStatus`
-- `setupAdditionalFiles`
-- `setupCertificateOfCompletions`
-- `setupIsEdit`
-- `updateConstructionStatus`
-- `setupMainCertificate`
-- `didTapMainCertificateButton`
-- `didTapRemoveMainCertificateButton`
-- `didTapSelectCategoryButton`
-- `didTapSelectStatusButton`
-- `openPicker`
-- `uploadFiles`
-- `imagePickerController`
-- `imagePickerControllerDidCancel`
-- `documentPicker`
-- `documentPickerWasCancelled`
-- `SelectedCertificateEnum`
-
+- `isEdit` - toggles the screen between editing and viewing
+- `isAdd` - checks if you are adding additional files
+- `selectedCertificate` - contains the value if the selected certificate is main or additional
+- `setupRestrictions` - sets up department restrictions
+- `didTapBackButton` - goes back the previous screen
+- `didTapKebabButton` - opens the menu screen
+- `didTapConstructionStatusButton` - opens the selection for construction status details
+- `didTapAddButton` - calls `setupMainCertificate` and sets isAdd to true
+- `didTapSaveButton` - validates the data and calls `updateConstructionStatus` and `uploadFiles`
+- `refreshData` - clears cache and reloads the data
+- `getConstructionStatus` - calls the endpoint for construction status details 
+- `initConstructionStatus` - initializes the view of the screen
+- `setupAddAdditionalFiles` - sets the screen to accomodate adding of additional files
+- `setupCertificationOfCompletions` - initializes the certificate of completion views
+- `setupIsEdit` - sets up the certificates if the user is in editing mode
+- `updateConstructionStatus` - calls the endpoint to update the construction status details
+- `setupMainCertificate` - sets up the main certificate view
+- `didTapMainCertificateButton` - calls `openPicker` to add a certificate file
+- `didTapRemoveMainCertificateButton` - removes the added main certificate file
+- `didTapSelectCategoryButton` - opens the selection for the category of the certificate
+- `didTapSelectStatusButton` - opens the selection for the status of the certificate
+- `openPicker` - opens gallery/document picker for certificate update
+- `uploadFiles` - calls the endpoint to upload files
+- `imagePickerController` - updates the screen depending on the result of `openPicker`
+- `imagePickerControllerDidCancel` - closes the image picking view
+- `documentPicker` - updates the screen depending on the result of `openPicker`
+- `documentPickerWasCancelled` - closes the document picking view
 
 
 ##### **CocAdditionalFilesViewController** - 
 
 ###### **Methods and Calculated Variables**
-- `setupAdditionalFiles`
+- `setupAdditionalFiles` - initializes the views for the certificate of completion additional files
 
 
 
