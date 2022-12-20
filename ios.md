@@ -335,15 +335,15 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitStatusEMIViewController** - 
+##### **UnitStatusEMIViewController** - View that manages the selection/adding of EMIs for Unit Status
 
 ###### **Methods and Calculated Variables**
-- `firstChoice`
-- `secondChoice`
-- `customChoice`
-- `didSelectFirst`
-- `didSelectSecond`
-- `didTapSaveButton`
+- `firstChoice` - dynamic function called if the first button is selected
+- `secondChoice` - dynamic function called if the second button is selected
+- `c` - dynamic function called when the save button is tapped
+- `didSelectFirst` - calls the `firstChoice` function
+- `didSelectSecond` - calls the `secondChoice` function
+- `didTapSaveButton` - saves the text from the input field and calls the `customChoice` function
 
 
 
@@ -471,22 +471,22 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryDeleteViewController** - 
+##### **GalleryDeleteViewController** - A view that manages the deletion of gallery images
 
 ###### **Methods and Calculated Variables**
-- `delete`
-- `didTapCancelButton`
-- `didTapDeleteButton`
+- `delete` - dynamic function called when the delete button is tapped
+- `didTapCancelButton` - closes the view
+- `didTapDeleteButton` - calls the delete function
 
 
 
-##### **FailedMessageViewController** - 
+##### **FailedMessageViewController** - A view that displays a failed message
 
 ###### **Methods and Calculated Variables**
-- `alertTitle`
-- `alertMessage`
-- `didTapGotItButton`
-- `initLabels`
+- `alertTitle` - the title to be displayed in the view
+- `alertMessage` - the message to be displayed in the view
+- `didTapGotItButton` - is called when the got it button is tapped
+- `initLabels` - inits the labels for the view
 
 
 
@@ -581,31 +581,31 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **StatusOptionsViewController** - 
+##### **StatusOptionsViewController** - View that displays the selection of status options
 
 ###### **Methods and Calculated Variables**
-- `setupOptions`
-- `StatusOptions`
+- `setupOptions` - sets up the options to display
+- `StatusOptions` - enum containing the current options for status
 
 
 
-##### **EditViewController** - 
-
-###### **Methods and Calculated Variables**
-- `editOption`
-- `cancelOption`
-- `didTapEditButton`
-- `didTapCancelButton`
-
-
-
-##### **DeleteViewController** - 
+##### **EditViewController** - Reusable view that displays an edit and cancel button
 
 ###### **Methods and Calculated Variables**
-- `confirmationText`
-- `deleteOption`
-- `didTapDeleteButton`
-- `didTapCancelButton`
+- `editOption` - dynamic function called when the edit button is tapped
+- `cancelOption` - dynamic function called when the cancel button is tapped
+- `didTapEditButton` - calls the `editOption` function
+- `didTapCancelButton` - calls the `cancelOption` function and closes the view
+
+
+
+##### **DeleteViewController** - Reusable view that displays a delete and cancel button
+
+###### **Methods and Calculated Variables**
+- `confirmationText` - the text to be displayed when the delete view is shown
+- `deleteOption` - dynamic function called when the delete button is tapped
+- `didTapDeleteButton` - calls the `deleteOption` function
+- `didTapCancelButton` - closes the delete view
 
 
 
