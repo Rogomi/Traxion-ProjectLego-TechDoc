@@ -426,7 +426,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryOptionsViewController** - 
+##### **GalleryOptionsViewController** - Menu screen showing the gallery options
 
 ###### **Methods and Calculated Variables**
 - `editDisclaimer`
@@ -440,13 +440,13 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **EditDisclaimerViewController** - 
+##### **EditDisclaimerViewController** - Manages the editing of disclaimer text
 
 ###### **Methods and Calculated Variables**
-- `editSuccess`
-- `didTapSaveButton`
-- `initLabels`
-- `textView - shouldChangeTextIn`
+- `editSuccess` - dynamic function called when saving is successful
+- `didTapSaveButton` - calls the endpoint for saving the disclaimer and calls the function `editSuccess` after successfully saving
+- `initLabels` - initializes the labels
+- `textView - shouldChangeTextIn` - contains a checker for text count
 
 
 
@@ -487,16 +487,6 @@ Some of the third party libraries are installed using SPM
 - `alertMessage` - the message to be displayed in the view
 - `didTapGotItButton` - is called when the got it button is tapped
 - `initLabels` - inits the labels for the view
-
-
-
-##### **PaymentStatusViewController** - 
-
-###### **Methods and Calculated Variables**
-- `tableView - numberOfRowsInSection`
-- `tableView - cellForRowAt`
-- `PaymentObject`
-
 
 
 ##### **SearchPulleyViewController** - 
