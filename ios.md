@@ -287,51 +287,46 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **AccountDetailsViewController** - 
+##### **AccountDetailsViewController** - View that manages the display of Account Details
 
 ###### **Methods and Calculated Variables**
-- `payments`
-- `setupFields`
-- `getAccountDetails`
-- `initAccountDetails`
+- `setupFields` - hides and shows certain views depending on user restrictions
+- `getAccountDetails` - call endpoint to get unit account details
+- `initAccountDetails` - setups the labels on screen based on data retrieved from `getAccountDetails`
 
 
 
-##### **UnitPlanViewController** - 
-
-###### **Methods and Calculated Variables**
-- `isRevisedSelected`
-- `hasUP`
-- `hasRUP`
-- `refreshData`
-- `setupRestrictions`
-- `didTapRUPImage`
-- `didTapUnitPlanButton`
-- `openImagePicker`
-- `openPDFPicker`
-- `didTapUPEditFileButton`
-- `didTapRUPEditFileButton`
-- `didTapUpDeleteButton`
-- `didTapRupDeleteButton`
-- `didTapUpEditDisclaimerButton`
-- `didTapRupEditDisclaimerButton`
-- `getUnitPlanDetails`
-- `initUnitPlanDetails`
-- `getDisclaimers`
-- `imagePickerController`
-- `imagePickerControllerDidCancel`
-- `documentPicker`
-- `documentPickerWasCancelled`
-
-
-
-##### **UnitStatusViewController** - 
+##### **UnitPlanViewController** - View that manages the display Unit Plan details and navigations to update the Unit Plan
 
 ###### **Methods and Calculated Variables**
-- `didTapEditSaveButton`
-- `updateEMI`
-- `setupFields`
-- `getUnitDetails`
+- `isRevisedSelected` - variable that holds the value 'true' if selected unit type is Revised
+- `hasUP` - variable that holds the value 'true' if unit has a unit plan
+- `hasRUP` - variable that holds the value 'true' if unit has a revised unit plan
+- `refreshData` - refreshes the screen to display proper date when edits are made
+- `setupRestrictions` - hides and shows certain views depending on user restrictions
+- `didTapRUPImage` - navigates to gallery view of revised unit plan image
+- `didTapUnitPlanButton` - navigates to gallery view of unit plan image
+- `openImagePicker`- opens camera/gallery picker for photo update
+- `openPDFPicker` - opens pdf/document picker for pdf update
+- `didTapUPEditFileButton` - navigates to edit unit plan file screen
+- `didTapRUPEditFileButton` - navigates to edit revised unit plan file screen
+- `didTapUpDeleteButton` - shows delete unit plan option menu
+- `didTapRupDeleteButton` - shows delete revised unit plan option menu
+- `didTapUpEditDisclaimerButton` - navigates to edit disclaimer for unit plan screen
+- `didTapRupEditDisclaimerButton` - navigates to edit disclaimer for revised unit plan screen
+- `getUnitPlanDetails` - call endpoint to get unit plan details
+- `initUnitPlanDetails` - setups the labels on screen based on data retrieved from `getUnitPlanDetails`
+- `getDisclaimers` - call endpoint to get disclaimer and populate disclaimer label for unit plan and revised unit plan
+
+
+
+##### **UnitStatusViewController** -  View that manage the display of EMIs for Unit Status
+
+###### **Methods and Calculated Variables**
+- `didTapEditSaveButton` - shows EMI options menu
+- `updateEMI` - call endpoint to update EMI category
+- `setupFields` - setups the views on the screen based on data retrieved from `getUnitDetails`
+- `getUnitDetails` - call endpoint to get unit details
 
 
 
@@ -347,42 +342,42 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **PdfViewController** - 
+##### **PdfViewController** - View that manages the display of PDF details for the selected file
 
 ###### **Methods and Calculated Variables**
-- `initUnitPlanPdf`
+- `initUnitPlanPdf` - setups the views based from the file passed to the screen
 
 
 
-##### **UnitPlanEditFileViewController** - 
-
-###### **Methods and Calculated Variables**
-- `isRevised`
-- `replaceImage`
-- `replacePDF`
-- `didTapReplaceWithImageButton`
-- `didTapReplaceWithPDFButton`
-
-
-
-##### **UnitPlanUploadFileViewController** - 
+##### **UnitPlanEditFileViewController** - View that manages the edit of PDF or Image for Unit Plan
 
 ###### **Methods and Calculated Variables**
-- `isRevised`
-- `uploadSuccess`
-- `didTapUploadButton`
-- `initDisplay`
+- `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
+- `replaceImage` - passed function that opens the camera/gallery picker for photo update
+- `replacePDF` - passed function that opens the pdf/document picker for photo update
+- `didTapReplaceWithImageButton` - calls the `replaceImage` function
+- `didTapReplaceWithPDFButton` - calls the `replacePDF` function
 
 
 
-##### **DeleteConfirmationViewController** - 
+##### **UnitPlanUploadFileViewController** - View that manages the adding/initial upload of PDF or Image for Unit Plan
 
 ###### **Methods and Calculated Variables**
-- `isRevised`
-- `deleteSuccess`
-- `initLabel`
-- `didTapDeleteButton`
-- `didTapCancelButton`
+- `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
+- `uploadSuccess` - passed function to refresh the previous screen on file update
+- `didTapUploadButton` - call endpoint to upload new file
+- `initDisplay` - setups the views based on file details passed on the screen
+
+
+
+##### **DeleteConfirmationViewController** - View that manages the confirmation prompt to confirm the deletion of a Unit Plan
+
+###### **Methods and Calculated Variables**
+- `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
+- `deleteSuccess` - passed function to refresh the previous screen on file deletion
+- `initLabel` - setups the views based on file details passed on the screen
+- `didTapDeleteButton` - call endpoint to delete selected unit plan
+- `didTapCancelButton` - closes the option menu and return to previous screen
 
 
 
