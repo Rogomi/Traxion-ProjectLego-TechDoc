@@ -188,6 +188,7 @@ Some of the third party libraries are installed using SPM
 - `openPicker` - opens camera/gallery picker for photo update
 
 
+
 ##### **AgreementViewController** - controls the behavior of the TNC, and privacy policy screens
 
 ###### **Methods and Calculated Variables**
@@ -195,6 +196,7 @@ Some of the third party libraries are installed using SPM
 - `viewWillAppear` - calls `getPrivacyPolicy` or `getTNC`
 - `getTNC` - calls endpoint to get terms and conditions
 - `getPrivacyPolicy` - calls endpoint to get privacy policy
+
 
 
 ##### **ChangePasswordUserViewController** - controls the behavior of the user change password screen
@@ -205,6 +207,237 @@ Some of the third party libraries are installed using SPM
 - `hideError` - hides the error message
 - `showError` - shows the error message
 
+
+
+##### **ConstructionStatusViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isEdit`
+- `isAdd`
+- `setupRestrictions`
+- `didTapBackButton`
+- `didTapKebabButton`
+- `didConstructionStatusButton`
+- `didTapAddButton`
+- `didTapSaveButton`
+- `refreshData`
+- `getConstructionStatus`
+- `initConstructionStatus`
+- `setupAdditionalFiles`
+- `setupCertificateOfCompletions`
+- `setupIsEdit`
+- `updateConstructionStatus`
+- `setupMainCertificate`
+- `didTapMainCertificateButton`
+- `didTapRemoveMainCertificateButton`
+- `didTapSelectCategoryButton`
+- `didTapSelectStatusButton`
+- `openPicker`
+- `uploadFiles`
+- `imagePickerController`
+- `imagePickerControllerDidCancel`
+- `documentPicker`
+- `documentPickerWasCancelled`
+- `SelectedCertificateEnum`
+
+
+
+##### **CocAdditionalFilesViewController** - 
+
+###### **Methods and Calculated Variables**
+- `setupAdditionalFiles`
+
+
+
+##### **LegalViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isSeeAll`
+- `isEdit`
+- `didTapBackButton`
+- `didTapSeeAllButton`
+- `didTapKebabButton`
+- `didTapAddButton`
+- `didTapSaveButton`
+- `updateRealEstateTax`
+- `setupRestrictions`
+- `setupRealEstateTax`
+- `setupEditRealEstateTax`
+- `getLegalDetails`
+- `initLegalDetails`
+
+
+
+##### **GeneralUnitDetailsViewController** - 
+
+###### **Methods and Calculated Variables**
+- `viewWillAppear`
+- `didTapImage`
+- `setupFields`
+- `didTapAccountDetails`
+- `didTapViewDetails`
+- `didTapViewUnitPlan`
+- `didTapConstructionStatus`
+- `didTapLegalDocuments`
+- `didTapUnitMilestonesButton`
+- `getUnitDetails`
+- `initUI`
+- `setupRestrictions`
+- `getUnitPhotos`
+- `initUnitDetails`
+
+
+
+##### **AccountDetailsViewController** - 
+
+###### **Methods and Calculated Variables**
+- `payments`
+- `setupFields`
+- `getAccountDetails`
+- `initAccountDetails`
+
+
+
+##### **UnitPlanViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isRevisedSelected`
+- `hasUP`
+- `hasRUP`
+- `refreshData`
+- `setupRestrictions`
+- `didTapRUPImage`
+- `didTapUnitPlanButton`
+- `openImagePicker`
+- `openPDFPicker`
+- `didTapUPEditFileButton`
+- `didTapRUPEditFileButton`
+- `didTapUpDeleteButton`
+- `didTapRupDeleteButton`
+- `didTapUpEditDisclaimerButton`
+- `didTapRupEditDisclaimerButton`
+- `getUnitPlanDetails`
+- `initUnitPlanDetails`
+- `getDisclaimers`
+- `imagePickerController`
+- `imagePickerControllerDidCancel`
+- `documentPicker`
+- `documentPickerWasCancelled`
+
+
+
+##### **UnitStatusViewController** - 
+
+###### **Methods and Calculated Variables**
+- `didTapEditSaveButton`
+- `updateEMI`
+- `setupFields`
+- `getUnitDetails`
+
+
+
+##### **UnitStatusEMIViewController** - 
+
+###### **Methods and Calculated Variables**
+- `firstChoice`
+- `secondChoice`
+- `customChoice`
+- `didSelectFirst`
+- `didSelectSecond`
+- `didTapSaveButton`
+
+
+
+##### **PdfViewController** - 
+
+###### **Methods and Calculated Variables**
+- `initUnitPlanPdf`
+
+
+
+##### **UnitPlanEditFileViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isRevised`
+- `replaceImage`
+- `replacePDF`
+- `didTapReplaceWithImageButton`
+- `didTapReplaceWithPDFButton`
+
+
+
+##### **UnitPlanUploadFileViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isRevised`
+- `uploadSuccess`
+- `didTapUploadButton`
+- `initDisplay`
+
+
+
+##### **DeleteConfirmationViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isRevised`
+- `deleteSuccess`
+- `initLabel`
+- `didTapDeleteButton`
+- `didTapCancelButton`
+
+
+
+##### **SearchResultsViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isAdvancedSearch`
+- `isLoading`
+- `isSalesDepartment`
+- `textFieldChanged`
+- `numberOfSections`
+- `countFiltered`
+- `tableView - numberOfRowsInSection`
+- `tableView - cellForRowAt`
+- `tableView - didSelectRowAt`
+- `loadSearchUnitsV2`
+- `loadSearchUnitsAdvancedV2`
+- `priceToCurrencyFormatter`
+- `SearchResultGroup`
+
+
+
+##### **GalleryViewController** - 
+
+###### **Methods and Calculated Variables**
+- `isUnitPlan`
+- `isImageOnly`
+- `initFields`
+- `setupRestrictions`
+- `setupFields`
+- `getUnitPhotos`
+- `makeDefault`
+- `deletePhoto`
+- `didTapKebabButton`
+- `collectionView`
+- `collectionView - numberOfItemsInSection`
+- `collectionView - cellForItemAt`
+- `collectionView - didSelectItemAt`
+- `scrollViewDidEndDecelerating`
+- `getDisclaimers`
+
+
+
+##### **GalleryOptionsViewController** - 
+
+###### **Methods and Calculated Variables**
+- `editDisclaimer`
+- `addEdit`
+- `delete`
+- `makeDefault`
+- `didTapEditDisclaimerTextButton`
+- `didTapMakeDefault`
+- `didTapAddEditButton`
+- `didTapDeleteButton`
 
 ### ARCHITECTURE
 
