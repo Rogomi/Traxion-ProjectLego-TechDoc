@@ -241,14 +241,14 @@ Some of the third party libraries are installed using SPM
 - `documentPickerWasCancelled` - closes the document picking view
 
 
-##### **CocAdditionalFilesViewController** - 
+##### **CocAdditionalFilesViewController** - controls the behavior for the certificate of completion additional files
 
 ###### **Methods and Calculated Variables**
 - `setupAdditionalFiles` - initializes the views for the certificate of completion additional files
 
 
 
-##### **LegalViewController** - 
+##### **LegalViewController** - controls the behavior of the legal details screen
 
 ###### **Methods and Calculated Variables**
 - `isSeeAll` - boolean value, hides the seeAll button if false
@@ -267,23 +267,23 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GeneralUnitDetailsViewController** - 
+##### **GeneralUnitDetailsViewController** - controls the behavior of the unit details screen
 
 ###### **Methods and Calculated Variables**
-- `viewWillAppear`
-- `didTapImage`
-- `setupFields`
-- `didTapAccountDetails`
-- `didTapViewDetails`
-- `didTapViewUnitPlan`
-- `didTapConstructionStatus`
-- `didTapLegalDocuments`
-- `didTapUnitMilestonesButton`
-- `getUnitDetails`
-- `initUI`
-- `setupRestrictions`
-- `getUnitPhotos`
-- `initUnitDetails`
+- `viewWillAppear` - calls `initUI`
+- `didTapImage` - navigates the user to the gallery view when tapping the unit image
+- `setupFields` - sets up the visibility of fields based on the restrictions
+- `didTapAccountDetails` - navigates the user to the account details screen when tapping the account details view
+- `didTapViewDetails` - navigates the user to the unit details screen when tapping the view details button
+- `didTapViewUnitPlan` - navigates the user to the unit plan screen when tapping the button
+- `didTapConstructionStatus` - navigates the user to the construction status screen when tapping the view
+- `didTapLegalDocuments` - navigates the user to the legal documents screen when tapping the view
+- `didTapUnitMilestonesButton` - navigates the user to the unit milestones screen when tapping the view
+- `getUnitDetails` - calls the endpoint for the unit details data
+- `initUI` - initializes the ui for the current screen
+- `setupRestrictions` - sets up the restrictions based on the department
+- `getUnitPhotos` - calls the endpoint for the unit photos
+- `initUnitDetails` - initializes the unit details data to the views
 
 
 
