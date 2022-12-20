@@ -320,7 +320,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitStatusViewController** -  View that manage the display of EMIs for Unit Status
+##### **UnitStatusViewController** -  view that manage the display of EMIs for Unit Status
 
 ###### **Methods and Calculated Variables**
 - `didTapEditSaveButton` - shows EMI options menu
@@ -330,7 +330,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitStatusEMIViewController** - View that manages the selection/adding of EMIs for Unit Status
+##### **UnitStatusEMIViewController** - view that manages the selection/adding of EMIs for Unit Status
 
 ###### **Methods and Calculated Variables**
 - `firstChoice` - dynamic function called if the first button is selected
@@ -342,14 +342,14 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **PdfViewController** - View that manages the display of PDF details for the selected file
+##### **PdfViewController** - view that manages the display of PDF details for the selected file
 
 ###### **Methods and Calculated Variables**
 - `initUnitPlanPdf` - setups the views based from the file passed to the screen
 
 
 
-##### **UnitPlanEditFileViewController** - View that manages the edit of PDF or Image for Unit Plan
+##### **UnitPlanEditFileViewController** - view that manages the edit of PDF or Image for Unit Plan
 
 ###### **Methods and Calculated Variables**
 - `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
@@ -360,7 +360,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitPlanUploadFileViewController** - View that manages the adding/initial upload of PDF or Image for Unit Plan
+##### **UnitPlanUploadFileViewController** - view that manages the adding/initial upload of PDF or Image for Unit Plan
 
 ###### **Methods and Calculated Variables**
 - `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
@@ -370,7 +370,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **DeleteConfirmationViewController** - View that manages the confirmation prompt to confirm the deletion of a Unit Plan
+##### **DeleteConfirmationViewController** - view that manages the confirmation prompt to confirm the deletion of a Unit Plan
 
 ###### **Methods and Calculated Variables**
 - `isRevised` - variable that holds the value 'true' if unit plan type is 'Revised'
@@ -381,22 +381,21 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **SearchResultsViewController** - 
+##### **SearchResultsViewController** - view that manages the search results returned from the api
 
 ###### **Methods and Calculated Variables**
-- `isAdvancedSearch`
-- `isLoading`
-- `isSalesDepartment`
-- `textFieldChanged`
-- `numberOfSections`
-- `countFiltered`
-- `tableView - numberOfRowsInSection`
-- `tableView - cellForRowAt`
-- `tableView - didSelectRowAt`
-- `loadSearchUnitsV2`
-- `loadSearchUnitsAdvancedV2`
-- `priceToCurrencyFormatter`
-- `SearchResultGroup`
+- `isAdvancedSearch` - boolean field, distinguishes advanced search from unit search 
+- `isLoading` - boolean field, used to store the value if the api is loading data
+- `isSalesDepartment` - boolean fied, used to check if the user is from sales department
+- `textFieldChanged` - monitors the text field if any changes happen, filters the data based on the text
+- `numberOfSections` - controls the number of sections the tableview will display
+- `countFiltered` - the total number of results based on the filter
+- `tableView - numberOfRowsInSection` - controls the number of rows the tableview will display in a section
+- `tableView - cellForRowAt` - manages the views displayed for each cell
+- `tableView - didSelectRowAt` - manages the selection of the row
+- `loadSearchUnitsV2` - calls the unit search endpoint
+- `loadSearchUnitsAdvancedV2` - calls the advanced search endpoint
+- `SearchResultGroup` - the grouping of each search result
 
 
 
