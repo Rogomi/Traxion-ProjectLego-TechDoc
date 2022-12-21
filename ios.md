@@ -402,35 +402,35 @@ Some of the third party libraries are installed using SPM
 ##### **GalleryViewController** - manages the gallery view 
 
 ###### **Methods and Calculated Variables**
-- `isUnitPlan`
-- `isImageOnly`
-- `initFields`
-- `setupRestrictions`
-- `setupFields`
-- `getUnitPhotos`
-- `makeDefault`
-- `deletePhoto`
-- `didTapKebabButton`
-- `collectionView`
-- `collectionView - numberOfItemsInSection`
-- `collectionView - cellForItemAt`
-- `collectionView - didSelectItemAt`
-- `scrollViewDidEndDecelerating`
-- `getDisclaimers`
+- `isUnitPlan` - boolean value, stores the value if the view is from unit plan
+- `isImageOnly`- boolean value, stores the value if the gallery view should only display an image
+- `initFields` - initializes the fields for the view
+- `setupRestrictions` - sets up the restrictions based on the department
+- `setupFields` - sets up the fields for the view
+- `getUnitPhotos` - calls an endpoint to get the gallery photos
+- `makeDefault` - calls an endpoint to make the current photo the default
+- `deletePhoto` - calls an endpoint to delete the current photo
+- `didTapKebabButton` - opens the menu
+- `collectionView` - the view that contains the images
+- `collectionView - numberOfItemsInSection` - the number of images to be displayed
+- `collectionView - cellForItemAt` - sets the views for the cell
+- `collectionView - didSelectItemAt` - is called when an image is tapped in the collection view
+- `scrollViewDidEndDecelerating` - manages the scrolling of the image
+- `getDisclaimers` - calls an endpoint to get the disclaimer text
 
 
 
 ##### **GalleryOptionsViewController** - menu screen showing the gallery options
 
 ###### **Methods and Calculated Variables**
-- `editDisclaimer`
-- `addEdit`
-- `delete`
-- `makeDefault`
-- `didTapEditDisclaimerTextButton`
-- `didTapMakeDefault`
-- `didTapAddEditButton`
-- `didTapDeleteButton`
+- `editDisclaimer` - opens a new view for editing the disclaimer text
+- `addEdit` - opens a new view for adding photos
+- `delete` - dynamic function is called when the delete button is tapped
+- `makeDefault` - dynamic function is called when make default is tapped
+- `didTapEditDisclaimerTextButton` - calls `editDisclaimer`
+- `didTapMakeDefault` - calls `makeDefault`
+- `didTapAddEditButton` - calls `addEdit`
+- `didTapDeleteButton` - calls `delete`
 
 
 
@@ -447,21 +447,21 @@ Some of the third party libraries are installed using SPM
 ##### **GalleryEditAddPhotoViewController** - manages the adding of additional photos
 
 ###### **Methods and Calculated Variables**
-- `uploadSuccess`
-- `didTapUploadButton`
-- `uploadPhotosV2`
-- `shouldDismissPhotoPicker`
-- `dismissPhotoPicker`
-- `photoPickerDidCancel`
-- `dismissComplete`
-- `didExceedMaximumNumberOfSelection`
-- `handleNoAlbumPermissions`
-- `handleNoCameraPermissions`
-- `askPermissions`
-- `setupPhotoPicker`
-- `tableView - numberOfRowsInSection`
-- `tableView - cellForRowAt`
-- `ImageUpload`
+- `uploadSuccess` - dynamic function is called when the upload is successfull
+- `didTapUploadButton` - validates the images and calls the function `uploadPhotosV2`
+- `uploadPhotosV2` - calls an endpoint to upload the selected photos
+- `shouldDismissPhotoPicker` - is called when the picker is closed
+- `dismissPhotoPicker` - is called when the picker is closed
+- `photoPickerDidCancel` - is called when the cancel button is tapped
+- `dismissComplete` - is called when the picker is closed
+- `didExceedMaximumNumberOfSelection` - is called when the maximum number is reached
+- `handleNoAlbumPermissions` - handles no album permissions
+- `handleNoCameraPermissions` - handles no camera permissions
+- `askPermissions` - asks permission from the user
+- `setupPhotoPicker` - sets up the photo picker
+- `tableView - numberOfRowsInSection` - displays the number of rows in the section
+- `tableView - cellForRowAt` - manages the cells to be displayed
+- `ImageUpload` - object that contains image and their name
 
 
 
@@ -486,30 +486,30 @@ Some of the third party libraries are installed using SPM
 ##### **SearchPulleyViewController** - manages the pull down view
 
 ###### **Methods and Calculated Variables**
-- `setDrawerPosition`
-- `primaryVC`
-- `drawerVC`
+- `setDrawerPosition` - sets the drawer position
+- `primaryVC` - the main view controller
+- `drawerVC` - the drawer view controller
 
 
 
 ##### **SearchDrawerViewController** - manages the drawer view for the selectable items and its search 
 
 ###### **Methods and Calculated Variables**
-- `position`
-- `setToHalf`
-- `selectedField`
-- `isSalesDepartment`
-- `setupFields`
-- `getProjects`
-- `getBuildings`
-- `getUnitTypes`
-- `getReferenceTypes`
-- `updateBuildings`
-- `textFieldChanged`
-- `tableView - numberOfRowsInSection`
-- `tableView - cellForRowAt`
-- `tableView - didSelectRowAt`
-- `PulleyDrawerViewControllerDelegate`
+- `position` - the position of the drawer
+- `setToHalf` - sets the drawer position to half the screen
+- `selectedField` - the selected field
+- `isSalesDepartment` - boolean value, true if the department is sales
+- `setupFields` - sets up the fields for the view
+- `getProjects` - calls an endpoint to get the projects
+- `getBuildings` - calls an endpoint to get the buildings
+- `getUnitTypes` - calls an endpoint to get the unit types
+- `getReferenceTypes` - calls an endpoint to get the reference types
+- `updateBuildings` - updates the buildings based on the projects selected
+- `textFieldChanged` - updates the items to be displayed depending on the text
+- `tableView - numberOfRowsInSection` - displays the number of rows in the section
+- `tableView - cellForRowAt` - manages the views for the cell
+- `tableView - didSelectRowAt` - is called when a row is tapped
+- `PulleyDrawerViewControllerDelegate` - delegate for the Pulley library, used for the drawer views
 
 
 
