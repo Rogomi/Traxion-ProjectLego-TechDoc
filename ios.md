@@ -287,7 +287,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **AccountDetailsViewController** - View that manages the display of Account Details
+##### **AccountDetailsViewController** - view that manages the display of Account Details
 
 ###### **Methods and Calculated Variables**
 - `setupFields` - hides and shows certain views depending on user restrictions
@@ -296,7 +296,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitPlanViewController** - View that manages the display Unit Plan details and navigations to update the Unit Plan
+##### **UnitPlanViewController** - view that manages the display Unit Plan details and navigations to update the Unit Plan
 
 ###### **Methods and Calculated Variables**
 - `isRevisedSelected` - variable that holds the value 'true' if selected unit type is Revised
@@ -399,7 +399,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryViewController** - 
+##### **GalleryViewController** - manages the gallery view 
 
 ###### **Methods and Calculated Variables**
 - `isUnitPlan`
@@ -420,7 +420,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryOptionsViewController** - Menu screen showing the gallery options
+##### **GalleryOptionsViewController** - menu screen showing the gallery options
 
 ###### **Methods and Calculated Variables**
 - `editDisclaimer`
@@ -434,7 +434,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **EditDisclaimerViewController** - Manages the editing of disclaimer text
+##### **EditDisclaimerViewController** - manages the editing of disclaimer text
 
 ###### **Methods and Calculated Variables**
 - `editSuccess` - dynamic function called when saving is successful
@@ -444,7 +444,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryEditAddPhotoViewController** - 
+##### **GalleryEditAddPhotoViewController** - manages the adding of additional photos
 
 ###### **Methods and Calculated Variables**
 - `uploadSuccess`
@@ -465,7 +465,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **GalleryDeleteViewController** - A view that manages the deletion of gallery images
+##### **GalleryDeleteViewController** - a view that manages the deletion of gallery images
 
 ###### **Methods and Calculated Variables**
 - `delete` - dynamic function called when the delete button is tapped
@@ -474,7 +474,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **FailedMessageViewController** - A view that displays a failed message
+##### **FailedMessageViewController** - a view that displays a failed message
 
 ###### **Methods and Calculated Variables**
 - `alertTitle` - the title to be displayed in the view
@@ -483,7 +483,7 @@ Some of the third party libraries are installed using SPM
 - `initLabels` - inits the labels for the view
 
 
-##### **SearchPulleyViewController** - 
+##### **SearchPulleyViewController** - manages the pull down view
 
 ###### **Methods and Calculated Variables**
 - `setDrawerPosition`
@@ -492,7 +492,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **SearchDrawerViewController** - 
+##### **SearchDrawerViewController** - manages the drawer view for the selectable items and its search 
 
 ###### **Methods and Calculated Variables**
 - `position`
@@ -513,7 +513,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **UnitSearchViewController** - 
+##### **UnitSearchViewController** - manages the view displaying the unit search
 
 ###### **Methods and Calculated Variables**
 - `showFields`
@@ -525,7 +525,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **AdvancedSearchViewController** - 
+##### **AdvancedSearchViewController** - manages the view displaying the advanced search
 
 ###### **Methods and Calculated Variables**
 - `showFields`
@@ -551,17 +551,17 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **ChangePasswordViewController** - 
+##### **ChangePasswordViewController** - manages the change password view
 
 ###### **Methods and Calculated Variables**
-- `rules`
-- `PasswordRules`
-- `newPasswordField - didSet` 
-- `newPasswordField - textFieldDidChange`
-- `updateReqs`
-- `setupRequirements`
-- `setupRuleDisplay`
-- `PasswordValidator`
+- `rules` - contains the rules for the password
+- `PasswordRules` - enum listing the possible rules for the password
+- `newPasswordField - didSet` - adds the `textFieldDidChange` function
+- `newPasswordField - textFieldDidChange` - updates the views depending on the inputted password, calls `updateReqs`
+- `updateReqs` - checks if the input is correct or wrong
+- `setupRequirements` - sets up the display for the rules, calls `setupRuleDisplay`
+- `setupRuleDisplay` - sets up the display for one rule
+- `PasswordValidator` - checker that returns if the password follows the rules
 
 
 
