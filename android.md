@@ -39,6 +39,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 **Android Lifecycle** - Used to manage data and connections between activities and fragments.  
 **RxAndroid and RxJava** - Used to connect to a network and manage data.   
 **Jetpack Compose** - Android’s modern toolkit for building native UI. It simplifies and accelerates UI development on Android.
+
 **Apollo GraphQL** - Used to communicate data between Android and Server.
 
 ##### Firebase Platform Libraries.  
