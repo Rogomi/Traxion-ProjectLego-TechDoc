@@ -158,7 +158,19 @@ Some of the third party libraries are installed using SPM
 
 
 
-##### **DashboardViewController** - controls the behavior of the user dashboard screen
+##### **DashboardViewController** - controls the behavior of the user dashboard screen, contains two container views, UnitSearchViewController and AdvancedSearchViewController
+- `showFields` - dynamic function, is called in `SearchPulleyViewController` to display the fields in the drop down
+- `viewWillAppear` - calls `getUser` and `getFieldRestrictions`
+- `prepare` - calls the `showFields` function of `UnitSearchViewController` and `AdvancedSearchViewController`
+- `setupProjects` - calls the `setupProjects` function of `UnitSearchViewController` and `AdvancedSearchViewController`
+- `setupBuildings` - calls the `setupBuildings` function of `UnitSearchViewController` and `AdvancedSearchViewController`
+- `setupReferences` - calls the `setupReferences` function of `UnitSearchViewController` and `AdvancedSearchViewController`
+- `didTapProfileButton` - navigates to the profile screen when the button is tapped
+- `customSegmentValueChanged` - changes the container view depending on the segment selected
+- `didTapSearchButton` - calls the `searchUnit` function of `SearchPulleyViewController`
+- `getUser` - endpoint for getting user details
+- `getFieldRestrictions` - endpoint for getting field restrictions depending on department
+- `setUser` - sets the image of the current user
 
 
 
@@ -483,7 +495,7 @@ Some of the third party libraries are installed using SPM
 - `initLabels` - inits the labels for the view
 
 
-##### **SearchPulleyViewController** - manages the pull down view
+##### **SearchPulleyViewController** - manages the pull down view, sets the drawer position based on the dynamic functions
 
 ###### **Methods and Calculated Variables**
 - `setDrawerPosition` - sets the drawer position
@@ -516,38 +528,38 @@ Some of the third party libraries are installed using SPM
 ##### **UnitSearchViewController** - manages the view displaying the unit search
 
 ###### **Methods and Calculated Variables**
-- `showFields`
-- `didTapProjectsButton`
-- `didTapBuildingsButton`
-- `didTapSearchButton`
-- `setupProjects`
-- `setupBuildings`
+- `showFields` - dynamic function that passes a variable, is called in `DashboardViewController`
+- `didTapProjectsButton` - calls the dynamic function `showFields` and passes projects enum
+- `didTapBuildingsButton` - calls the dynamic function `showFields` and passes buildings enum
+- `didTapSearchButton` - validates the inputs and navigates to the search results view
+- `setupProjects` - sets up the text for the projects view
+- `setupBuildings` - sets up the text for the buildings view
 
 
 
 ##### **AdvancedSearchViewController** - manages the view displaying the advanced search
 
 ###### **Methods and Calculated Variables**
-- `showFields`
-- `isSalesDepartment`
-- `didTapProjectsButton`
-- `didTapBuildingsButton`
-- `didTapUnitTypeButton`
-- `didTapProjectClassificationButton`
-- `didTapProjectStatusButton`
-- `didTapUnitStatusButton`
-- `didTapConstructionStatusButton`
-- `didTapPunchlistStatus`
-- `didTapKeyStatus`
-- `didTapViewingStatusButton`
-- `didTapTOQPunchlistButton`
-- `didTapSearchButton`
-- `changeViewsAlpha`
-- `setupSalesFields`
-- `setupProjects`
-- `setupReferences`
-- `setupBuildings`
-- `RangeSeekSliderDelegate`
+- `showFields` - dynamic function that passes a variable, is called in `DashboardViewController`
+- `isSalesDepartment` - boolean value, true if the department is sales
+- `didTapProjectsButton` - calls the dynamic function `showFields` and passes projects enum
+- `didTapBuildingsButton` - calls the dynamic function `showFields` and passes buildings enum
+- `didTapUnitTypeButton` - calls the dynamic function `showFields` and passes unit type enum
+- `didTapProjectClassificationButton` - calls the dynamic function `showFields` and passes the project classification enum
+- `didTapProjectStatusButton` - calls the dynamic function `showFields` and passes the project status enum
+- `didTapUnitStatusButton` - calls the dynamic function `showFields` and passes the unit status enum
+- `didTapConstructionStatusButton` - calls the dynamic function `showFields` and passes the construction status enum
+- `didTapPunchlistStatus` - calls the dynamic function `showFields` and passes the pr enum
+- `didTapKeyStatus` - calls the dynamic function `showFields` and passes the key status enum
+- `didTapViewingStatusButton` - calls the dynamic function `showFields` and passes the viewing status enum
+- `didTapTOQPunchlistButton` - calls the dynamic function `showFields` and passes the toq punchlist enum
+- `didTapSearchButton` - checks the selected inputs and navigates the user to the search results view
+- `changeViewsAlpha` - changes the views alpha values
+- `setupSalesFields` - sets up the fields to be disabled if sales
+- `setupProjects` - sets up the view if a project is selected, also sets the isSelected value of a project
+- `setupReferences` - sets the isSelected value of a reference
+- `setupBuildings` - sets up the view if a building is selected, also sets the isSelected value of a building
+- `RangeSeekSliderDelegate` - manages the returned results if the range is moved
 
 
 
