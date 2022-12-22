@@ -14,7 +14,7 @@ The user must first install the [Node.js](https://nodejs.org/en/) runtime enviro
 
 This project was created with **Node.js version 16.16.0**.
 
-The Vue.js framework was used for this project, and a guide for it can be found [here](https://vuejs.org/guide/introduction.html#what-is-vue).
+The Vue.js 3 framework was used for this project, and a guide for it can be found [here](https://vuejs.org/guide/introduction.html#what-is-vue). The app uses the Options API.
 
 Lastly, the user must have a text editor. The developers suggest [Visual Studio Code](https://code.visualstudio.com/) with the following extensions:
 
@@ -33,8 +33,10 @@ With it being a web application, it uses HTML for markup and CSS for styling.
 The developers use the corresponding developer tools for [Chrome](https://developer.chrome.com/docs/devtools/), [Firefox](https://firefox-dev.tools/), and [Safari](https://developer.apple.com/safari/tools/) respectively, together with the [Vue.js Devtools](https://devtools.vuejs.org/). 
 
 ### UI LIBRARIES
-**Tailwind CSS** - A utility first CSS framework that can be composed to build any design, directly in your markup.
-**Vue Toaster** - Custom Utility CSS that allows an easy and simple toast message for vue.
+
+[**Tailwind CSS**](https://tailwindcss.com/) - A utility first CSS framework that can be composed to build any design, directly in your markup.
+[**Vue Toaster**](https://github.com/MeForma/vue-toaster) - Custom Utility CSS that allows an easy and simple toast message for Vue.
+[**Vue Datepicker**](https://vue3datepicker.com/) - Powerful, lightweight, and reusable datepicker component to fit within any project.
 
 ### IMPORTANT CLASSES
 
