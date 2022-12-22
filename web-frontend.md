@@ -68,10 +68,46 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     ##### Components
     - `TopBar` - Top bar that persists throughout the app. Contains logo and user info.
     - `SideBar` - Side bar that persists throughout the app. Contains sections that can be navigated.
+    - `MainPageFirstLoginModal` - Modal shown to user during first login.
+    - `LogoutModal` - Modal shown to user attempting to logout.  
 
-- **ForgotPasswordForm.vue** - Handles the forgot password function.
-- **ChangePassword.vue** - Handles the reset password function.
-- **UserList.vue** - Handles the display of different users of Project LEGO.
+- **UserProfile.vue** - Page that contains user information and allows changing of passwords. 
+    ##### Data/Methods
+    - `isCredInvalid` - Flag for displaying error message.
+    - `message` - Error message to be displayed.
+    - `isHeightBig` - Flag for window sizing.
+    - `getMessage()` - Get error message from form to display.
+    - `onResize()` - Account for window sizing.
+    ##### Components
+    - `LoginForm` - Form with textfields to handle user login.  
+
+- **UserList.vue** - Page that displays existing users and allows for creation/editing. 
+    ##### Data/Methods
+    - `departments` - List of all available departments.
+    - `departmentOptions` - List of selectable departments for filtering purposes.
+    - `users` - List of users to be displayed.
+    - `query` - Query for user filtering.
+    - `showAddUserForm` - Flag for display of form to add a new user.
+    - `isConfirmingReactivate` - Flag for display of confirmation modal for user reactivation.
+    - `isConfirmingDeactivate` - Flag for display of confirmation modal for user deactivation.
+    - `currentUser` - User currently selected for reactivation/deactivation.
+    - `isShowEditUserForm` - Flag for display of form to edit an existing user.
+    - `selectedEdituser` - User currently selected for editing.
+    - `pageOfItems` - List of users visible in the currently viewed page.
+    - `selectedDepartmentIds()` - **Computed property.** Returns a list of selected departments from the filter.
+    - `changePage()` - Change the currently viewed page.
+    - `showModal()` - Show reactivation/deactivation confirmation modal.
+    - `addedANewUser()` - Close the "add user" form and refresh the page.
+    - `showEditUserForm()` - Show form for editing an existing user.
+    - `editAUser()` - Close the "edit user" form and refresh the page.
+    - `toggleUserActivationStatus()` - Reactivate/deactivate a user.
+    ##### Components
+    - `UserListDropdown` - Dropdown for department filters.
+    - `AddUserForm` - Form for adding users.
+    - `UserListDeactivateModal` - Modal to confirm user deactivation.
+    - `UserListReactivateModal` - Modal to confirm user reactivation.
+    - `EditUserForm` - Form for editing users.
+    - `Pagination` - Handler of pagination for users.
 
 ### ARCHITECTURE USED
 
