@@ -73,13 +73,25 @@ The developers use the corresponding developer tools for [Chrome](https://develo
 
 - **UserProfile.vue** - Page that contains user information and allows changing of passwords. 
     ##### Data/Methods
-    - `isCredInvalid` - Flag for displaying error message.
-    - `message` - Error message to be displayed.
-    - `isHeightBig` - Flag for window sizing.
-    - `getMessage()` - Get error message from form to display.
-    - `onResize()` - Account for window sizing.
+    - `change_password_clicked` - Flag for checking if password form is editable.
+    - `password_match` - Flag for checking if input passwords match.
+    - `old_password` - User's old password.
+    - `new_password` - User's new password.
+    - `confirm_password` - Confirmation of user's new password.
+    - `firstName` - Currently logged in user's first name.
+    - `lastName` - Currently logged in user's last name.
+    - `role` - Currently logged in user's role.
+    - `position` - Currently logged in user's position.
+    - `department` - Currently logged in user's department.
+    - `user_id` - Currently logged in user's ID.
+    - `email` - Currently logged in user's email address.
+    - `projects` - List of currently logged in user's projects.
+    - `filteredPasswordParameters()` - **Computed property.** Returns a list of checkers/parameters required for new passwords.
+    - `checkPassword()` - Check if new password passes specified constraints and return API response.
+    - `toggleTextVisibility()` - Toggle password text field obfuscation.
+    - `cancelChangePassword()` - Reloads the page and cancels password changing.
     ##### Components
-    - `LoginForm` - Form with textfields to handle user login.  
+    - `UserProfilePasswordField` - Text field with obfuscation toggle for passwords.  
 
 - **UserList.vue** - Page that displays existing users and allows for creation/editing. 
     ##### Data/Methods
