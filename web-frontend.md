@@ -119,7 +119,28 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     - `UserListDeactivateModal` - Modal to confirm user deactivation.
     - `UserListReactivateModal` - Modal to confirm user reactivation.
     - `EditUserForm` - Form for editing users.
-    - `Pagination` - Handler of pagination for users.
+    - `Pagination` - Handler of pagination for users.  
+
+- **UserLogs.vue** - Page that contains user activity logs. 
+    ##### Data/Methods
+    - `audits` - List of logs to be displayed.
+    - `logModules` - List of selectable modules.
+    - `fromDate` - Start date for log filtering.
+    - `toDate` - End date for log filtering.
+    - `isLoading` - Flag for loading data.
+    - `pageOfItems` - List of logs visible in the currently viewed page.
+    - `hasQueried` - Flag for determining if user has attempted to query a filter.
+    - `changePage()` - Change the currently viewed page.
+    - `generateLogs()` - Query the API for logs that fit the provided date filter and selected module.
+    - `formatDate()` - Format a date to `MM-dd-yyyy hh:mm aa`.
+    - `convertDigits()` - Used in `formatDate()` to add 0s before 1-digit entries.
+    - `queryFormatDate()` - Formats a date for GraphQL queries. Used in computed properties.
+    - `selectLogModule()` - Selects a module.
+    - `formattedFromDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "from date", or an empty string if not. 
+    - `formattedToDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "to date", or an empty string if not. 
+    ##### Components
+    - `DatePicker` - Vue Datepicker component for date selection.
+    - `Pagination` - Handler of pagination for logs.  
 
 ### ARCHITECTURE USED
 
