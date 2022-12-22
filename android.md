@@ -114,7 +114,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `saveAdvancedSearchResults()` - Saves the data inputted from Advanced Search.
   - `saveUnitSearchResults()` - Saves the data inputted from Unit Search.
   - `bringUpToSearchResult()` - Brings up items when pressed from the drawer.
-  - `processTaskClick()` - Handles the logic for when project is more than 5; checker for if a new project is selected to getBuildingData() is called again; calls function to save selected data; calls bringUpToSearchResult().
+  - `processTaskClick()` - Handles the logic for when project is more than 5; checker if a new project is selected to call getBuildingData() again; calls function to save selected data; calls bringUpToSearchResult().
   - `bottomSheetSearch()` - Handles the logic for drawer search field.
   - `checkIfSales()` - Handles the logic for checking if the user is sales to disable certain fields on Advanced Search.
 
