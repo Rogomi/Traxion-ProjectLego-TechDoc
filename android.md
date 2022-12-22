@@ -49,6 +49,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 ##### UI Libraries
 **Compose Coil** - Used for displaying images.
+
 **Accompanist** - Used for various composable that are not native to Jetpack Compose.
 
 ##### Other Useful Libraries 
