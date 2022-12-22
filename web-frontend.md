@@ -130,17 +130,44 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     - `isLoading` - Flag for loading data.
     - `pageOfItems` - List of logs visible in the currently viewed page.
     - `hasQueried` - Flag for determining if user has attempted to query a filter.
+    - `formattedFromDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "from date", or an empty string if not. 
+    - `formattedToDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "to date", or an empty string if not. 
     - `changePage()` - Change the currently viewed page.
     - `generateLogs()` - Query the API for logs that fit the provided date filter and selected module.
     - `formatDate()` - Format a date to `MM-dd-yyyy hh:mm aa`.
     - `convertDigits()` - Used in `formatDate()` to add 0s before 1-digit entries.
     - `queryFormatDate()` - Formats a date for GraphQL queries. Used in computed properties.
     - `selectLogModule()` - Selects a module.
-    - `formattedFromDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "from date", or an empty string if not. 
-    - `formattedToDate()` - **Computed property.** Returns a GraphQL-formatted date String if given a valid "to date", or an empty string if not. 
     ##### Components
     - `DatePicker` - Vue Datepicker component for date selection.
     - `Pagination` - Handler of pagination for logs.  
+
+- **AccessManagement.vue** - Page that contains available departments and allows for creation/editing. 
+    ##### Data/Methods
+    - `isDepartmentList` - Flag for showing list of departments.
+    - `isAddDepartment` - Flag for showing form for adding departments.
+    - `isEditDepartment` - Flag for showing form for editing departments.
+    - `showUnitDetailsForm` - Flag for showing form of unit details.
+    - `isRequired` - Flag for showing error message if required fields are not filled.
+    - `selectedDepartment` - Currently selected department.
+    - `selectedModule` - Currently selected module.
+    - `selectedDepartmentDetails` - Currently selected department details.
+    - `moduleGroups` - List of module groups.
+    - `departments` - List of all available departments.
+    - `departmentName` - Name of currently selected department.
+    - `parentModules()` - **Computed property.** Returns list of parent modules.
+    - `subModules()` - **Computed property.** Returns list of submodules.
+    - `addDepartment()` - Initialize list of departments. 
+    - `initModuleGroup()` - Initialize list of module groups.
+    - `getTypes()` - Create a string of types based on a given array.
+    - `initEditDepartment()` - Initialize form for editing departments.
+    - `getSubmodule()` - Returns a list of submodules based on the provided parent ID.
+    - `showEditModuleForm()` - Display form for editing a module.
+    - `saveDetails()` - Save changes made related to access types.
+    - `updateDepartmentName()` - Update shown department name.
+    - `addNewDepartment()` - Create a new department.
+    ##### Components
+    - `UnitDetailsForm` - Form to display unit details.
 
 ### ARCHITECTURE USED
 
