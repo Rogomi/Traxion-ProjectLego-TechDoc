@@ -73,8 +73,8 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 - **LoginScreen** - Handles the display where users will input email account and password.
   ##### Composable/ViewModel Methods
-  - `login()` - Handles the process for Login. Calls the REST API if all credentials are valid and logs user in.
-  - `getArticleByType()` - Handles the process for getting the Article data.
+  - `login()` - Handles the process for Login. Calls the API if all credentials are valid and logs user in.
+  - `getArticleByType()` - Handles the process for getting the terms and privacy data.
 
 - **ChangePasswordScreen** - Handles the display when the user wants to change password
   ##### Composable/ViewModel Methods
@@ -93,11 +93,11 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 - **PrivacyPolicyScreen** - Handles the display of privacy policy.
   ##### Composable/ViewModel Methods
-  - `getArticleByType()` - Handles the process for getting the Article data.
+  - `getArticleByType()` - Handles the process for getting the privacy data.
   
 - **TermsConditionScreen** - Handles the display of terms and conditions
   ##### Composable/ViewModel Methods
-  - `getArticleByType()` - Handles the process for getting the Article data.
+  - `getArticleByType()` - Handles the process for getting the terms data.
 
 - **MainDashboardScreen** - Handles the display of main dashboard; landing screen after login
   ##### Composable/ViewModel Methods
