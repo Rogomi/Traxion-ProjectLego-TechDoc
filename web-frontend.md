@@ -167,7 +167,14 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     - `updateDepartmentName()` - Update shown department name.
     - `addNewDepartment()` - Create a new department.
     ##### Components
-    - `UnitDetailsForm` - Form to display unit details.
+    - `UnitDetailsForm` - Form to display unit details.  
+
+- **ContentManagement.vue** - Page that contains the site's privacy policy (PP) and terms and conditions (T&C). Allows for editing. 
+    ##### Data/Methods
+    - `type` - Determines which article (PP/T&C) should be displayed.
+    ##### Components
+    - `TopTabs` - Tabs to switch articles.
+    - `ArticleByType` - Text box that can be toggled to be editable or not.
 
 ### ARCHITECTURE USED
 
