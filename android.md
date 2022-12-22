@@ -39,7 +39,9 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 **Android Lifecycle** - Used to manage data and connections between activities and fragments.  
 **RxAndroid and RxJava** - Used to connect to a network and manage data.   
 **Jetpack Compose** - Android’s modern toolkit for building native UI. It simplifies and accelerates UI development on Android.
+
 **Apollo GraphQL** - Used to communicate data between Android and Server.
+
 
 ##### Firebase Platform Libraries.  
 **Firebase/Analytics** - Used for App Analytics.  
@@ -48,7 +50,9 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 ##### UI Libraries
 **Compose Coil** - Used for displaying images.
+
 **Accompanist** - Used for various composable that are not native to Jetpack Compose.
+
 
 ##### Other Useful Libraries 
 **Android Navigation: Kotlin** - Used to manage connections between different screens and layouts.  
@@ -114,7 +118,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `bringUpToSearchResult()` - Brings up items when pressed from the drawer.
   - `processTaskClick()` - Handles the logic for when project is more than 5; checker for if a new project is selected to getBuildingData() is called again; calls function to save selected data; calls bringUpToSearchResult().
   - `bottomSheetSearch()` - Handles the logic for drawer search field.
-  - `checkIfSales()` - Handles the logic for checking if the user is sales to disabled certain fields on Advanced Search.
+  - `checkIfSales()` - Handles the logic for checking if the user is sales to disable certain fields on Advanced Search.
 
 - **SearchResultScreen** - Handles the display of items coming from the API, with a search bar on top. Some items are hidden based on a user's department restriction.
   ##### Composable/ViewModel Methods
