@@ -43,9 +43,32 @@ The developers use the corresponding developer tools for [Chrome](https://develo
 #### Initialization Classes
 - **main.js** - Handles the initialization of Vue components. Also contains initial navigation of the pages.
 
-#### Components
-- **LoginPage.vue** - Container that handles forms related to user login.
-- **LoginForm.vue** - Handles the user login.
+#### Screens
+- **LoginPage.vue** - Page that contains forms related to user login. 
+    ##### Data/Methods
+    - `isCredInvalid` - Flag for displaying error message.
+    - `message` - Error message to be displayed.
+    - `isHeightBig` - Flag for window sizing.
+    - `getMessage()` - Get error message from form to display.
+    - `onResize()` - Account for window sizing.
+    ##### Components
+    - `LoginForm` - Form with textfields to handle user login.  
+
+- **MainPage.vue** - Container where most other screens are rendered. 
+    ##### Data/Methods
+    - `isFirstLoginModalVisible` - Flag for displaying modal on user's first login.
+    - `isLogoutModalVisible` - Flag for displaying logout confirmation modal.
+    - `id` - Currently logged in user's ID.
+    - `firstName` - Currently logged in user's first name.
+    - `lastName` - Currently logged in user's last name.
+    - `role` - Currently logged in user's role.
+    - `profilePicture` - Currently logged in user's profile picture URL.
+    - `confirmLogout()` - Show logout modal.
+    - `cancelLogout()` - Hide logout modal.
+    ##### Components
+    - `TopBar` - Top bar that persists throughout the app. Contains logo and user info.
+    - `SideBar` - Side bar that persists throughout the app. Contains sections that can be navigated.
+
 - **ForgotPasswordForm.vue** - Handles the forgot password function.
 - **ChangePassword.vue** - Handles the reset password function.
 - **UserList.vue** - Handles the display of different users of Project LEGO.
