@@ -75,36 +75,36 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getArticleByType()` - Handles the process for getting the Article data.
 
 - **ChangePasswordScreen** - Handles the display when the user wants to change password
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `changePassword()` - Handles the process for changing the password.
   
 - **ForgotPasswordScreen** - Handles the display of forgot password
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `sendEmailRecoveryLink()` - Handles the process for sending an email password link if a correct email is provided.  
 
 - **UserProfileScreen** - Handles the display of user profile.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `fetchProfile()` - Handles the process for getting user data.
   - `updateProfile()` - Handles the process for updating user data.
   - `logout()` - Handles the clearing of data when a user logs out.
 
 
 - **PrivacyPolicyScreen** - Handles the display of privacy policy.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getArticleByType()` - Handles the process for getting the Article data.
   
 - **TermsConditionScreen** - Handles the display of terms and conditions
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getArticleByType()` - Handles the process for getting the Article data.
 
 - **MainDashboardScreen** - Handles the display of main dashboard; landing screen after login
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getData()` - Handles the process for getting User data, as well as their field restrictions.    
   - `getAllFieldRestrictions()` - Handles the process for getting field restrictions, called in getData(). 
 
 - **UnitSearchScreen** - Handles the display of Unit Search, the fields Projects, Buildings, and Unit Keyword. As well as 4 Additional redirection buttons below.
 - **AdvancedSearchScreen** - Handles the display of Advanced Search with all the query fields required.
-  ##### Coomposable/ViewModel Methods - Unit Search and Advanced Search share ViewModels
+  ##### Composable/ViewModel Methods - Unit Search and Advanced Search share ViewModels
   - `getProjectData()` - Requests from the GraphQL API the list of available projects.
   - `getBuildingData()` - Requests from the GraphQL API the list of available buildings.
   - `getUnitTypeData()` - Requests from the GraphQL API the list of available unit types.
@@ -117,7 +117,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `checkIfSales()` - Handles the logic for checking if the user is sales to disabled certain fields on Advanced Search.
 
 - **SearchResultScreen** - Handles the display of items coming from the API, with a search bar on top. Some items are hidden based on a user's department restriction.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `advancedSearch()` - Requests query data if the user used Advanced Search.
   - `unitSearchQuery()` - Requests query data if the user used Unit Search.
   - `saveAdvancedSearchInput()` - Process the input data for Advanced Search before doing the query. Called before advanceSearch().
@@ -127,12 +127,12 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `checkIfSales()` - Handles the logic for checking if the user is sales to hide items that are not Unsold-Available or Unsold-Reserved.
 
 - **UnitDetailsScreen** - Handles the display of a specific Unit with all its associated data. It also displays additional items or buttons dependent on user's department restriction.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getUnitDetails()` - Gets the saved data from saveUnitDetails().
   - `getUnitPhotos()` - Requests the query data for the unit's photos.
 
 - **UnitGalleryScreen** - Handles the display of a unit's available photos in a carousel manner. Ability to add/edit/delete if user is on marketing deparment and the unit is RFO.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getGalleryDetails()` - Gets the saved data from saveUnitDetails().
   - `getUnitPhotos()` - Requests the query data for the unit's photos.
   - `prepareShowData()` - Handles the logic for displaying the selected images. Also handles the logic for when the selected images exceed 15 items.
@@ -143,7 +143,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `editDisclaimer()` - Handles the query to edit the details for Gallery's disclaimer.
 
 - **UnitPlanScreen** - Handles the display of a unit's plan, in both Image or PDF for. If it is revised or not. Ability to add/edit/delete if user is PDS department.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getUnitPlanDetails()` - Requests the query data for the unit's Unit Plans.
   - `uploadPhotos` - Handles the request for uploading; Also uploads PDFs.
   - `deleteUnitPlan()` - Handles the request for deleting a Unit Plan item.
@@ -153,17 +153,17 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getRevisedDisclaimer()` - Handles the query for Revised Unit Plan disclaimer.
 
 - **UnitStatusScreen** - Handles the display of a unit's status. Ability to edit EMI Status on Sold - EMI Units for BD, TOQ, and AMD users.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getUnitDetails()` - Gets the saved data from saveUnitDetails().
   - `updateEmiCategory()` - Handles the request for editing the EMI Category on Sold-EMI units.
 
 - **AccountDetailsScreen** - Handles the display for a unit's accountancy details. Some items are hidden based on a user's department restriction.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getAccountDetails()` - Requests the query data for the unit's accountancy details.
   - `parsePaymentScheme()` - Handles the logic for parsing payment scheme data.
 
 - **ConstructionStatusScreen** - Handles the display for a unit's construction status. Field is hidden from Sales. Ability to add/edit/delete items for Construction/PMD users.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getConstructionStatus()` - Requests the query data for the unit's construction status details.
   - `updateConstructionStatus()` - Handles the request for updating the unit's construction status.
   - `uploadCompletionCertificate()` - Handles the request for uploading a unit's certificate.
@@ -172,7 +172,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 - **CertificateOfCompletionScreen** - Handles the display when user taps to view a certificate on ConstructionStatusScreen.
 
 - **LegalDocumentsScreen** - Handles the display for a unit's legal documents. Field is hidden from Sales. Ability to add/edit/delete items for Legal users.
-  ##### Coomposable/ViewModel Methods
+  ##### Composable/ViewModel Methods
   - `getLegalDetails()` - Requests the query data for the unit's legal details.
   - `updateEstatePropertyTax()` - Handles the request for updating the unit's estate property taxes.
 
