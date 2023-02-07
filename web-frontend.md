@@ -176,6 +176,12 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     - `TopTabs` - Tabs to switch articles.
     - `ArticleByType` - Text box that can be toggled to be editable or not.
 
+- **DataDump.vue** - Page that contains settings and options related to data dumps and logs.
+   ##### Data/Methods
+   - `updateDataDump()` - Trigger a script that updates updates the database with the data dump file.
+   - `updateCronSchedule()` - Schedule a daily cron job that updates the database with a data dump file.
+   - `downloadDataDumpLogs()` - Download a single log file detailing data dump log outputs from the server.
+
 ### ARCHITECTURE USED
 
 Vue.JS has its own architecture. Kindly refer to this [link](https://vuex.vuejs.org/guide/structure.html).
