@@ -429,6 +429,7 @@ Some of the third party libraries are installed using SPM
 - `collectionView - didSelectItemAt` - is called when an image is tapped in the collection view
 - `scrollViewDidEndDecelerating` - manages the scrolling of the image
 - `getDisclaimers` - calls an endpoint to get the disclaimer text
+- `unmarkDefaultPhoto` - calls an endpoint to unmark the current default photo
 
 
 
@@ -443,7 +444,7 @@ Some of the third party libraries are installed using SPM
 - `didTapMakeDefault` - calls `makeDefault`
 - `didTapAddEditButton` - calls `addEdit`
 - `didTapDeleteButton` - calls `delete`
-
+- `checkIfDefaultPhoto` - checks if the photo is the default photo and changes the labels accordingly
 
 
 ##### **EditDisclaimerViewController** - manages the editing of disclaimer text
