@@ -138,10 +138,11 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getUnitPhotos()` - Requests the query data for the unit's photos.
   - `prepareShowData()` - Handles the logic for displaying the selected images. Also handles the logic for when the selected images exceed 15 items.
   - `uploadPhotos()` - Handles the request for uploading; compresses images before uploading.
-  - `deletePhotos()` - Handles the request for deleting a photo.
-  - `setDefaultPhoto()` - Handles the request for setting the selected photo default.
+  - `deletePhotos()` - Handles the request for deleting a photo. Users can now delete Default Photos.
+  - `setDefaultPhoto()` - Handles the request for setting the selected default photo.
   - `getDisclaimer()` - Handles the query for Gallery's disclaimer.
   - `editDisclaimer()` - Handles the query to edit the details for Gallery's disclaimer.
+  - `unmarkDefaultPhoto()` - Handles the logic for when the users attempts to delete a Default Photo. 
 
 - **UnitPlanScreen** - Handles the display of a unit's plan, in both Image or PDF for. If it is revised or not. Ability to add/edit/delete if user is PDS department.
   ##### Composable/ViewModel Methods
