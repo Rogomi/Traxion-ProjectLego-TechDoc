@@ -90,7 +90,6 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `updateProfile()` - Handles the process for updating user data.
   - `logout()` - Handles the clearing of data when a user logs out.
 
-
 - **PrivacyPolicyScreen** - Handles the display of privacy policy.
   ##### Composable/ViewModel Methods
   - `getArticleByType()` - Handles the process for getting the privacy data.
