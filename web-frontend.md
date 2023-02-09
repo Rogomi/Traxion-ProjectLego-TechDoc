@@ -186,4 +186,8 @@ The developers use the corresponding developer tools for [Chrome](https://develo
 
 Vue.JS has its own architecture. Kindly refer to this [link](https://vuex.vuejs.org/guide/structure.html).
 
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
+#### API ARCHITECTURE
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-web.png)
+
+#### OVERALL ARCHITECTURE
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png)
