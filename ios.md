@@ -596,18 +596,18 @@ Some of the third party libraries are installed using SPM
 
 
 
-#### **UnitNoteDetailsViewController** - View that display the details of the selected unit note
+##### **UnitNoteDetailsViewController** - View that display the details of the selected unit note
 
-##### **Methods and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `initUnitNoteDetails` - initializes the labels of the view using the information of the selected unit note
 - `getUnitNoteAttachments` - calls an endpoint to get all the attachments of the selected unit note
 - `storeAndShare` - handles the viewing and sharing of the selected attachment of the unit note
 
 
 
-#### **UnitNoteAddEditViewController** - View that displays the edit or add view for unit notes
+##### **UnitNoteAddEditViewController** - View that displays the edit or add view for unit notes
 
-##### **Methods and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `isEdit` - variable that is used to check if the view is for editing or adding a unit note
 - `setupEditView` - initializes the labels and fields of the unit note to be edited 
 - `didTapSaveButton` - calls an endpoint to either edit or add a unit note
@@ -618,9 +618,9 @@ Some of the third party libraries are installed using SPM
 
 
 
-#### **UnitTurnoverViewController** - View that displays the turnover details of the selected unit
+##### **UnitTurnoverViewController** - View that displays the turnover details of the selected unit
 
-##### **Methods and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `getUnitTurnover` - calls and endpoint to get all the turnover details of the selected unit
 - `initUnitTurnover` - initializes the lables and fields of the view using the turnover detials of the unit
 - `goToViewingView` - manages the transformation of the labels and fields of the view to display mode
