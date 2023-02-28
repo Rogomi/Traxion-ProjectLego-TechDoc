@@ -586,6 +586,49 @@ Some of the third party libraries are installed using SPM
 
 
 
+##### **UnitNotesViewController** - View that displays the unit notes of the selected unit
+
+###### **Methods and Calculated Variables**
+- `getUnitNotes` - calls an endpoint to get all unit notes of the selected unit
+- `cell.editUnitNote` - navigates the user to the edit view of the selected unit note
+- `cell.deleteUnitNote` - manages the deletion of the selected unit note upon users approval
+- `didTapAddButton` - navigates the user to the add unit note view
+
+
+
+#### **UnitNoteDetailsViewController** - View that display the details of the selected unit note
+
+##### **Methods and Calculated Variables**
+- `initUnitNoteDetails` - initializes the labels of the view using the information of the selected unit note
+- `getUnitNoteAttachments` - calls an endpoint to get all the attachments of the selected unit note
+- `storeAndShare` - handles the viewing and sharing of the selected attachment of the unit note
+
+
+
+#### **UnitNoteAddEditViewController** - View that displays the edit or add view for unit notes
+
+##### **Methods and Calculated Variables**
+- `isEdit` - variable that is used to check if the view is for editing or adding a unit note
+- `setupEditView` - initializes the labels and fields of the unit note to be edited 
+- `didTapSaveButton` - calls an endpoint to either edit or add a unit note
+- `getUnitNoteAttachments` - calls an endpoint to get all the attachments of the selected unit note
+- `uploadFiles` - calls an endpoint to edit or add new attachments for the selected unit note
+- `deleteAttachment` - manages the deletion of the selected unit note attachment upon users approval
+- `documentPicker` - navigates the user to the document picker view for editing or adding an attachment
+
+
+
+#### **UnitTurnoverViewController** - View that displays the turnover details of the selected unit
+
+##### **Methods and Calculated Variables**
+- `getUnitTurnover` - calls and endpoint to get all the turnover details of the selected unit
+- `initUnitTurnover` - initializes the lables and fields of the view using the turnover detials of the unit
+- `goToViewingView` - manages the transformation of the labels and fields of the view to display mode
+- `goToEditView` - manages the transformation of the lables and fields of the view to edit mode
+- `didTapViewingSchedule` - navigates the user to the viewing schedule view of the unit turnover
+
+
+
 ##### **EditViewController** - Reusable view that displays an edit and cancel button
 
 ###### **Methods and Calculated Variables**
