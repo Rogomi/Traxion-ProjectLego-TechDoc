@@ -658,8 +658,6 @@ Some of the third party libraries are installed using SPM
 - `initDetails` - initializes the details of the viewing schedule before sending it to concerned parties
 - `didTapSendButton` - calls an endpoint to send the viewing invite to the buyer's email upon the approval of the user
 
-
-
 ##### **UpdateBookingViewController** - View that handles the update option for the booking of the viewing schedule
 
 ###### **Methods and Calculated Variables**
@@ -667,7 +665,11 @@ Some of the third party libraries are installed using SPM
 - `setupFields` - setups the values of the labels and fields based on the booking data
 - `saveViewingSchedule` - calls an endpoint to save the updated booking date for the viewing schedule
 
+##### **AlertMessageViewController** - Reusable view that displays an alert
 
+###### **Methods and Calculated Variables**
+- `initLabels` - function that initializes the labels of the alert view
+- `didTapGotItButton` - dismisses the view
 
 ##### **EditViewController** - Reusable view that displays an edit and cancel button
 
