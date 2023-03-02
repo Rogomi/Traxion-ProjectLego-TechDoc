@@ -178,6 +178,27 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getLegalDetails()` - Requests the query data for the unit's legal details.
   - `updateEstatePropertyTax()` - Handles the request for updating the unit's estate property taxes.
 
+- **TurnoverStatusScreen** - Handles the display for a unit's turnover status. Only PMD and TOQ can view this screen.
+  ##### Composable/ViewModel Methods  
+  - `getUnitTurnover()` - Requests the query data for the unit's unit turnover status.
+  - `updateUnitTurnover()` - Handles the request for updating the unit's unit turnover status.
+
+- **ViewingScheduleScreen** - Handles the display for a unit's viewing schedule under Turnover Status Screen. Only PMD and TOQ can view this screen while only TOQ can edit and send invites.
+  - `getSchedule()` - Requests the query data for the unit's viewing schedule.
+  - `getSapSchedule()` - Requests the query data for the unit's SAP schedules.
+  - `saveSchedule()` - Handles the request for updating the unit's viewing schedule on both save to drafts or send option.
+  - `emailSchedule()` - Handles the request for sending confirmed schedule.
+  - `updateSapBooking()` - Handles the request for updating the unit's sap schedules.
+  - `validateSchedule()` - Handles the checking when pressing the date, save to draft, or send to check and see if it's a valid schedule.
+
+- **UnitNotesScreen** - Handles the display for a unit's notes. Only PMD, TOQ, and Admin accounts can view, add, edit, or delete Unit Notes
+  - `getUnitNotes()` - Requests the query data for the unit notes associated with the unit.
+  - `createUnitNote()` - Handles the request for creating a new unit note.
+  - `updateUnitNote()` - Handles the request for updating a unit note.
+  - `deleteUnitNote()` - Handles the request for deleting a unit note.
+  - `getUnitNoteAttachments()` - Requests the query data for the unit note's attachments.
+  - `uploadUnitNoteAttachments()` - Handles the request for adding attachments to existing unit notes.
+  - `deleteUnitNoteAttachments()` - Handles the request for removing attachments from existing unit notes. 
 
 ### ARCHITECTURE USED
 
