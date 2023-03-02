@@ -176,6 +176,12 @@ The developers use the corresponding developer tools for [Chrome](https://develo
     - `TopTabs` - Tabs to switch articles.
     - `ArticleByType` - Text box that can be toggled to be editable or not.
 
+  - **ProjectManagement.vue** - Page that contains customization settings for projects. 
+    ##### Data/Methods
+    - `tabs` - Content tabs to be displayed.
+    ##### Components
+    - `Settings` - Tab that allows editing of booking limits.
+
 - **DataDump.vue** - Page that contains settings and options related to data dumps and logs.
    ##### Data/Methods
    - `updateDataDump()` - Trigger a script that updates updates the database with the data dump file.
