@@ -621,11 +621,51 @@ Some of the third party libraries are installed using SPM
 ##### **UnitTurnoverViewController** - View that displays the turnover details of the selected unit
 
 ###### **Methods and Calculated Variables**
-- `getUnitTurnover` - calls and endpoint to get all the turnover details of the selected unit
-- `initUnitTurnover` - initializes the lables and fields of the view using the turnover detials of the unit
+- `getUnitTurnover` - calls an endpoint to get all the turnover details of the selected unit
+- `initUnitTurnover` - initializes the labels and fields of the view using the turnover detials of the unit
 - `goToViewingView` - manages the transformation of the labels and fields of the view to display mode
 - `goToEditView` - manages the transformation of the lables and fields of the view to edit mode
 - `didTapViewingSchedule` - navigates the user to the viewing schedule view of the unit turnover
+
+
+
+##### **ViewingScheduleViewController** - View that displays the viewing schedule of a unit turnover
+
+###### **Methods and Calculated Variables**
+- `initFields` - initializes the default values for the labels and fields of the viewing schedule
+- `setupFields` - setups the values for the labels and fields using the retrieved data related to the viewing schedule
+- `getViewingSchedule` - calls an endpoint to get the viewing schedule for the unit turnover
+- `getSapSchedules` - calls an endpoint to get the SAP schedules of the viewing schedule
+- `didTapEditButton` - navigates to the edit view of the viewing schedule
+
+
+
+##### **ViewingScheduleEditViewController** - View that manages the edit option of the viewing schedule
+
+###### **Methods and Calculated Variables**
+- `setupFields` - setups the values for the labels and fields using the data of the viewing schedule
+- `getViewingSchedule` - call an endpoint to get the viewing schedule for the unit turnover
+- `validateSchedule` - calls an endpoint to validate the availability of the viewing schedule
+- `didTapSendButton` - navigates to the preview screen of the new viewing schedule
+- `didTapTurnoverEngineerButton` - calls an endpoint to retrieve the details of the available turnover engineer for the viewing schedule
+- `saveViewingSchedule` - calls an endpoint to save the new viewing schedule
+
+
+
+##### **PreviewMockupViewController** - View that handles the preview for the details of the viewing schedule
+
+###### **Methods and Calculated Variables**
+- `initDetails` - initializes the details of the viewing schedule before sending it to concerned parties
+- `didTapSendButton` - calls an endpoint to send the viewing invite to the buyer's email upon the approval of the user
+
+
+
+##### **UpdateBookingViewController** - View that handles the update option for the booking of the viewing schedule
+
+###### **Methods and Calculated Variables**
+- `uneditableFields` - initializes the state of the uneditable fields based on the booking data
+- `setupFields` - setups the values of the labels and fields based on the booking data
+- `saveViewingSchedule` - calls an endpoint to save the updated booking date for the viewing schedule
 
 
 
