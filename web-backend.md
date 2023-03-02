@@ -122,6 +122,11 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
 - **projectResolver.js** - Handles the connection to projects related data.
     ##### Data/Methods
     - `projects` - handles the retrieval of all projects
+    - `setDefaultBookingLimit` - process the setting of default booking limit
+    - `addEditBookingLimit` - process the adding and updating the booking limit of a project
+    - `deleteBookingLimit` - process the deleting of booking limit of a certain project
+    - `getBookingLimits` - handles the retrieval of list of projects with their corresponding limit
+ 
 
 - **referenceStatusResolver.js** - Handles the connection to reference status related data. 
     ##### Data/Methods
@@ -160,6 +165,22 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
     - `users` - handles the retrieval of all the users
     - `userById` - handles the retrieval of a user based on the given user id
     - `filterUser` - handles the retrieval of all the users using the given filter
+
+- **scheduleResolver.js** - Handles the connection to scheduling related data.
+    ##### Data/Methods
+    -`emailSchedule` - process the email sending of schedule
+    -`saveSchedule` - process the saving of viewing schedule
+    -`updateBooking` - process the update schedule to sap server
+    -`validateSchedule` - process the checking of booking limit
+    -`getSchedule` - handles the retrieval of viewing schedule
+    -`getSapSchedules` - handles the retrieval of booking schedule from SAP API
+    
+- **unitTurnoverResolver.js** - Handles the connection to scheduling related data.
+    ##### Data/Methods
+    -`updateUnitTurnover` - process the updating of unit turnover
+    -`getUnitTurnover` - handles the retrieval of unit turnover
+
+
 
 #### Routes
 - **routes.js** - compiles the routes
