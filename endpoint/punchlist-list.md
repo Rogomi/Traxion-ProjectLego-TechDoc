@@ -22,7 +22,7 @@ Show the list of buyer punchlists.
 	{
 		"id": "881bbb54-fc5e-4639-841e-44d21234cbb2",
 		"refNo": "BPLTEST123000002",
-    "buyerName" : "James Reid"
+    		"buyerName" : "James Reid"
 		"status": "",
 		"type": "Buyer",
 		"filedBy": {
