@@ -28,7 +28,7 @@ Show a viewing schedule based on submitted time range.
 	{
 		"id": "881bbb54-fc5e-4639-841e-44d21234cbb2",
 		"propertyAddress": "Hello",
-    "buyerName" : "James Reid"
+    		"buyerName" : "James Reid"
 		"viewingDate": "2023-02-25T16:00:00.000Z",
 		"timeFrom": "07:00:00",
 		"timeTo": "09:30:00",
