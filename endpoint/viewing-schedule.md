@@ -17,8 +17,6 @@ Show a viewing schedule based on submitted time range.
 
 ## Success Response
 
-**Condition** : If Account exists and Authorized User has required permissions.
-
 **Code** : `200 OK`
 
 **Content example**
