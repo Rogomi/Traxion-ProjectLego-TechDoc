@@ -1,4 +1,4 @@
-# Viewing Schedule
+# Get Viewing Schedules
 
 Show a viewing schedule based on submitted time range.
 
