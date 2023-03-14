@@ -20,11 +20,13 @@ Show the list of buyer punchlists.
 ```json
 [
 	{
-		"id": "881bbb54-fc5e-4639-841e-44d21234cbb2",
-		"refNo": "BPLTEST123000002",
-    		"buyerName" : "James Reid"
-		"status": "",
-		"type": "Buyer",
+		"id": "6328dda0-aeba-4994-ab45-ac9d15e144d7",
+		"refNo": "BPLTEST1230001",
+		"dateAccepted": "2023-03-11T16:00:00.000Z",
+		"buyerName": "Nadine",
+		"status": "Accepted",
+		"turnaroundTime": "15 days",
+		"targetCompletionDate": "2023-07-11T16:00:00.000Z",
 		"filedBy": {
 			"firstName": "Media",
 			"lastName": "Gulapa",
