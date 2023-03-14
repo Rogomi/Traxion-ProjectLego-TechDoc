@@ -1,4 +1,4 @@
-# API Documentation
+# Project Lego REST API Documentation
 
 Base URL: https://devumsapi.robinsonsland.com/
 
