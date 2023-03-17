@@ -6,9 +6,9 @@ Show a viewing schedule based on submitted time range.
 
 **Query Parameters** : 
 
-- `unitNo=[string]` 02A
+- `unitNo=[string]` CONDO13
 - `projectCode=[string]` 00048100
-- `buildingCode=[string]` TEST125
+- `buildingCode=[string]` TEST123
 
 **Method** : `GET`
 
@@ -24,30 +24,29 @@ Show a viewing schedule based on submitted time range.
 ```json
 [
 	{
-		"id": "881bbb54-fc5e-4639-841e-44d21234cbb2",
-		"propertyAddress": "Hello",
-    		"buyerName" : "James Reid"
-		"viewingDate": "2023-02-25T16:00:00.000Z",
-		"timeFrom": "07:00:00",
-		"timeTo": "09:30:00",
+		"id": "cda1e6dd-8567-43da-8152-3931b3f374eb",
+		"propertyAddress": "QC",
+		"viewingDate": "2023-03-15T16:00:00.000Z",
+		"timeFrom": "08:00:00",
+		"timeTo": "09:00:00",
+		"buyerName": "JAMES REID FORD WHITE REID ORANGE BLUE",
 		"turnoverEngineer": {
 			"firstName": "Media",
 			"lastName": "Gulapa",
 			"position": "Turnover Engineer"
 		},
 		"unit": {
-			"unitNo": "02A",
-			"contractNo": "0000100004593"
+			"unitNo": "CONDO13",
+			"contractNo": "0000100001771"
 		},
 		"project": {
 			"name": "Sample BE 123",
 			"projectCode": "00048100"
 		},
 		"building": {
-			"name": "The Residences Place Tower C",
-			"bldgCode": "TEST125"
+			"name": "The Residences TEST A",
+			"bldgCode": "TEST123"
 		}
-	}
   ....
  ]
 ```
