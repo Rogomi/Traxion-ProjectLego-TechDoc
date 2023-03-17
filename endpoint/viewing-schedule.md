@@ -6,9 +6,9 @@ Show a viewing schedule based on submitted time range.
 
 **Query Parameters** : 
 
-- `date=[string]` yyyy/MM/dd
-- `timeFrom=[string]` HH:mm
-- `timeTo=[string]` HH:mm
+- `unitNo=[string]` 02A
+- `projectCode=[string]` 00048100
+- `buildingCode=[string]` TEST125
 
 **Method** : `GET`
 
