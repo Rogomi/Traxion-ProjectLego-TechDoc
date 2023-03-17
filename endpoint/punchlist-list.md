@@ -6,9 +6,9 @@ Show the list of buyer punchlists.
 
 **Query Parameters** : 
 
-- `unitNo=[string]` ex. 02A
-- `projectCode=[string]` ex. 00048100
-- `buildingCode=[string]` ex. TEST125
+- `unitNo=[string]` CONDO13
+- `projectCode=[string]` 00048100
+- `buildingCode=[string]` TEST123
 
 **Method** : `GET`
 
@@ -24,35 +24,36 @@ Show the list of buyer punchlists.
 ```json
 [
 	{
-		"id": "6328dda0-aeba-4994-ab45-ac9d15e144d7",
-		"refNo": "BPLTEST1230001",
-		"dateAccepted": "2023-03-11T16:00:00.000Z",
-		"buyerName": "Nadine",
+		"id": "e064f6bd-165d-4cf6-bc74-cb1d333e1b42",
+		"refNo": "BPLTEST1230009",
+		"dateAccepted": "2023-04-16T16:00:00.000Z",
+		"buyerName": "Mediatrix Gulapa",
 		"status": "Accepted",
 		"turnaroundTime": "15 days",
-		"targetCompletionDate": "2023-07-11T16:00:00.000Z",
+		"targetCompletionDate": "2023-04-15T16:00:00.000Z",
 		"filedBy": {
 			"firstName": "Media",
 			"lastName": "Gulapa",
+			"position": "Turnover Engineer"
 		},
 		"unit": {
-			"unitNo": "02A",
-			"contractNo": "0000100004593"
+			"unitNo": "CONDO13",
+			"contractNo": "0000100001771"
 		},
 		"project": {
 			"name": "Sample BE 123",
 			"projectCode": "00048100"
 		},
 		"building": {
-			"name": "The Residences Place Tower C",
-			"bldgCode": "TEST125"
+			"name": "The Residences TEST A",
+			"bldgCode": "TEST123"
 		},
 		"punchlistitems": [
 			{
-				"sectionName": "Kitchen",
-				"item": "Flooring",
-				"particular": "Broken",
-				"status": null
+				"sectionName": null,
+				"item": "Floor tiles",
+				"particular": "okay",
+				"status": "Accepted"
 			}
 		]
 	}
