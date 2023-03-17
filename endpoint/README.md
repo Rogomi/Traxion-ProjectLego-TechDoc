@@ -4,8 +4,8 @@ Base URL: https://devumsapi.robinsonsland.com/
 
 Basic Auth Credentials:
 
-Username: `username`
-Password: `password`
+- Username: `username`
+- Password: `password`
 
 
 ## [Viewing Schedule](viewing-schedule.md)  
