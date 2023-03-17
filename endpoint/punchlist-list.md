@@ -6,6 +6,10 @@ Show the list of buyer punchlists.
 
 **Query Parameters** : 
 
+- `unitNo=[string]` ex. 02A
+- `projectCode=[string]` ex. 00048100
+- `buildingCode=[string]` ex. TEST125
+
 **Method** : `GET`
 
 **Auth required** : Basic
@@ -42,7 +46,15 @@ Show the list of buyer punchlists.
 		"building": {
 			"name": "The Residences Place Tower C",
 			"bldgCode": "TEST125"
-		}
+		},
+		"punchlistitems": [
+			{
+				"sectionName": "Kitchen",
+				"item": "Flooring",
+				"particular": "Broken",
+				"status": null
+			}
+		]
 	}
   ....
  ]
