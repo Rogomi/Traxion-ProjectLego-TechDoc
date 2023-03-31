@@ -658,12 +658,254 @@ Some of the third party libraries are installed using SPM
 - `initDetails` - initializes the details of the viewing schedule before sending it to concerned parties
 - `didTapSendButton` - calls an endpoint to send the viewing invite to the buyer's email upon the approval of the user
 
+
+
 ##### **UpdateBookingViewController** - View that handles the update option for the booking of the viewing schedule
 
 ###### **Methods and Calculated Variables**
 - `uneditableFields` - initializes the state of the uneditable fields based on the booking data
 - `setupFields` - setups the values of the labels and fields based on the booking data
 - `saveViewingSchedule` - calls an endpoint to save the updated booking date for the viewing schedule
+
+
+##### **PunchlistViewController** - View that handles the display of punchlists
+
+###### **Methods and Calculated Variables**
+- `didTapFilterButton` - navigates to the filter view for the punchlists
+- `didTapAddPunchlistButton` - handles the showing of the options to add a new punchlist
+- `didTapToqButton` - navigates to the view for adding a new toq punchlist
+- `didTapBuyerButton` - navigates to the view for adding a new buyer punchlist
+- `didTapEraseTextButton` - handles the function that clears of the search punchlist text field
+- `refreshData` - function that refreshes the punchlists
+- `getPunchlist` - calls an endpoint to get all available punchlists for display
+- `textFieldChanged` - handles the corresponding functions when text is changed on different text fields
+
+
+
+##### **PunchlistFilterViewController** - View that handles the filter function for the punchlists view
+
+###### **Methods and Calculated Variables**
+- `currentFilter` - variable that checks if filters to be used is for a toq punchlist or a buyer punchlist
+- `getProjects` - calls an endpoint to get the projects available as filter
+- `getBuildings` - calls an endpoint to get the buildings available as filter
+- `didTapApplyAllButton` - calls the function that applies the filters selected
+- `didTapClearAllButton` - calls the function that clears all the selected filters
+
+
+
+##### **PunchlistTableViewCell** - Table View Cell that contains the outlets for the punchlist items cells display
+
+
+
+##### **PunchlistFilterTableViewCell** - Table View Cell that contains the outlets and functions for the punchlist filters item
+
+###### **Methods and Calculated Variables**
+- `setup` - setup the initial values of the filters available
+- `didTapItem` - calls the dynamic function for the selected filter item
+
+
+
+##### **FilterHeaderTableViewCell** - Table View Cell that contains the outlets and functions for the punchlist filters header
+
+###### **Methods and Calculated Variables**
+- `setSelected` - call the function that sets the focus on the selected header
+
+
+
+##### **BuyerPunchlistAddEditViewController** - View that handles the adding and editing of buyer punchlists
+
+###### **Methods and Calculated Variables**
+- `isAdd` - boolean variable that is used to check if view will handle add punchlist display and functions
+- `isEdit` - boolean variable that is used to check if view will handle edit punchlist display and functions
+- `isProcess` - boolean variable that is used to check if view will handle process punchlist display and functions
+- `uneditableFields` - variable that is to check uneditable fields that have their own functions then tapped
+- `requiredFields` - variable that is to check for required fields
+- `didTapAddButton` - function that handles the adding of new an empty punchlist item
+- `didTapSaveButton` - function that asks for confirmation when making changes to existing punchlists
+- `savePunchlist` - calls an endpoint that saves new punchlist or save changes on edited or processed punchlists
+- `initEditFields` - functions that initializes the initial display when editing and processing punchlists
+- `getProjects` - calls an endpoint to get projects available for adding and editing punchlists
+- `getBuildings` - call an endpoint to get buildings available for adding and editing punchlists
+- `loadSearchUnitsV2` - calls an endpoint to get units available for adding and editing punchlists
+- `textFieldShouldBeginEditing` - functions that handles the corresponding actions for each the textfields tapped
+- `buyerPunchlistItemTableViewCell` - function that handles in saving the changes on the textfields of the punchlist itmes
+
+
+
+##### **BuyerPunchlistItemTableViewCell** - Table View Cell that contains the outlets and functions for the buyer punchlist items
+
+###### **Methods and Calculated Variables**
+- `isSubConDisabled` - variable used to check if subcon is disabled
+- `isPunchlistEdit` - variable used to check if views and functions related to editing will be enabled
+- `isProcess` - variable used to check if views and functions related to processing will be enabled
+- `isAdded` - variable used to check if views and functions related to adding will be enabled
+- `setup` - function that initializes the values of the textfields
+- `didTapRemoveButton` - calls the dynamic `remove` function
+- `didTapDuplicateButton` - calls the dynamic `duplicate` function
+- `didTapStatusButton` - calls the dynamic `status` function
+- `didTapCheckboxButton` - calls the dynamic `checkbox` function
+- `changeStatus` - calls the function that handles the changing of status and also calls the `checkbox` function
+- `didEndEditing` - handles the function when editing the values of the text fields
+
+
+
+##### **PunchlistDetailsViewController** - View that handles the display of punchlist details
+
+###### **Methods and Calculated Variables**
+- `isToq` - variable used to check if punchlist details to be displayed is from a toq punchlist or a buyer punchlist
+- `didTapKebabButton` - handles the display of the punchlist menu options
+- `goToEdit` - navigates to the edit view for the punchlist details
+- `goToProcess` - navigates to the process view for the punchlist details upon user confirmation
+- `goToCancel` - handles the `cancelPunchlist` function upon user confirmation
+- `cancelPunchlist` - calls an endpoint to cancel the punchlist
+- `goToDownload` - handles the `downloadPunchlist`function upon user confirmation
+- `downloadPunchlist` - calls an endpoint to download the punchlist
+- `getPunchlistDetails` - calls an endpoint to get the punchlist details to be displayed
+- `getPunchlistItems` - calls an endpoint to get the punchlist items for the selected punchlist
+- `initPunchlistDetails` - function that initializes the punchlist details textfields and labels
+- `storeAndShare` - function that handles the preview,saving, and sharing of the punchlist from `downloadPunchlist`
+
+
+
+##### **PunchlistDetailsMenuViewController** - View that handles the functions for the menu options from the punchlist details view
+
+###### **Methods and Calculated Variables**
+- `initMenuView` - handles the initialization of the available menu options depending on the user permissions
+- `edit` - handles the dynamic edit option when edit button is selected
+- `download` - handles the dynamic download option when download button is selected
+- `process` - handles the dynamic process option when process button is selected
+- `cancel` - handles the dynamic cancel option when option button is selected
+
+
+
+##### **PunchlistDetailsBuyerTableViewCell** - Table View Cell that handles the outlets for the display of the punchlist details items
+
+
+
+##### **PunchlistDownloadViewController** - View that handles the functions for downloading punchlists
+
+###### **Methods and Calculated Variables**
+- `fromDate` - variable that handles the starting date for downloading punchlists
+- `toDate` - variable that handles the ending date for downloading punchlists
+- `didTapDownloadButton` - handles the `downloadPunchlist` function
+- `didTapCancelButton` - closes the view
+- `downloadPunchlist` - calls an endpoint to get the url for the punchlists to be downloaded
+- `textfieldShouldBeginEditing` - handles the corresponding funtion for the textfields edited
+- `storeAndShare` - function that handles the preview,saving, and sharing of the punchlist from `downloadPunchlist`
+
+
+
+##### **ToqPunchlistAddEditViewController** - View that handles the adding and editing of toq punchlists
+
+###### **Methods and Calculated Variables**
+- `unitDetails` - variable that contains the punchlist details and initializes the unit details view if is not empty
+- `punchlistDetails` - variable that contains the punchlist details and initializes the punchlist details view if is not empty
+- `isEdit` - boolean variable that is used to check if view will handle edit punchlist display and functions
+- `isProcess` - boolean variable that is used to check if view will handle process punchlist display and functions
+- `uneditableFields` - variable that is to check uneditable fields that have their own functions then tapped
+- `requiredFields` - variable that is to check for required fields
+- `didTapSaveButton` - function that asks for confirmation when making changes to existing punchlists
+- `processPunchlist` - calls an endpoint that processes the punchlist
+- `saveFields` - calls an endpoint that saves new punchlist or save changes on edited or processed punchlists
+- `didTapAddSectionButton` - handles the function that adds a section to the punchlist items
+- `getProjects` - calls an endpoint to get projects available for adding and editing punchlists
+- `getBuildings` - call an endpoint to get buildings available for adding and editing punchlists
+- `loadSearchUnitsV2` - calls an endpoint to get units available for adding and editing punchlists
+- `getPunchlistItems` - calls an endpoint to get the punchlist items to be displayed or edited if there are any
+- `getPredefinedPunchlistItems` - calls and endpoint for the predefined punchlist items to be used
+- `textFieldShouldBeginEditing` - functions that handles the corresponding actions for each the textfields tapped
+- `punchlistTableViewCell` - function that handles in saving the changes on the textfields of the punchlist itmes
+
+
+
+##### **ToqPunchlistAddEditSectionViewController** - View that handles the adding and editing of toq punchlist items sections
+
+###### **Methods and Calculated Variables**
+- `isEdit` - boolean variable that is used to check if view will handle edit punchlist item sections
+- `setupFields` - function that initializes the punchlist item sections display
+- `didTapAddButton` - function that handles the adding of new punchlist items
+- `didTapSaveButton` - function that handles the saving of the newly added punchlist items
+
+
+
+##### **ToqPunchlistItemTableViewCell** - Table View Cell that handles the outlets and functions for the toq punchlist items
+
+###### **Methods and Calculated Variables**
+- `edit` - dynamic function that handles the edit related actions
+- `expand` - dynamic function that handles the expand related actions
+- `setup` - initializes the values for the toq punchlist item cell
+- `didTapExpandButton` - calls the `expand` function
+
+
+
+##### **ToqPunchlistItemEditTableViewCell** - Table View Cell that handles the outlets and functions for the toq punchlist items when expanded
+
+###### **Methods and Calculated Variables**
+- `collapse` - dynamic function that handles the collapse related actions
+- `status` - dynamic function that handles the status related actions
+- `checkbox` - dynamic function that handles the checkbox related actions
+- `subConDisabled` - variable used to check if subcon is disabled
+- `isPunchlistEdit` - variable used to check if views and functions related to editing will be enabled
+- `isProcess` - variable used to check if views and functions related to processing will be enabled
+- `isAdded` - variable used to check if views and functions related to adding will be enabled
+- `setupReadonly` - initializes that values and views that are enabled/disabled for read only
+- `changeStatus` - calls the `status` and `checkbox` functions
+- `didTapCheckboxButton` - calls the `checkbox` function
+- `didTapCollapseButton` - calls the `collapse` function
+- `didTapStatusButton` - calls the `status` function
+- `didEndEditing` - handles the function when editing the values of the text fields
+
+
+
+##### **CalendarViewController** - View that handles the calendar details and functions
+
+###### **Methods and Calculated Variables**
+- `setCellsView` - configures and initializes the layout of the calendar cells
+- `setMonthView` - function that sets the current calendar details
+- `getUnitTurnoverSchedules` - calls an endpoint to get the unit turnover schedules of the current calendar
+- `getUnitTurnoverSchedulesPerDay` - calls an endpoint to get the unit turnover schedules of the selected day in the calendar
+- `initCalendar` - initializes the calendar view using the `setCellsView` and `setMonthView` functions
+- `didTapExportButton` - navigates to the export calendar view
+- `didTapPrevMonthButton` - sets the calendar view to the previous month
+- `didTapNextMonthButton` - sets the calendar view to the next month
+- `didTapFilterButton` - calls an endpoint to filter the unit turnover schedules
+- `shouldAutororate` - overrides the boolean value that disables the rotation of the screen to landscape view
+- `extension CalendarViewController` - separate section that contains the helper functions for the calendar details
+
+
+
+##### **CalendarCollectionViewCell** - Collection View Cell that handles the outlets and functions for the calendar cells
+
+###### **Methods and Calculated Variables**
+- `setup` - function that initializes the layout of the calendar cells
+- `didTappedDate` - function that handles the actions when tapping a date
+- `setupTodayDate` - initializes the values of the current day in the calendar
+
+
+
+##### **ScheduleTableViewCell** - Table View Cell that handles the outlets for the unit turnover schedule cells
+
+
+
+##### **CalendarExportViewController** - View that handles the functions for exporting of calendar details
+
+###### **Methods and Calculated Variables**
+- `fromDate` - variable that handles the starting date for downloading punchlists
+- `toDate` - variable that handles the ending date for downloading punchlists
+- `didTappedExportButton` - handles the `filterTurnoverSchedules` function
+- `filterTurnoverSchedules` - calls an endpoint to get the url for the filtered unit turnover schedules to be downloaded
+- `textfieldShouldBeginEditing` - handles the corresponding funtion for the textfields edited
+- `storeAndShare` - function that handles the preview,saving, and sharing of the punchlist from `filterTurnoverSchedules`
+
+
+
+##### **TurnoverScheduleDetailsViewController** - View that handles the display of the details of the unit turnover schedules
+
+###### **Methods and Calculated Variables**
+- `initLabels` - initializes the labes of the view using the details of the selected unit turnoverschedule
+- `didTapOutsideButton` - closes the view
+
+
 
 ##### **AlertMessageViewController** - Reusable view that displays an alert
 
@@ -688,6 +930,18 @@ Some of the third party libraries are installed using SPM
 - `deleteOption` - dynamic function called when the delete button is tapped
 - `didTapDeleteButton` - calls the `deleteOption` function
 - `didTapCancelButton` - closes the delete view
+
+
+
+##### **ConfirmationViewController** - Reusable view that displays a yes and no button
+
+###### **Methods and Calculated Variables**
+- `messageText` - dynamic variable that handles the message to be displayed when confirmation view is shown
+- `noteText` - dynamic variable that handles the note to be displayed when confirmation view is shown
+- `isNoteHidden` - boolean variable that is used to check if noteText should be displayed
+- `actionOption` - dynamic function called then the yes button is tapped
+- `didTapYesButton` - calls the `actionOption` function
+- `didTapNoButton` - closes the confirmation view
 
 
 
