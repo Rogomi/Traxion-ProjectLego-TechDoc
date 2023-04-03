@@ -41,7 +41,7 @@ Show a viewing schedule based on submitted unit details
 		"timeFrom": "08:00:00",
 		"timeTo": "09:00:00",
 		"buyerName": "JAMES REID FORD WHITE REID ORANGE BLUE",
-    "buyerRemarks": "This is a remarks",
+    		"buyerRemarks": "This is a remarks",
 		"turnoverEngineer": {
 			"firstName": "Media",
 			"lastName": "Gulapa",
@@ -117,11 +117,11 @@ Post a buyer remarks for viewing schedule.
 
 ##
 
-# Get Viewing Schedules
+# Get Buyer Punchlists
 
-Show a viewing schedule based on submitted time range.
+Show the list of buyer punchlists.
 
-**URL** : `/api/v1/schedule/viewSchedule`
+**URL** : `/api/v1/punchlist/list`
 
 **Query Parameters** : 
 
@@ -143,13 +143,14 @@ Show a viewing schedule based on submitted time range.
 ```json
 [
 	{
-		"id": "cda1e6dd-8567-43da-8152-3931b3f374eb",
-		"propertyAddress": "QC",
-		"viewingDate": "2023-03-15T16:00:00.000Z",
-		"timeFrom": "08:00:00",
-		"timeTo": "09:00:00",
-		"buyerName": "JAMES REID FORD WHITE REID ORANGE BLUE",
-		"turnoverEngineer": {
+		"id": "e064f6bd-165d-4cf6-bc74-cb1d333e1b42",
+		"refNo": "BPLTEST1230009",
+		"dateAccepted": "2023-04-16T16:00:00.000Z",
+		"buyerName": "Mediatrix Gulapa",
+		"status": "Accepted",
+		"turnaroundTime": "15 days",
+		"targetCompletionDate": "2023-04-15T16:00:00.000Z",
+		"filedBy": {
 			"firstName": "Media",
 			"lastName": "Gulapa",
 			"position": "Turnover Engineer"
@@ -165,7 +166,16 @@ Show a viewing schedule based on submitted time range.
 		"building": {
 			"name": "The Residences TEST A",
 			"bldgCode": "TEST123"
-		}
+		},
+		"punchlistitems": [
+			{
+				"sectionName": null,
+				"item": "Floor tiles",
+				"particular": "okay",
+				"status": "Accepted"
+			}
+		]
+	}
   ....
  ]
 ```
