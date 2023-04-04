@@ -200,6 +200,80 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `uploadUnitNoteAttachments()` - Handles the request for adding attachments to existing unit notes.
   - `deleteUnitNoteAttachments()` - Handles the request for removing attachments from existing unit notes. 
 
+- **PunchListScreen** - Handles the display of all punchlists. Can be viewed under Punchlist on the Dashboard
+  - `getPunchlists()` - Requests the query data for the punchlists 
+
+- **PunchListFilterScreen** - Handles the display for filtering of specifed punshlists
+  - `getUserProjectData()` - Handles the query data for the punchlists 
+  - `getProjectBuildingFilterData()` - Handles the query data for getting the buildings based on the project IDs
+  - `getFilteredResultListIds()` - Handles the request for getting the IDs of the filtered results
+  - `searchBasedOnInput()` - Handles the searching of a specific punchlist
+  - `applyFilters()` - Handles the request for applying the selected filters
+
+- **BuyerPunchListScreen** - Handles the display for creating a Buyer Punchlist from the Punchlist Screen
+  - `getUnits()` - Handles the query data for getting the units
+  - `getProjectBuildingData()` - Handles the request for getting the building data for the associated project
+  - `addPunchlistItem()` - Handles the request for adding a punchlist item
+  - `duplicatePunchlistItem()` - Handles the request for duplicating a punchlist item
+  - `deletePunchlistItem()` - Handles the request for deleting a punchlist item
+  - `savePunchlist()` - Handles the request for saving the punchlist
+  - `editItemForBuyer()` - Handles the request for editing a punchlist item
+
+- **DetailedBuyerPunchlistScreen** - Handles the viewing of details of the selected Buyer Punchlist. Only the creator of the Punchlist can edit and cancel the punchlist. Only Construction can process the Punchlist. Anyone can download the punchlist report
+  - `getPunchlist()` - Handles the query data for the associated punchlist
+  - `getPunchlistItems()` - Handles the query data for the punchlist items assoiciated with the punchlist
+  - `processPunchlist()` - Handles the request for processing the punchlist
+  - `cancelPunchlist()` - Handles the request for cancelling the punchlist
+  - `updatePunchlist()` - Handles the request for updating the punchlist
+  - `downloadPunchlistLink()` - Handles the query data for getting the download file link
+  - `downloadBuyerPunchlistFile()` - Handles the request for downloading the punchlist
+
+- **ToqPunchlistScreen** - Handles the display for creating a TOQ Punchlist from the Punchlist Screen
+  - `addSection()` - Handles the request for adding a section
+  - `editAddSectionName()` - Handles the request for adding section name
+  - `editAddItemName()` - Handles the request for adding an item
+  - `editTOQSection()` - Handles the request for editing a section
+  - `editTOQSectionItem()` - Handles the request for editing a section item
+  - `editTOQSectionAddItem()` - Handles the request for editing the added punchlist item
+  - `saveDuplicateSection()` - Handles the request for duplicating and saving a section
+  - `deleteSection()` - Handles the reqeuest for deleting a section
+  - `deleteTOQSectionItem()` - Handles the request for deleting a section item
+  - `deleteAddedPunchlistFromSection()` - Handles the request for deleting the added punchlist item from the section
+  - `saveNewSectionPunchlistToList()` - Handles the request for saving a new section to the list
+  - `savePunchlist()` - Handles the request for saving the punchlist
+
+- **DetailedToqPunchlistScreen** - Handles the creation of a TOQ Punchlist from the Punchlist Screen. Only the creator of the Punchlist can edit and cancel the punchlist. Only Construction can process the Punchlist. Anyone can download the punchlist report
+  - `processPunchlist()` - Handles the request for processing the punchlist
+  - `cancelPunchlist()` - Handles the request for processing the punchlist
+  - `addSection()` - Handles the request for adding a section
+  - `editAddSectionName()` - Handles the request for adding section name
+  - `editAddItemName()` - Handles the request for adding an item
+  - `editTOQSection()` - Handles the request for editing a section
+  - `editTOQSectionItem()` - Handles the request for editing a section item
+  - `editTOQSectionAddItem()` - Handles the request for editing the added punchlist item
+  - `saveDuplicateSection()` - Handles the request for duplicating and saving a section
+  - `deleteSection()` - Handles the reqeuest for deleting a section
+  - `deleteTOQSectionItem()` - Handles the request for deleting a section item
+  - `deleteAddedPunchlistFromSection()` - Handles the request for deleting the added punchlist item from the section
+  - `saveNewSectionPunchlistToList()` - Handles the request for saving a new section to the list
+  - `savePunchlist()` - Handles the request for saving the punchlist
+  - `downloadPunchlistLink()` - Handles the query data for getting the download file link
+  - `downloadPunchlist()` - Handles the request for processing the punchlist
+  - `getPunchlist()` - Handles the query data for the associated punchlist
+  - `getPunchlistItems()` - Handles the query data for the punchlist items assoiciated with the punchlist
+
+- **GeneratePunchlistScreen** - Handles the display for generating a punchlist report
+  - `generateReport()` - Handles the request for generating the punchlist report
+  - `generateReportLink()` - Handles the query data for getting the generate report link
+
+- **CalendarScreen** - Handles the display of unit turnover schedules
+  - `projectsQuery()` - Handles the query data for projects
+  - `getCalendarExportLink()` - Handles the queary data for getting the calendar export link
+  - `exportCalendar()` - Handles the request for downloading the calendar
+  - `getUnitTurnoverSchedules()` - Handles the query data for getting the turnover schedule for a specific project
+
+  
+
 ### ARCHITECTURE USED
 
 Project Lego Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of an xml file which is the UI layout definition for the screen, a Fragment that is the UI controller that displays the data, and the ViewModel, a class that prepares the data for viewing in the Fragment and reacts to user interactions.
