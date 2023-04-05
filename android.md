@@ -207,14 +207,14 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getUserProjectData()` - Handles the query data for the punchlists 
   - `getProjectBuildingFilterData()` - Handles the query data for getting the buildings based on the project IDs
   - `getFilteredResultListIds()` - Handles the request for getting the IDs of the filtered results
-  - `searchBasedOnInput()` - Handles the searching of a specific punchlist
+  - `searchBasedOnInput()` - Handles the request for searching a specific punchlist
   - `applyFilters()` - Handles the request for applying the selected filters
 
 - **BuyerPunchListScreen** - Handles the display for creating a Buyer Punchlist from the Punchlist Screen
   - `getUnits()` - Handles the query data for getting the units
   - `getProjectBuildingData()` - Handles the request for getting the building data for the associated project
   - `addPunchlistItem()` - Handles the request for adding a punchlist item
-  - `duplicatePunchlistItem()` - Handles the request for duplicating a punchlist item
+  - `duplicatePunchlistItem()` - Handles the logic behind duplicating a punchlist item
   - `deletePunchlistItem()` - Handles the request for deleting a punchlist item
   - `savePunchlist()` - Handles the request for saving the punchlist
   - `editItemForBuyer()` - Handles the request for editing a punchlist item
@@ -230,12 +230,12 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 - **ToqPunchlistScreen** - Handles the display for creating a TOQ Punchlist from the Punchlist Screen
   - `addSection()` - Handles the request for adding a section
-  - `editAddSectionName()` - Handles the request for adding section name
-  - `editAddItemName()` - Handles the request for adding an item
-  - `editTOQSection()` - Handles the request for editing a section
-  - `editTOQSectionItem()` - Handles the request for editing a section item
-  - `editTOQSectionAddItem()` - Handles the request for editing the added punchlist item
-  - `saveDuplicateSection()` - Handles the request for duplicating and saving a section
+  - `editAddSectionName()` - Handles the logic behind editing added section name
+  - `editAddItemName()` - Handles the logic behind editing an item name
+  - `editTOQSection()` - Handles the logic behind editing a section
+  - `editTOQSectionItem()` - Handles the logic behind editing a section item
+  - `editTOQSectionAddItem()` - Handles the logic behind editing the added punchlist item
+  - `saveDuplicateSection()` - Handles the request for duplicating and saving the section
   - `deleteSection()` - Handles the reqeuest for deleting a section
   - `deleteTOQSectionItem()` - Handles the request for deleting a section item
   - `deleteAddedPunchlistFromSection()` - Handles the request for deleting the added punchlist item from the section
@@ -244,13 +244,13 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 - **DetailedToqPunchlistScreen** - Handles the creation of a TOQ Punchlist from the Punchlist Screen. Only the creator of the Punchlist can edit and cancel the punchlist. Only Construction can process the Punchlist. Anyone can download the punchlist report
   - `processPunchlist()` - Handles the request for processing the punchlist
-  - `cancelPunchlist()` - Handles the request for processing the punchlist
+  - `cancelPunchlist()` - Handles the request for cancelling the punchlist
   - `addSection()` - Handles the request for adding a section
-  - `editAddSectionName()` - Handles the request for adding section name
-  - `editAddItemName()` - Handles the request for adding an item
-  - `editTOQSection()` - Handles the request for editing a section
-  - `editTOQSectionItem()` - Handles the request for editing a section item
-  - `editTOQSectionAddItem()` - Handles the request for editing the added punchlist item
+  - `editAddSectionName()` - Handles the logic behind editing added section name
+  - `editAddItemName()` - Handles the logic behind editing an item name
+  - `editTOQSection()` - Handles the logic behind editing a section
+  - `editTOQSectionItem()` - Handles the logic behind editing a section item
+  - `editTOQSectionAddItem()` - Handles the logic behind editing the added punchlist item
   - `saveDuplicateSection()` - Handles the request for duplicating and saving a section
   - `deleteSection()` - Handles the reqeuest for deleting a section
   - `deleteTOQSectionItem()` - Handles the request for deleting a section item
