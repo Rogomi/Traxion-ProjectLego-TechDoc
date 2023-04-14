@@ -11,5 +11,10 @@ Basic Auth Credentials:
 - Username: `username`
 - Password: `password`
 
+## [User Login](login.md)  
+## [Forgot Password](forgot-password.md)  
+## [Change Password from Reset Link](change-password-email.md)  
+## [Change Password in User Profile](change-password-user.md)  
 ## [Viewing Schedule](viewing-schedule.md)  
 ## [List of Punchlists](punchlist-list.md)
+## [GraphQL API](graphql.md)
