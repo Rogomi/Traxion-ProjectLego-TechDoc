@@ -9,227 +9,79 @@ Header Credentials:
 - Authentication: `Bearer Token`
 - api-key: `APIKEY`
 
-Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API tool. https://altairgraphql.dev/
+Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API tool. https://altairgraphql.dev/ Also, GraphQL API Tool provides a more user-friendly and detailed documentation. 
 
+## Projects / Buildings
 
+**Query** - is the equivalent of GET
 
-**Query**
+```graphql
 
-    modules: [Module]
+    # Use to get the list of all projects
+    projects: [Project]
     
-    departments: [Department]
+    # Use to get the list of all buildings
+    buildings: [Building]
+
+    # Use to get the list of all buildings by projects
+    #
+    # Arguments
+    # projectIds:
+    buildingsByProjectIds(projectIds: [String]): [Building] 
     
+    # Use to get the list of projects of a specific user
+    #
+    # Arguments
+    # userId:
+    getUserProjects(userId: String): [Project] 
+    
+
+```
+
+## Users
+
+**Query** 
+
+```graphql
+    # Use to get the list of departments
+    departments: [Department] 
+    -
+    
+    # Use to get the details of specific department
+    #
     # Arguments
     # id:
-    departmentById(id: String): Department
+    departmentById(id: String): Department 
+    -
     
-    users: [User]
+    # Use to get the list of all users
+    users: [User] 
+    -
+    
+    # Use to get the details of a specific user
+    #
     # Arguments
     # id:
-    userById(id: String): User
+    userById(id: String): User 
+    -
     
+    # Use to search or filter user
+    #
     # Arguments
     # userEmail:
     # department:
-    filterUser(userEmail: String, department: [String]): [User]
+    filterUser(userEmail: String, department: [String]): [User] 
+    -
     
-    audits: [Audit]
-    
-    # Arguments
-    # fromDate:
-    # toDate:
-    filterAudits(fromDate: String, toDate: String): [Audit]
-    
-    # Arguments
-    # module:
-    # fromDate:
-    # toDate:
-    filterAuditsByModule(
-    module: ModuleName,
-    fromDate: String,
-    toDate: String
-    ): [Audit]
-    
-    projects: [Project]
-    
-    buildings: [Building]
-    
-    # Arguments
-    # projectId:
-    buildingsByProject(projectId: String): [Building]
-    
-    # Arguments
-    # projectIds:
-    buildingsByProjectIds(projectIds: [String]): [Building]
-    
-    # Arguments
-    # type:
-    referenceStatuses(type: ReferenceType): [ReferenceStatus]
-    
-    # Arguments
-    # projectIds:
-    # buildingIds:
-    # keyword:
-    searchUnit(projectIds: [String], buildingIds: [String], keyword: String): [Unit]
-    
-    # Arguments
-    # advancedSearchInput:
-    advancedSearch(advancedSearchInput: AdvancedSearchInput): [Unit]
-    
-    # Arguments
-    # id:
-    unitDetails(id: String): Unit
-    
-    # Arguments
-    # unitCode:
-    unitDetailsByUnitCode(unitCode: String): Unit
-    
-    unitTypes: [UnitType]
-    
-    # Arguments
-    # type:
-    articleByType(type: ArticleType): Article
-    
-    getFields: [Field]
-    
-    getFieldRestrictions: [FieldRestriction]
-    
-    getAllFieldRestrictions: [FieldRestriction]
-    
-    # Arguments
-    # unitId:
-    getAccount(unitId: String): Account
-    
-    # Arguments
-    # unitId:
-    getUnitPlan(unitId: String): UnitPlan
-    
-    # Arguments
-    # unitId:
-    # bldgId:
-    getUnitPhotos(unitId: String, bldgId: String): [UnitPhoto]
-    
-    # Arguments
-    # projectIds:
-    # buildingIds:
-    # keyword:
-    searchUnitV2(
-    projectIds: [String],
-    buildingIds: [String],
-    keyword: String
-    ): [Unit]
-    
-    # Arguments
-    # advancedSearchInput:
-    advancedSearchV2(advancedSearchInput: AdvancedSearchInput): [Unit]
-    
-    # Arguments
-    # unitId:
-    # bldgId:
-    getLegalDetails(unitId: String, bldgId: String): Legal
-    
-    # Arguments
-    # unitId:
-    getConstructionStatus(unitId: String): Construction
-    
-    # Arguments
-    # unitId:
-    getUnitTurnover(unitId: String): UnitTurnover
-    
-    # Arguments
-    # unitId:
-    unitNotes(unitId: String): [UnitNote]
-    
-    # Arguments
-    # noteId:
-    unitNoteAttachments(noteId: String): [UnitNoteAttachment]
-    
-    getBookingLimits: BookingLimits
-    # Arguments
-    # userId:
-    getUserProjects(userId: String): [Project]
-    
-    # Arguments
-    # unitId:
-    getSchedule(unitId: String): ViewingSchedule
-    
-    # Arguments
-    # unitId:
-    getSapSchedules(unitId: String): [SapSchedule]
-    
-    # Arguments
-    # userType:
-    getUserByType(userType: UserType): [User]
-    
-    getPunchlists: [Punchlist]
-    
-    # Arguments
-    # id:
-    getPunchlistDetails(id: String): Punchlist
-    
-    # Arguments
-    # punchlistId:
-    getPunchlistItems(punchlistId: String): [PunchlistItem]
-    
-    getPredefinedPunchlistItems: [PunchlistItem]
-    
-    # Arguments
-    # month:
-    # year:
-    # projectId:
-    getUnitTurnoverSchedules(
-    month: String,
-    year: String,
-    projectId: String
-    ): [ViewingSchedule]
-    
-    # Arguments
-    # date:
-    # projectId:
-    getUnitTurnoverSchedulesPerDay(
-    date: String,
-    projectId: String
-    ): [ViewingSchedule]
-    
-    # Arguments
-    # dateFrom:
-    # dateTo:
-    # projectId:
-    filterTurnoverSchedules(
-    dateFrom: String,
-    dateTo: String,
-    projectId: String
-    ): String
-    
-    # Arguments
-    # unitId:
-    getLatestToqPunchlist(unitId: String): Punchlist
-    
-    # Arguments
-    # unitId:
-    getLatestBuyerPunchlist(unitId: String): Punchlist
-    
-    # Arguments
-    # unitId:
-    getUnitPunchlists(unitId: String): [Punchlist]
-    
-    # Arguments
-    # dateFrom:
-    # dateTo:
-    downloadPunchlist(dateFrom: String, dateTo: String): String
-    
-    # Arguments
-    # punchlistId:
-    downloadPunchlistById(punchlistId: String): String
+```
 
-**Mutation**
+**Mutation** - is the equivalent of POST/PUT/DELETE
 
-   
-    # Arguments
-    # name:
-    # parentModule:
-    createModule(name: String, parentModule: String): Module
-    
+```graphql
+
+    # Create/Update a department. Pass an empty or null id update if create. For
+    # update, pass the id of department.
+    #
     # Arguments
     # id:
     # name:
@@ -240,50 +92,116 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     name: String,
     abbreviation: String,
     modules: [DepartmentModuleInput]
-    ): Department
+    ): Department 
     
-    # Arguments
-    # name:
-    createProject(name: String): Project
+    -
     
+    # Use to create or update a user in admin portal. Pass an id in userInput for update.
+    #
     # Arguments
     # userInput:
-    createUser(userInput: UserInput): UserResponse
+    createUser(userInput: UserInput): UserResponse 
     
+    -
+    
+    # Use to activate or deactivate a user
+    #
     # Arguments
     # userId:
-    activateUser(userId: String): ActivationResponse
+    activateUser(userId: String): ActivationResponse 
     
+    -
+    
+    # Use to update the password of a user.
+    #
     # Arguments
     # passwordInput:
-    changePassword(passwordInput: PasswordInput): String
-    
+    changePassword(passwordInput: PasswordInput): String 
+
+```
+
+## Units
+
+**Query** 
+
+```graphql
+
+    # Use to seach a unit by projects, buildings, and keyword only
+    #
     # Arguments
-    # userId:
-    # moduleName:
-    # activity:
-    createAudit(userId: String, moduleName: ModuleName, activity: String): Audit
+    # projectIds:
+    # buildingIds:
+    # keyword:
+    searchUnitV2(
+    projectIds: [String],
+    buildingIds: [String],
+    keyword: String
+    ): [Unit] 
     
+    # Use to make an advanced unit search
+    #
     # Arguments
-    # name:
-    # projectId:
-    createBuilding(name: String, projectId: String): Building
+    # advancedSearchInput:
+    advancedSearchV2(advancedSearchInput: AdvancedSearchInput): [Unit]
     
+    # Use to get the legal details of a unit
+    #
     # Arguments
-    # name:
-    # type:
-    createReferenceStatus(name: String, type: ReferenceType): ReferenceStatus
+    # unitId:
+    # bldgId:
+    getLegalDetails(unitId: String, bldgId: String): Legal
     
+    # Use to get the construction status of a unit
+    #
     # Arguments
-    # name:
-    # unitCode:
-    # unitType:
-    createUnit(name: String, unitCode: String, unitType: String): Unit
+    # unitId:
+    getConstructionStatus(unitId: String): Construction
     
+    # Use to get the unit turnover details of a unit
+    #
     # Arguments
-    # name:
-    createUnitType(name: String): UnitType
+    # unitId:
+    getUnitTurnover(unitId: String): UnitTurnover
     
+    # Use to get the list of unit notes
+    #
+    # Arguments
+    # unitId:
+    unitNotes(unitId: String): [UnitNote]
+    
+    # Use to get the list of attachments of a unit note
+    #
+    # Arguments
+    # noteId:
+    unitNoteAttachments(noteId: String): [UnitNoteAttachment]  
+    
+    # Use to get the viewing schedule details
+    #
+    # Arguments
+    # unitId:
+    getSchedule(unitId: String): ViewingSchedule
+    
+    # Use to get the viewing schedule details
+    #
+    # Arguments
+    # unitId:
+    getSapSchedules(unitId: String): [SapSchedule] 
+
+```
+
+**Mutation**
+
+```graphql
+    
+    # Use to update emiCategory.
+    #
+    # Arguments
+    # emiCategory:
+    # unitId:
+    updateEmiCategory(emiCategory: String, unitId: String): GeneralMessage
+    
+    # Use to create a unit note
+    #
     # Arguments
     # content:
     # unitCode:
@@ -296,11 +214,15 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     attachments: [Upload]
     ): UnitNote
     
+    # Use to update a unit note
+    #
     # Arguments
     # noteId:
     # content:
     updateUnitNote(noteId: String, content: String): GeneralMessage
     
+    # Use to upload a unit note attachments
+    #
     # Arguments
     # attachments:
     # noteId:
@@ -309,90 +231,20 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     noteId: String
     ): GeneralMessage
     
+    # Use to delete a unit note
+    #
     # Arguments
     # noteId:
     deleteUnitNote(noteId: String): GeneralMessage
     
+    # Use to delete a unit note attachment
+    #
     # Arguments
     # attachmentId:
-    deleteUnitNoteAttachment(attachmentId: String): GeneralMessage
+    deleteUnitNoteAttachment(attachmentId: String): GeneralMessage 
     
-    # Arguments
-    # id:
-    # content:
-    # type:
-    createArticle(id: String, content: String, type: ArticleType): Article
-    
-    # Arguments
-    # fieldName:
-    # refCode:
-    insertField(fieldName: String, refCode: String): Field
-    
-    # Arguments
-    # fieldId:
-    # departments:
-    # state:
-    insertFieldRestriction(
-    fieldId: String,
-    departments: [String],
-    state: State
-    ): [FieldRestriction]
-    
-    # Arguments
-    # fieldId:
-    # departments:
-    # state:
-    insertFieldRestrictionException(
-    fieldId: String,
-    departments: [String],
-    state: State
-    ): [FieldRestriction]
-    
-    # Arguments
-    # accountInput:
-    insertAccount(accountInput: AccountInput): Account
-    
-    # Arguments
-    # url:
-    # fileName:
-    # fileType:
-    # uploadedBy:
-    insertFileUpload(
-    url: String,
-    fileName: String,
-    fileType: String,
-    uploadedBy: String
-    ): FileUpload
-    
-    # Arguments
-    # unit:
-    # unitPlan:
-    # revisedUnitPlan:
-    insertUnitPlan(
-    unit: String,
-    unitPlan: String,
-    revisedUnitPlan: String
-    ): UnitPlan
-    
-    # Arguments
-    # unitUpdateInput:
-    updateUnit(unitUpdateInput: UnitUpdateInput): Unit
-    
-    # Arguments
-    # file:
-    fileUploadTest(file: Upload): String
-    
-    # Arguments
-    # msg:
-    # sender:
-    # email:
-    testMessage(msg: String, sender: String, email: String): String
-    
-    # Arguments
-    # photoInputs:
-    # unitId:
-    uploadUnitPhotos(photoInputs: [UnitPhotoInput], unitId: String): GeneralMessage
-    
+    # Use to upload unit photos
+    #
     # Arguments
     # photos:
     # unitId:
@@ -405,21 +257,29 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     bldgCode: String
     ): GeneralMessage
     
+    # Use to delete a unit photo
+    #
     # Arguments
     # photoId:
     deleteUnitPhoto(photoId: String): GeneralMessage
     
+    # Use to set a default unit photo
+    #
     # Arguments
     # photoId:
     # unitId:
     # bldgId:
     setDefaultPhoto(photoId: String, unitId: String, bldgId: String): GeneralMessage
     
+    # Use to set a default unit photo
+    #
     # Arguments
     # photoId:
     # unitId:
     unmarkDefaultPhoto(photoId: String, unitId: String): GeneralMessage
     
+    # Use to upload a unit plan or revised unit plan.
+    #
     # Arguments
     # file:
     # unitId:
@@ -432,16 +292,15 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     bldgId: String
     ): GeneralMessage
     
+    # Use to delete a unit plan or revised unit plan.
+    #
     # Arguments
     # unitId:
     # isRevised:
     deleteUnitPlan(unitId: String!, isRevised: Boolean!): GeneralMessage
     
-    # Arguments
-    # emiCategory:
-    # unitId:
-    updateEmiCategory(emiCategory: String, unitId: String): GeneralMessage
-    
+    # Use to update estate property tax under legal submodule
+    #
     # Arguments
     # unitId:
     # yearCovered:
@@ -452,6 +311,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     bldgId: String
     ): GeneralMessage
     
+    # Use to update construction status
+    #
     # Arguments
     # unitId:
     # constructionStatus:
@@ -462,6 +323,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     bldgId: String
     ): GeneralMessage
     
+    # Use to add completion certificate
+    #
     # Arguments
     # files:
     # unitId:
@@ -476,6 +339,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     bldgId: String
     ): GeneralMessage
     
+    # Use to update completion certificate
+    #
     # Arguments
     # certificateId:
     # file:
@@ -490,10 +355,14 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     status: String
     ): GeneralMessage
     
+    # Use to delete completion certificate
+    #
     # Arguments
     # certificateId:
     deleteCompletionCertificate(certificateId: String): GeneralMessage
     
+    # Use to add additional certificate within Completion Certificate
+    #
     # Arguments
     # certificateId:
     # files:
@@ -508,6 +377,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     status: String
     ): GeneralMessage
     
+    # Use to delete certificate within Completion Certificate
+    #
     # Arguments
     # certificateId:
     # fileUploadId:
@@ -516,6 +387,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     fileUploadId: String
     ): GeneralMessage
     
+    # Use to update unit turnover
+    #
     # Arguments
     # viewingStatus:
     # keyStatus:
@@ -528,25 +401,16 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     atmiStatus: String,
     unitId: String,
     bldgId: String
-    ): GeneralMessage
+    ): GeneralMessage 
     
-    # Arguments
-    # limit:
-    setDefaultBookingLimit(limit: Int): GeneralMessage
-    
-    # Arguments
-    # projectId:
-    # limit:
-    addEditBookingLimit(projectId: String, limit: Int): GeneralMessage
-    
-    # Arguments
-    # bookingLimitId:
-    deleteBookingLimit(bookingLimitId: String): GeneralMessage
-    
+    # Use to send viewing schedule email
+    #
     # Arguments
     # scheduleId:
     emailSchedule(scheduleId: String): GeneralMessage
     
+    # Use to save viewing schedule
+    #
     # Arguments
     # unitId:
     # buildingId:
@@ -571,6 +435,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     engineerUserId: String
     ): ViewingSchedule
     
+    # Use to update booking of in sap schedule
+    #
     # Arguments
     # unitId:
     # scheduleId:
@@ -589,11 +455,113 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     remarks: String
     ): GeneralMessage
     
+    # Use to validate schedule based on date
+    #
     # Arguments
     # projectId:
     # date:
     validateSchedule(projectId: String, date: String): GeneralMessage
     
+```
+
+## Punchlists
+
+**Query**
+
+```graphql
+    
+    # Use to get the list of punchlists
+    getPunchlists: [Punchlist]
+    
+    # Use to get the details of punchlist
+    #
+    # Arguments
+    # id:
+    getPunchlistDetails(id: String): Punchlist
+    
+    # Use to get the punchlist items
+    #
+    # Arguments
+    # punchlistId:
+    getPunchlistItems(punchlistId: String): [PunchlistItem]
+    
+    # Use to get the predefined punchlist items for TOQ
+    getPredefinedPunchlistItems: [PunchlistItem]
+    
+    # Use to get the unit turnover schedules
+    #
+    # Arguments
+    # month:
+    # year:
+    # projectId:
+    getUnitTurnoverSchedules(
+    month: String,
+    year: String,
+    projectId: String
+    ): [ViewingSchedule]
+    
+    # Use to filter the viewing schedule per day
+    #
+    # Arguments
+    # date:
+    # projectId:
+    getUnitTurnoverSchedulesPerDay(
+    date: String,
+    projectId: String
+    ): [ViewingSchedule]
+    
+    # Use to filter turnover schedules by date range and or project
+    #
+    # Arguments
+    # dateFrom:
+    # dateTo:
+    # projectId:
+    filterTurnoverSchedules(
+    dateFrom: String,
+    dateTo: String,
+    projectId: String
+    ): String
+    
+    # Use to get the latest toq puchlist of a unit
+    #
+    # Arguments
+    # unitId:
+    getLatestToqPunchlist(unitId: String): Punchlist
+    
+    # Use to get the latest buyer punchlist of a unt
+    #
+    # Arguments
+    # unitId:
+    getLatestBuyerPunchlist(unitId: String): Punchlist
+    
+    # Use to get the list of punchlists of a certain unit
+    #
+    # Arguments
+    # unitId:
+    getUnitPunchlists(unitId: String): [Punchlist]
+    
+    # Use to download the pdf file of punchlists report
+    #
+    # Arguments
+    # dateFrom:
+    # dateTo:
+    downloadPunchlist(dateFrom: String, dateTo: String): String
+    
+    # Use to download the pdf file of punchlist details
+    #
+    # Arguments
+    # punchlistId:
+    downloadPunchlistById(punchlistId: String): String 
+
+    
+```
+**Mutation**
+
+```graphql
+    
+    # Use to save or update punchlist. Pass an empty or null id when adding a
+    # punchlist.
+    #
     # Arguments
     # id:
     # projectId:
@@ -622,6 +590,8 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     punchlistItems: [PunchlistItemInput]
     ): GeneralMessage
     
+    # Use to process a punchlist
+    #
     # Arguments
     # punchlistId:
     # status:
@@ -632,7 +602,12 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     punchlistItems: [PunchlistItemInput]
     ): GeneralMessage
     
+    # Use to cancel a punchlist
+    #
     # Arguments
     # punchlistId:
-    cancelPunchlist(punchlistId: String): GeneralMessage
-    
+    cancelPunchlist(punchlistId: String): GeneralMessage 
+
+```
+
+
