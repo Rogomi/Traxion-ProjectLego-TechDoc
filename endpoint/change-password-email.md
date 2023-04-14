@@ -10,7 +10,7 @@
 
 ```json
 {
-	"userId": "user id from link",
+  "userId": "user id from link",
   "token": "token from link",
   "password": "new password",
 }
