@@ -610,4 +610,69 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
 
 ```
 
+## Settings
 
+**Query**
+
+```graphql
+    
+    # Use to show the list of logs by module
+    #
+    # Arguments
+    # module:
+    # fromDate:
+    # toDate:
+    filterAuditsByModule(
+    module: ModuleName,
+    fromDate: String,
+    toDate: String
+    ): [Audit] 
+    
+    # Use to get the value of a simple content based on type like Terms and Conditions
+    #
+    # Arguments
+    # type:
+    articleByType(type: ArticleType): Article 
+    
+    # Use to get the restricted fields of a certain user
+    getFieldRestrictions: [FieldRestriction] 
+    
+    # Use to get the list booking limits
+    getBookingLimits: BookingLimits 
+    
+   
+```
+
+**Mutation**
+
+```graphql
+    
+    # Use to set default booking limit
+    #
+    # Arguments
+    # limit:
+    setDefaultBookingLimit(limit: Int): GeneralMessage
+    
+    # Use to add or update booking limit of a project
+    #
+    # Arguments
+    # projectId:
+    # limit:
+    addEditBookingLimit(projectId: String, limit: Int): GeneralMessage
+    
+    # Use to delete booking limit of a project
+    #
+    # Arguments
+    # bookingLimitId:
+    deleteBookingLimit(bookingLimitId: String): GeneralMessage 
+    
+    # Use to create a simple content, that needs only one field such as terms and
+    # conditions, privacy policy, etc
+    #
+    # Arguments
+    # id:
+    # content:
+    # type:
+    createArticle(id: String, content: String, type: ArticleType): Article 
+
+```
