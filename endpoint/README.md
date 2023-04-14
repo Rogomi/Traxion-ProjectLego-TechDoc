@@ -17,4 +17,5 @@ Basic Auth Credentials:
 ## [Change Password in User Profile](change-password-user.md)  
 ## [Viewing Schedule](viewing-schedule.md)  
 ## [List of Punchlists](punchlist-list.md)
+## [Post Buyer Remarks](post-buyer-remarks.md)
 ## [GraphQL API](graphql.md)
