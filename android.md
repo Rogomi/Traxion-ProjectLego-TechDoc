@@ -294,7 +294,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 ### ARCHITECTURE USED
 
-Project Lego Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of an xml file which is the UI layout definition for the screen, a Fragment that is the UI controller that displays the data, and the ViewModel, a class that prepares the data for viewing in the Fragment and reacts to user interactions.
+Project Lego Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of a Composable file which is the UI layout definition for the screen, a NavController that is the UI controller that navigates and displays the data, and the ViewModel, a class that prepares the data for viewing in the Composables and reacts to user interactions.
 
 [here](https://drive.google.com/file/d/1ikD6dEHvLZIGkIyTN_1Zs-iRh_RnZbgy/view?usp=sharing)
 
