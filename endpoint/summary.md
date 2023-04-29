@@ -372,6 +372,83 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     # userId:
     getUserProjects(userId: String): [Project] 
     
+    # Use to get a advanced project lists. It returns more details or fields --
+    # primarily used in project module
+    getAdvancedProjectLists: [Project]
+    
+    # Use to get the project photos
+    #
+    # Arguments
+    # projectId:
+    # isPreselling:
+    getProjectPhotos(projectId: String, isPreselling: Boolean): [ProjectPhoto]
+    
+    # Use to get a number of units per project
+    #
+    # Arguments
+    # projectId:
+    getProjectUnitCount(projectId: String): Int 
+    
+
+```
+
+**Mutation** - is the equivalent of POST/PUT/DELETE
+
+```graphql
+    
+    # Use to upload project photos
+    #
+    # Arguments
+    # photos:
+    # projectId:
+    # defaultPhotoIndex:
+    # isPreselling:
+    uploadProjectPhotos(
+    photos: [Upload],
+    projectId: String,
+    defaultPhotoIndex: Int,
+    isPreselling: Boolean
+    ): GeneralMessage
+    
+    # Use to delete a project photo
+    #
+    # Arguments
+    # photoId:
+    deleteProjectPhoto(photoId: String): GeneralMessage
+    
+    # Use to set a default project photo
+    #
+    # Arguments
+    # photoId:
+    # projectId:
+    # isPreselling:
+    setProjectDefaultPhoto(
+    photoId: String,
+    projectId: String,
+    isPreselling: Boolean
+    ): GeneralMessage
+    
+    # Use to set a default project photo
+    #
+    # Arguments
+    # photoId:
+    # projectId:
+    # isPreselling:
+    unmarkProjectDefaultPhoto(
+    photoId: String,
+    projectId: String,
+    isPreselling: Boolean
+    ): GeneralMessage
+    
+    # Use to set a default project photo
+    #
+    # Arguments
+    # projectId:
+    # adminContactNo:
+    updateProjectAdminContact(
+    projectId: String,
+    adminContactNo: String
+    ): GeneralMessage 
 
 ```
 
@@ -412,7 +489,7 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     
 ```
 
-**Mutation** - is the equivalent of POST/PUT/DELETE
+**Mutation**
 
 ```graphql
 
@@ -1013,5 +1090,6 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     createArticle(id: String, content: String, type: ArticleType): Article 
 
 ```
+
 
 
