@@ -907,6 +907,44 @@ Some of the third party libraries are installed using SPM
 
 
 
+##### **ProjectsViewController** - View that handles the display of list of all available projects
+
+###### **Methods and Calculated Variables**
+- `filteredProjects` - array that contains the project objects to be displayed, and the array used for the table view functions
+- `getProjects` - calls an endpoint to get all project objects available for display
+- `textFieldChanged` - handles the monitoring of the text change for the search bar and calls the appropriate function
+- `filterProjects` - function that handles the filtering of the displayed project objects depending on the text in the search bar
+
+
+
+##### **ProjectGalleryViewController** - View that handles the display of a more detailed view of the project object information
+
+###### **Methods and Calculated Variables**
+- `isPreselling` - a variable that is used to checked if the view will use preselling functionalities
+- `updateComplete` - a callback function that is called when update on the project object is done
+- `getUnitCount` - calls an endpoint to get the count for the unit count of the project
+- `didTapImageButton` - function that is called when the project image is tapped to navigate to the gallery view of the project photos
+- `customSegmentValueChanged` - handles the monitoring of the selection between preselling and default photo gallery
+- `didTapKebabButton` - handles the navigation to the project edit view
+- `setupProjectGallery` - function that is called to setup the initial values of the project gallery view
+- `getProjectPhotos` - calls an endpoint to get the default and preselling photo gallery of the selected project
+- `didTapProjectPlanButton` - handles the navigation to the project plans options view
+
+
+
+##### **ProjectEditViewController** - View that handles the display and functions for the edit view of the selected project object
+
+###### **Methods and Calculated Variables**
+- `updateComplete` - a callback function that is called when update on the project object is done
+- `setupProjectDetails` - function that is called to setup the initial values of the project edit view
+- `updateAdminContactNumber` - calls an endpoint to update the admin contact number of the selected project object
+
+
+
+##### **ProjectTableViewCell** - Table View cell that handles the variables and functions of the project objects used in ProjectsViewController
+
+
+
 ##### **AlertMessageViewController** - Reusable view that displays an alert
 
 ###### **Methods and Calculated Variables**
