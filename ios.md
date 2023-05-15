@@ -945,6 +945,58 @@ Some of the third party libraries are installed using SPM
 
 
 
+##### **ProjectPlansViewController** - View that handles the display and navigation to the different Project Plan type lists
+
+###### **Methods and Calculated Variables**
+- `didTabBidPlanButton` - handles the navigation to the Bid Plan project plan list
+- `didTapFcdPlanButton` - hanldes the navigation to the Fcd Plan project plan list
+- `didTapBuildDrawingsButton` - handles the navigation to the As Build Drawings Plan project plan list
+- `didTapKeyPlanButton` - handles the navigation to the Key Plan and Unitized Layout Plan project plan list
+
+
+
+##### **ProjectPlanListViewController** - View that dynamically handles the display of the selected project plan type list
+
+###### **Methods and Calculated Variables**
+- `didTapBackButton` - handles the navigation back to the ProjectPlansViewController or Project Plan list display view if view is in edit view.
+- `didTapAddFileButton` - handles the display of the different options to add file for a new project plan item.
+- `didTapKebabButton` - handles the display of the edit view for the project plan list
+- `setupRestrictions` - restricts the available functions depending on the type of user
+- `setupView` - function that handles the setup of the display view
+- `setupEdit` - function that handles the setup of the edit view
+- `getProjectPlans` - calls an endpoint to get the list of the project plan items of the selected project plan type
+- `storeAndShare` - handles the viewing and sharing of the file of the selected project plan item
+
+
+
+##### **ProjectPlanAddFileViewController** - View that handles the addition of a new file for a new project plan item
+
+###### **Methods and Calculated Variables**
+- `openCamera` - function that handles the addition of a new image using the camera for a new project plan item
+- `openGallery` - function that handles the addition of a new image selected from the gallery for a new project plan item
+- `openFiles` - function that handlest he addition of a new file selected using a document picker for a new project plan item
+
+
+
+##### **EditPlanDescriptionViewController** - View that handles the updating of the selected project plan item
+
+###### **Methods and Calculated Variables**
+- `setupProjectPlan` - function that setups the initial display of the fields and labels of the view using the values of the selected project plan item
+- `didTapSaveButton` - function that calls an an endpoint that updates the description of the selected project plan item 
+
+
+
+###### **ProjectPlanTableViewCell** - Table View cell that handles the variables and functions of the project plan objects used in ProjectPlanListViewController
+
+###### **Methods and Calculated Variables**
+- `goToEditDescription` - function that handles the navigation to the edit description view of the selected project plan item
+- `openDocumentViewer` - function that handles the display and sharing of the file of the selected project plan item
+- `deleteProjectPlan`- function that calls an endpoint to delete the selected project plan item
+- `setupView` - function that handles the setup of the display view
+- `setupEdit` - function that handles the setup of the edit view
+
+
+
 ##### **AlertMessageViewController** - Reusable view that displays an alert
 
 ###### **Methods and Calculated Variables**
