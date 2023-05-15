@@ -288,6 +288,44 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `unmarkDefaultPhoto` - Handles the request for unmarking the default photo.
   - `getDisclaimer` - Handles the query data for the selected option for display in gallery.
   - `editDisclaimer` - Handles the request to change the selected disclaimer.
+
+- **ProjectPlansScreen** - Handles the display of the type of Project Plans from the ProjectDetailsScreen, can also be accessed from Unit Plans from the View Floor Plans buttons.
+
+- **BidPlan** - Handles the display of Bid Plans of the specific Project. All user can view Bid Plans but only Construction and PDS user can add, edit and delete the project plans.
+  - `getProjectPlan` - Handles the query data for a project's Bid Plans.
+  - `uploadProjectPlan` - Handles the request for uploading a project plan.
+  - `deleteProjectPlan` - Handles the request for deleting a project plan.
+  - `updateDescription` - Handles the request for adding or updating the description of a project plan.
+
+- **FCDPlan** - Handles the display of FCD Plans of the specific Project. All user can view Bid Plans but only Construction and PDS user can add, edit and delete the project plans.
+  - `getProjectPlan` - Handles the query data for a project's FCD Plans.
+  - `uploadProjectPlan` - Handles the request for uploading a project plan.
+  - `deleteProjectPlan` - Handles the request for deleting a project plan.
+  - `updateDescription` - Handles the request for adding or updating the description of a project plan.
+
+- **BuiltDrawingsPlan** - Handles the display of Built Drawings Plan of the specific Project. All user can view Bid Plans but only Construction and PDS user can add, edit and delete the project plans.
+  - `getProjectPlan` - Handles the query data for a project's Built Drawings Plans.
+  - `uploadProjectPlan` - Handles the request for uploading a project plan.
+  - `deleteProjectPlan` - Handles the request for deleting a project plan.
+  - `updateDescription` - Handles the request for adding or updating the description of a project plan.
+  
+- **KeyPlanUnitizedLayout** - Handles the display of Key Plan and Unitized Layout of the specific Project. All user can view Bid Plans but only Construction and PDS user can add, edit and delete the project plans.
+  - `getProjectPlan` - Handles the query data for a project's Key Plan and Unitized Layout.
+  - `uploadProjectPlan` - Handles the request for uploading a project plan.
+  - `deleteProjectPlan` - Handles the request for deleting a project plan.
+  - `updateDescription` - Handles the request for adding or updating the description of a project plan.
+
+- **ProjectMilestonesScreen** - Handles the display of Project Milestones for the selected project. All users can view Project Milestones but only TOQ and Construction users can edit or clear the milestones.
+  - `getProjectMilestone` - Handles the query data for a Project's Project Milestones.
+  - `saveProjectMilestones` - Handles the request for saving the project milestones.
+
+- **ConstructionProgressScreen** - Handles the display of the selected Project's buildings that can be selected to view their construction progress.
+  - `getBuildingsByProjectId` - Handles the query data of the buildings of the selected Project.
+
+- **ConstructionProgressDetails** - Handles the display of a selected building's construction progress. 
+  - `getConstructionProgress` - Handles the query data of the selected building's construction progress.
+  - `saveConstructionProgress` - Handles the request for saving the construction progress.
+
  
 
   
