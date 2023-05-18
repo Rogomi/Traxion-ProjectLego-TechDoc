@@ -126,6 +126,38 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
     - `addEditBookingLimit` - process the adding and updating the booking limit of a project
     - `deleteBookingLimit` - process the deleting of booking limit of a certain project
     - `getBookingLimits` - handles the retrieval of list of projects with their corresponding limit
+    - `getAdvancedProjectLists` - handles the retrieval of list of projects with more details and fields
+    - `getProjectPhotos` - handles the retrieval of list of project photos
+    - `getProjectPlans` - handles the retrieval of list of project plans
+    - `getProjectMilestone` - handles the retrieval of project milestone
+    - `getConstructionProgress` - handles the retrieval of construction progress of project building
+    - `uploadProjectPhotos` - process the uploading of project photos
+    - `deleteProjectPhoto` - process the deleting of project photo
+    - `setProjectDefaultPhoto` - process the marking of project default photo
+    - `unmarkProjectDefaultPhoto` - process the unmarking of project default photo
+    - `updateProjectAdminContact` - process the updating of project admin contact info
+    - `uploadProjectPlan` - process the uploading of project plan
+    - `deleteProjectPlan` - process the deleting of project plan
+    - `updateDescription` - process the updating of project plan description
+    - `saveConstructionProgress` - process the saving of construction progress
+    - `saveProjectMilestone` - process the saving of project milestone
+   
+
+
+- **punchlistResolver.js** - Handles the connection to punchlists related data.
+    ##### Data/Methods
+    - `getPunchlists` - handles the retrieval of the list of punchlists
+    - `getPunchlistDetails` - handles the retrieval of punchlist details
+    - `getPunchlistItems` - handles the retrieval of punchlist items per punchlist
+    - `getPredefinedPunchlistItems` - phandles the retrieval of punchlist items template
+    - `savePunchlist` - process the saving of punchlist
+    - `processPunchlist` - process the processing of punchlist
+    - `cancelPunchlist` - process the cancelling of punchlist
+    - `getLatestToqPunchlist` - handles the retrieval of latest toq punchlist
+    - `getLatestBuyerPunchlist` - handles the retrieval of latest buyer punchlist
+    - `getUnitPunchlists` - handles the retrieval of list of punchlists by unit
+    - `downloadPunchlist` - handles the downloading of punchlist report
+    - `downloadPunchlistById` - handles the downloading of punchlist details in pdf format
  
 
 - **referenceStatusResolver.js** - Handles the connection to reference status related data. 
@@ -177,8 +209,12 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
     
 - **unitTurnoverResolver.js** - Handles the connection to scheduling related data.
     ##### Data/Methods
-    -`updateUnitTurnover` - process the updating of unit turnover
-    -`getUnitTurnover` - handles the retrieval of unit turnover
+    - `updateUnitTurnover` - process the updating of unit turnover
+    - `getUnitTurnover` - handles the retrieval of unit turnover
+    - `getUnitTurnoverSchedules` - handles the retrieval of unit turnover schedules for calendar
+    - `getUnitTurnoverSchedulesPerDay` - handles the retrieval of unit turnover schedules per day
+    - `filterTurnoverSchedules` - handles the filterng of unit turnover schedule by date range and project
+    
 
 
 
