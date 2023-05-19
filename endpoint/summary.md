@@ -4,7 +4,8 @@ Our team utilizes both REST API authentication and GraphQL, with REST being our 
 
 REST API
 
-Base URL: https://devumsapi.robinsonsland.com/
+Staging Base URL: https://devumsapi.robinsonsland.com/
+Production Base URL: https://umsapi.robinsonsland.com/
 
 Basic Auth Credentials:
 
@@ -339,7 +340,8 @@ Post a buyer remarks for viewing schedule.
 
 Our team has adopted GraphQL as our primary method for accessing data, as it provides a streamlined and intuitive approach to fetching and manipulating data from our server. With GraphQL, we are able to easily document our API and maintain consistent communication between our frontend and backend teams.
 
-Endpoint: https://devumsapi.robinsonsland.com/rLcTrAxi0NpR0d
+Staging Endpoint: https://devumsapi.robinsonsland.com/rLcTrAxi0NpR0d
+Production Endpoint: https://umsapi.robinsonsland.com/rLcTrAxi0NpR0d
 
 Header Credentials:
 
@@ -388,6 +390,23 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     # Arguments
     # projectId:
     getProjectUnitCount(projectId: String): Int 
+    
+	# Use to get the list of project plans per project
+	#
+	# Arguments
+	# projectId:
+	# planType:
+	getProjectPlans(projectId: String, planType: ProjectPlanType): [ProjectPlan]
+	# Use to get the project milestone
+	#
+	# Arguments
+	# projectId:
+	getProjectMilestone(projectId: String): ProjectMilestone
+	# Use to get the construction progress of a building
+	#
+	# Arguments
+	# buildingId:
+	getConstructionProgress(buildingId: String): ConstructionProgress 
     
 
 ```
@@ -440,7 +459,7 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     isPreselling: Boolean
     ): GeneralMessage
     
-    # Use to set a default project photo
+    # Use to update admin contact
     #
     # Arguments
     # projectId:
@@ -449,6 +468,67 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
     projectId: String,
     adminContactNo: String
     ): GeneralMessage 
+	
+	# Use to upload project plan
+	#
+	# Arguments
+	# projectId:
+	# file:
+	# planType:
+	# description:
+	uploadProjectPlan(
+	projectId: String,
+	file: Upload,
+	planType: ProjectPlanType,
+	description: String
+	): GeneralMessage
+	
+	# Use to delete project plan
+	#
+	# Arguments
+	# projectPlanId:
+	deleteProjectPlan(projectPlanId: String): GeneralMessage
+	
+	# Use to update project plan description
+	#
+	# Arguments
+	# projectPlanId:
+	# description:
+	updateDescription(projectPlanId: String, description: String): GeneralMessage
+	
+	# Use to save construction progress
+	#
+	# Arguments
+	# buildingId:
+	# completionPercentage:
+	# projectedCompletionDate:
+	# actualCompletionDate:
+	saveConstructionProgress(
+	buildingId: String,
+	completionPercentage: Int,
+	projectedCompletionDate: String,
+	actualCompletionDate: String
+	): GeneralMessage
+	
+	# Use to save project milestone
+	#
+	# Arguments
+	# projectId:
+	# completionDate:
+	# revisedTargetDate:
+	# groundBreakingEventDate:
+	# groundBreakingActualDate:
+	# toppingOffEventDate:
+	# toppingOffActualDate:
+	saveProjectMilestone(
+	projectId: String,
+	completionDate: String,
+	revisedTargetDate: String,
+	groundBreakingEventDate: String,
+	groundBreakingActualDate: String,
+	toppingOffEventDate: String,
+	toppingOffActualDate: String
+	): GeneralMessage 
 
 ```
 
