@@ -4,8 +4,8 @@ Our team utilizes both REST API authentication and GraphQL, with REST being our 
 
 REST API
 
-Staging Base URL: https://devumsapi.robinsonsland.com/
-Production Base URL: https://umsapi.robinsonsland.com/
+- Staging Base URL: https://devumsapi.robinsonsland.com/
+- Production Base URL: https://umsapi.robinsonsland.com/
 
 Basic Auth Credentials:
 
@@ -340,8 +340,8 @@ Post a buyer remarks for viewing schedule.
 
 Our team has adopted GraphQL as our primary method for accessing data, as it provides a streamlined and intuitive approach to fetching and manipulating data from our server. With GraphQL, we are able to easily document our API and maintain consistent communication between our frontend and backend teams.
 
-Staging Endpoint: https://devumsapi.robinsonsland.com/rLcTrAxi0NpR0d
-Production Endpoint: https://umsapi.robinsonsland.com/rLcTrAxi0NpR0d
+- Staging Endpoint: https://devumsapi.robinsonsland.com/rLcTrAxi0NpR0d
+- Production Endpoint: https://umsapi.robinsonsland.com/rLcTrAxi0NpR0d
 
 Header Credentials:
 
