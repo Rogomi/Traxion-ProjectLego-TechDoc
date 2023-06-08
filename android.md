@@ -326,6 +326,15 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getConstructionProgress` - Handles the query data of the selected building's construction progress.
   - `saveConstructionProgress` - Handles the request for saving the construction progress.
 
+- **SCurveReportScreen** - Handles the display of the selected building's S Curve Reports.
+  - `getSCurveReport` - Handles the query data of the building's S Curve Reports.
+  - `uploadSCurveReport` - Handles the request for uploading a S Curve Report.
+  - `deleteSCurve` - Handles the request for deleting a S Curve Report.
+
+- **ConstructionProgressReportScreen** - Handles the display of the selected building's Construction Progress Reports.
+  - `getProgressReport` - Handles the query data of the building's Construction Progress Reports.
+  - `uploadProgressReport` - Handles the request for uploading a Construction Progress Report.
+  - `deleteProgressReport` - Handles the request for deleting a Construction Progress Report.
  
 
   
