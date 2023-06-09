@@ -187,6 +187,11 @@ The developers use the corresponding developer tools for [Chrome](https://develo
    - `updateDataDump()` - Trigger a script that updates updates the database with the data dump file.
    - `updateCronSchedule()` - Schedule a daily cron job that updates the database with a data dump file.
    - `downloadDataDumpLogs()` - Download a single log file detailing data dump log outputs from the server.
+   - `formatDate()` - Format user input date for cron schedule processing.
+   - `convertDigits()` - Add 0s before 1-digit time values (e.g. '1' to '01').
+   - `queryFormatDate()` - Format date for GraphQL query.
+   - `formattedFromDate()` - **Computed property.** Checks if "From Date" has a value and calls `queryFormatDate()` to format.
+   - `formattedToDate()` - **Computed property.** Checks if "To Date" has a value and calls `queryFormatDate()` to format.
 
 ### ARCHITECTURE USED
 
