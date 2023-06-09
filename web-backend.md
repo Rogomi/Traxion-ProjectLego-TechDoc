@@ -141,7 +141,9 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
     - `updateDescription` - process the updating of project plan description
     - `saveConstructionProgress` - process the saving of construction progress
     - `saveProjectMilestone` - process the saving of project milestone
-   
+    - `uploadConstructionReport` - process the uploading of scurve and construction progress report
+    - `deleteConstructionReport` - process the deletion of scurve and construction progress report
+    - `getConstructionReports` - handles the retrieval of scurve and construction progress report
 
 
 - **punchlistResolver.js** - Handles the connection to punchlists related data.
@@ -215,8 +217,6 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
     - `getUnitTurnoverSchedulesPerDay` - handles the retrieval of unit turnover schedules per day
     - `filterTurnoverSchedules` - handles the filterng of unit turnover schedule by date range and project
     
-
-
 
 #### Routes
 - **routes.js** - compiles the routes
