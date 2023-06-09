@@ -941,6 +941,60 @@ Some of the third party libraries are installed using SPM
 
 
 
+##### **ProjectConstructionProgressViewController** - View that handles the display and functions for the construction progress options of the selected project
+
+###### **Methods and Calculated Variables**
+- `getBuildings` - calls an endpoint to get the list of the buildings of the selected project
+- `tableView - didSelectRowAt` - table view function that handles the navigation to the selected option available from the view
+
+
+
+
+##### **ProjectConstructionProgressDetailsViewController** - View that handles the display and functions for the general details view of the construction progress of the selected project
+
+###### **Methods and Calculated Variables**
+- `completionPercentage` - handles the display of the percent completed of the construction progress
+- `setupRestrictions` - function that hides and restricts some of the details and functionality of the view depending on the type of user
+- `setupFields` - handles the display of the values of the labels and fields for the construction progress general details
+- `getConstructionProgress` - calls an endpoint to get the construction details data
+- `didTapOptionsButton` - handles the navigation to the edit view for the project construction progress details
+
+
+
+##### **ProjectConstructionProgressEditViewController** - View that handles the display and functions for editing and updating the construction progress general details
+
+###### **Methods and Calculated Variables**
+- `editSuccess` - callback function that updates the construction progress general details view after editing
+- `didTapSaveButton` - calls the saveConstructionProgress function to start the updating of the construction progress details
+- `setupFields` - handles the display of the initial values of the labels and fields for the construction progress general details
+- `saveConstructionProgress` - calls an endpoint to update the construction progress general details and call the editSuccess callback function
+
+
+
+##### **ProjectMilestonesViewController** - View that handles the display and functions for the milestones options of the selected project
+
+###### **Methods and Calculated Variables**
+- `didTapOtionsButton` - handles the display of the edit option and navigation for the project milestone
+- `setupFields` - handles the display of the initial values for the lables and fields of the project milestone details
+- `setupResttriction` - functions that hides and limits some of the details and functionality of the view depending on the type of user
+- `getProjectMilestones` - calls and endpoint to get the project milestones information
+
+
+
+##### **ProjectMilestonesEditViewController** - View that handles the display and functions for editing and updating the milestones of the selected project
+
+###### **Methods and Calculated Variables**
+- `editSuccess` - callback function that updates the project milestones details view after editing
+- `uneditableFields` - function that defines the fields that are uneditable and instead show a specific module when tapped
+- `setupFields` - handles the display of the initial values for the lables and fields of the project milestone details
+- `saveMilestones` - calls an endpoint to update the project milestones details and call the editSuccess callback function
+
+
+
+##### **ProjectBuildingsTableViewCell** - Table view cell that handles the variables for the project building objects used in ProjectConstructionProgressViewController
+
+
+
 ##### **ProjectTableViewCell** - Table View cell that handles the variables and functions of the project objects used in ProjectsViewController
 
 
@@ -986,7 +1040,7 @@ Some of the third party libraries are installed using SPM
 
 
 
-###### **ProjectPlanTableViewCell** - Table View cell that handles the variables and functions of the project plan objects used in ProjectPlanListViewController
+##### **ProjectPlanTableViewCell** - Table View cell that handles the variables and functions of the project plan objects used in ProjectPlanListViewController
 
 ###### **Methods and Calculated Variables**
 - `goToEditDescription` - function that handles the navigation to the edit description view of the selected project plan item
@@ -994,6 +1048,46 @@ Some of the third party libraries are installed using SPM
 - `deleteProjectPlan`- function that calls an endpoint to delete the selected project plan item
 - `setupView` - function that handles the setup of the display view
 - `setupEdit` - function that handles the setup of the edit view
+
+
+
+##### **ConstructionReportsListViewController** - View that handles the display and functions for the list of Construction Reports
+
+###### **Methods and Calculated Variables**
+- `didTapAddFileButton` - function that handles the display of options for adding a new report
+- `getConstructionReports` - calls an endpoint to get the list of construction reports
+
+
+
+##### **ConstructionReportTableViewCell** - Table View cell that handles the variables and functions construction report objects in ConstructionReportsListViewController
+
+###### **Methods and Calculated Variables**
+- `downloadConstructionReport` - callback function that downloads the construction report
+- `deleteConstructionReport` - callback function that deletes the construction report
+- `didTapFileButton` - callback function that handles the navigation to the display of the construction report details
+
+
+
+##### **ConstructionReportAddFileViewController** - View that handles the different options for adding a new construction report
+
+###### **Methonds and Calculated Variables**
+- `openCamera` - callback function that handles the selection of new construction file through the camera of the device
+- `openGallery` - callback function that handles the selection of new construction file through the gallery of the device
+- `openfiles` - callback function that handles the selection of new construction file through the files of the device
+
+
+
+##### **ConstructionReportImageViewController** - View that handles the display of the image of the construction report
+
+###### **Methonds and Calculated Variables**
+- `initImageView` - function that initializes the display of the values for the labels and image of the construction report
+
+
+
+##### **ConstructionReportPdfViewController** - View that handles the display of the image of the construction report
+
+###### **Methonds and Calculated Variables**
+- `initPdfView` - function that initializes the display of the values for the labels and pdf file of the construction report
 
 
 
