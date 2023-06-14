@@ -407,7 +407,7 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
 	# Arguments
 	# buildingId:
 	getConstructionProgress(buildingId: String): ConstructionProgress 
-	
+
 	# Use to get the list of construction reports per project
 	#
 	# Arguments
