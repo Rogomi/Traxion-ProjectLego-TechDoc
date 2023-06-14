@@ -356,41 +356,41 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
 
 ```graphql
 
-    # Use to get the list of all projects
-    projects: [Project]
-    
-    # Use to get the list of all buildings
-    buildings: [Building]
+	# Use to get the list of all projects
+	projects: [Project]
 
-    # Use to get the list of all buildings by projects
-    #
-    # Arguments
-    # projectIds:
-    buildingsByProjectIds(projectIds: [String]): [Building] 
-    
-    # Use to get the list of projects of a specific user
-    #
-    # Arguments
-    # userId:
-    getUserProjects(userId: String): [Project] 
-    
-    # Use to get a advanced project lists. It returns more details or fields --
-    # primarily used in project module
-    getAdvancedProjectLists: [Project]
-    
-    # Use to get the project photos
-    #
-    # Arguments
-    # projectId:
-    # isPreselling:
-    getProjectPhotos(projectId: String, isPreselling: Boolean): [ProjectPhoto]
-    
-    # Use to get a number of units per project
-    #
-    # Arguments
-    # projectId:
-    getProjectUnitCount(projectId: String): Int 
-    
+	# Use to get the list of all buildings
+	buildings: [Building]
+
+	# Use to get the list of all buildings by projects
+	#
+	# Arguments
+	# projectIds:
+	buildingsByProjectIds(projectIds: [String]): [Building] 
+
+	# Use to get the list of projects of a specific user
+	#
+	# Arguments
+	# userId:
+	getUserProjects(userId: String): [Project] 
+
+	# Use to get a advanced project lists. It returns more details or fields --
+	# primarily used in project module
+	getAdvancedProjectLists: [Project]
+
+	# Use to get the project photos
+	#
+	# Arguments
+	# projectId:
+	# isPreselling:
+	getProjectPhotos(projectId: String, isPreselling: Boolean): [ProjectPhoto]
+
+	# Use to get a number of units per project
+	#
+	# Arguments
+	# projectId:
+	getProjectUnitCount(projectId: String): Int 
+
 	# Use to get the list of project plans per project
 	#
 	# Arguments
