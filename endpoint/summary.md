@@ -407,6 +407,16 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
 	# Arguments
 	# buildingId:
 	getConstructionProgress(buildingId: String): ConstructionProgress 
+	
+	# Use to get the list of construction reports per project
+	#
+	# Arguments
+	# projectId:
+	# isSCurve:
+	getConstructionReports(
+	projectId: String,
+	isSCurve: Boolean
+	): [ConstructionReport] 
     
 
 ```
@@ -529,6 +539,25 @@ Access the endpoint to test the API. You can use GraphQL Altair, a GraphQL API t
 	toppingOffEventDate: String,
 	toppingOffActualDate: String
 	): GeneralMessage 
+	
+	
+	# Use to upload contruction report
+	#
+	# Arguments
+	# projectId:
+	# file:
+	# isSCurve:
+	uploadConstructionReport(
+	projectId: String,
+	file: Upload,
+	isSCurve: Boolean
+	): GeneralMessage
+	
+	# Use to delete contruction report
+	#
+	# Arguments
+	# reportId:
+	deleteConstructionReport(reportId: String): GeneralMessage 
 
 ```
 
