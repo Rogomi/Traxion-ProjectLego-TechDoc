@@ -335,7 +335,39 @@ Most of the third-party libraries are integrated using Gradle. They can be added
   - `getProgressReport` - Handles the query data of the building's Construction Progress Reports.
   - `uploadProgressReport` - Handles the request for uploading a Construction Progress Report.
   - `deleteProgressReport` - Handles the request for deleting a Construction Progress Report.
- 
+
+- **MonthlyCloseOutScreen** - Handles the display of the selected building's Monthly Close Out Reports.
+  - `getMonthlyCloseOutReport` - Handles the query data of the building's Monthly Close Out Reports.
+  - `uploadMonthlyCloseOut` - Handles the request for uploading a Monthly Close Out Report.
+  - `deleteMonthlyCloseOut` - Handles the request for deleting a Monthly Close Out Report.
+
+- **GenerateReportScreen** - Handles the display of Accomplishment Reports and Unit Reports that can be generated.
+
+- **AccomplishmentReportScreen** - Handles the display of either a project's or a selected building's Accomplishment Reports.
+  - `getAllProjects` - Handles the query data of a project's Accomplishment Reports.
+  - `generateProjectAccomplishmentReport` - Handles the request for generating and downloading all the project's Accomplishment Reports.
+  - `getAllBuildings` - Handles the query data of a selected building's Accomplishment Reports.
+  - `generateBuildingAccomplishmentReport` - Handles the request for generating and downloading a selected building's Accomplishment Reports.
+
+- **UnitReportScreen** - Handles the display of either a project's or a selected building's Unit Reports.
+  - `getAllProjects` - Handles the query data of a project's Unit Reports.
+  - `generateProjectAccomplishmentReport` - Handles the request for generating and downloading all the project's Unit Reports.
+  - `getAllBuildings` - Handles the query data of a selected building's Unit Reports.
+  - `generateBuildingAccomplishmentReport` - Handles the request for generating and downloading a selected building's Unit Reports.
+
+- **ProjectNotesScreen** - Handles the display of a selected building's Project Notes. Only TOQ, Construction, BD and Marketing have access to add, view, edit, remove notes, upload, download and remove files.
+  - `getProjectNotes` - Handles the query data of a selected building's Project Notes.
+  - `deleteUnitNote` - Handles the request for deleting a Project Note.
+
+- **ProjectNotesAddEditScreen** - Handles the display for adding or editing a building's Project Notes.
+  - `createProjectNote` - Handles the request for creating a Project Note.
+  - `getProjectNoteAttachment` - Handles the query data for getting the attachment file.
+  - `updateProjectNote` - Handles the request for updating the Project Notes.
+  - `uploadProjectNoteAttachment` - Handles the request for uploading the Project Note attachment.
+  - `deleteProjectNoteAttachment` - Handles the request for deleting the a Project Note attachment.
+
+- **ProjectNotesDetails** - Handles the display for the detaild view of a selected building's Project Notes.
+  - `getUnitNoteAttachments` - Handles the query data of a selected building's Project Notes.
 
   
 
