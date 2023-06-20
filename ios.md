@@ -1070,7 +1070,7 @@ Some of the third party libraries are installed using SPM
 
 ##### **ConstructionReportAddFileViewController** - View that handles the different options for adding a new construction report
 
-###### **Methonds and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `openCamera` - callback function that handles the selection of new construction file through the camera of the device
 - `openGallery` - callback function that handles the selection of new construction file through the gallery of the device
 - `openfiles` - callback function that handles the selection of new construction file through the files of the device
@@ -1079,15 +1079,71 @@ Some of the third party libraries are installed using SPM
 
 ##### **ConstructionReportImageViewController** - View that handles the display of the image of the construction report
 
-###### **Methonds and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `initImageView` - function that initializes the display of the values for the labels and image of the construction report
 
 
 
 ##### **ConstructionReportPdfViewController** - View that handles the display of the image of the construction report
 
-###### **Methonds and Calculated Variables**
+###### **Methods and Calculated Variables**
 - `initPdfView` - function that initializes the display of the values for the labels and pdf file of the construction report
+
+
+
+##### **GenerateReportsViewController** - View that handles the navigation to the types for generating reports at an All Projects level
+
+###### **Methods and Calculated Variables**
+- `didTapAccomplishmentReportButton` - function that handles the navigation to generate Accomplishment Reports
+- `didTapUnitReportButton` - function that handles the navigation to generate Unit Reports
+
+
+
+##### **GenerateAccomplishmentReportViewController** - View that handles the generation of the accomplishment reports
+
+###### **Methods and Calculated Variables**
+- `didTapGenerateButton` - function that handles the generation of the downloadable report
+- `didTapSelectDeselectButton` - function that selects and deselects all buildings/projects where reports could be generated from
+- `getBuildings` - calls an api endpoint to get buildings from the selected project
+- `getProjects` - calls an api endpoint to get all available projects to the user
+- `checkSelection` - function that checks the current selection of the generate accomplishment report objects
+
+
+
+##### **GenerateAccomplishmentReportTableViewCell** - Table View Cell that handles the variables of the Generate Accomplishment Report objects
+
+###### **Methods and Calculated Variables**
+- `setupBuildings` - initializes the values of the generate accomplishment report objects
+
+
+
+##### **GenerateUnitReportSingleViewController - View that handles the generation of the unit reports at a project level
+
+###### **Methods and Calculated Variables**
+- `didTapGenerateButton` - function that handles the generation of the downloadable report
+- `didTapSelectDeselectButton` - function that selects and deselects all buildings/projects where reports could be generated from
+- `getBuildings` - calls an api endpoint to get buildings from the selected project
+- `getProjects` - calls an api endpoint to get all available projects to the user
+- `checkSelection` - function that checks the current selection of the generate unit report objects
+  
+
+
+##### **GenerateUnitReportNestedViewController - View that handles the generation of the unit reports at the all projects level
+
+###### **Methods and Calculated Variables**
+- `didTapGenerateButton` - function that handles the generation of the downloadable report
+- `didTapSelectDeselectButton` - function that selects and deselects all buildings/projects where reports could be generated from
+- `getBuildings` - calls an api endpoint to get buildings from the selected project
+- `getProjects` - calls an api endpoint to get all available projects to the user
+- `checkSelection` - function that checks the current selection of the generate unit report objects
+
+
+
+##### **UnitReportTableViewCell** - Table View Cell that handles the variables of the Generate Unit Report objects
+
+
+
+##### **UnitReportHeaderTableViewCell** - Table View Cell that handles the variables for the section title of the Generate Unit Report objects
 
 
 
