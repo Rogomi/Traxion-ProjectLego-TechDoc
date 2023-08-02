@@ -24,9 +24,9 @@ Lastly, the user must have a text editor. The developers suggest [Visual Studio 
 
 ### UPDATING DATA DUMP
 
-The user must first upload the new files into this filder: __*/home/v-traxion/Traxion-ProjectLego-API/files*__
+The user must first upload the new files into this folder: __*/home/v-traxion/Traxion-ProjectLego-API/files*__
 
-The user must follow these file name depending on what they want to update:
+The user must follow these file names depending on what they want to update:
  - **Contract.csv**
  - **ProjectList.csv**
 
