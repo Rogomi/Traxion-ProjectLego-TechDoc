@@ -22,7 +22,7 @@ Lastly, the user must have a text editor. The developers suggest [Visual Studio 
 [Apollo GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo) - Rich editor support for GraphQL client and server development that seamlessly integrates with the Apollo platform  
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Intelligent Tailwind CSS tooling for VS Code.
 
-### Updating Data Dump
+### UPDATING DATA DUMP
 
 The user must first upload the new files into this filder: __*/home/v-traxion/Traxion-ProjectLego-API/files*__
 
@@ -31,7 +31,7 @@ The user must follow these file name depending on what they want to update:
  - **ProjectList.csv**
 
 Then, in web portal, go to System menu, then initiate a data dump update:
-![alt text](https://drive.google.com/file/d/17A_TpkGEkSEth8mln2rAYAygE8BICDK9/view?usp=sharing)
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png)
 
 ### PROGRAMMING LANGUAGE
 
