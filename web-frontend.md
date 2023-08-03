@@ -22,25 +22,6 @@ Lastly, the user must have a text editor. The developers suggest [Visual Studio 
 [Apollo GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo) - Rich editor support for GraphQL client and server development that seamlessly integrates with the Apollo platform  
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Intelligent Tailwind CSS tooling for VS Code.
 
-### UPDATING DATA DUMP
-
-The user must first upload the new files into this folder: __*/home/v-traxion/Traxion-ProjectLego-API/files*__
-
-The user must follow these file names depending on what they want to update:
- - **Contract.csv**
- - **ProjectList.csv**
-
-After uploading the files the user needs to update it either manually or scheduled in the web CMS. 
-
-For Manual, press the Update button.
-
-For Scheduled, input a time following the same format and press the Save button.
-
-Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png)
-
-
-
 ### PROGRAMMING LANGUAGE
 
 Project LEGO Web uses JavaScript for development.
@@ -221,3 +202,21 @@ Vue.JS has its own architecture. Kindly refer to this [link](https://vuex.vuejs.
 
 #### OVERALL ARCHITECTURE
 ![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png)
+
+
+### UPDATING DATA DUMP
+
+The user must first upload the new files into this folder: __*/home/v-traxion/Traxion-ProjectLego-API/files*__
+
+The user must follow these file names depending on what they want to update:
+ - **Contract.csv**
+ - **ProjectList.csv**
+
+After uploading the files the user needs to update it either manually or scheduled in the web CMS. 
+
+For Manual, press the Update button.
+
+For Scheduled, input a time following the same format and press the Save button.
+
+Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png)
