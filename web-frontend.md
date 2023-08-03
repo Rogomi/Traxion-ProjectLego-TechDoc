@@ -32,7 +32,8 @@ The user must follow these file names depending on what they want to update:
 
 There are two types of updates, manual or scheduled. 
 
-For Manual; press the Update button.
+For Manual, press the Update button.
+
 For Scheduled, input a time following the same format and press the Save button.
 
 Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
