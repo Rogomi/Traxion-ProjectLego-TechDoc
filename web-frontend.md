@@ -30,7 +30,7 @@ The user must follow these file names depending on what they want to update:
  - **Contract.csv**
  - **ProjectList.csv**
 
-There are two types of updates, manual or scheduled. 
+After uploading the files the user needs to update it either manually or scheduled in the web CMS. 
 
 For Manual, press the Update button.
 
