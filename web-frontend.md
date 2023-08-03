@@ -30,8 +30,15 @@ The user must follow these file names depending on what they want to update:
  - **Contract.csv**
  - **ProjectList.csv**
 
-Then, in web portal, go to System menu, then initiate a data dump update:
+There are two types of updates, manual or scheduled. 
+
+For Manual; press the Update button.
+For Scheduled, input a time following the same format and press the Save button.
+
+Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
 ![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png)
+
+
 
 ### PROGRAMMING LANGUAGE
 
