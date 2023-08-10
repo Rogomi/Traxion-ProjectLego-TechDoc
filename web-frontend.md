@@ -199,11 +199,11 @@ Vue.JS has its own architecture. Kindly refer to this [link](https://vuex.vuejs.
 
 #### API ARCHITECTURE
 
-<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-web.png" class="img-responsive" alt="">
+<img src="/UMS-architecture-web.png" class="img-responsive" alt="">
 
 #### OVERALL ARCHITECTURE
 
-<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png" class="img-responsive" alt="">
+<img src="/UMS-architecture-overall.png" class="img-responsive" alt="">
 
 
 ### UPDATING DATA DUMP
@@ -222,4 +222,4 @@ For Scheduled, input a time following the same format and press the Save button.
 
 Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
 
-<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png" class="img-responsive" alt="">
+<img src="/DataDump.png" class="img-responsive" alt="">
