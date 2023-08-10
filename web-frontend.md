@@ -198,10 +198,12 @@ The developers use the corresponding developer tools for [Chrome](https://develo
 Vue.JS has its own architecture. Kindly refer to this [link](https://vuex.vuejs.org/guide/structure.html).
 
 #### API ARCHITECTURE
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-web.png)
+
+<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-web.png" class="img-responsive" alt="">
 
 #### OVERALL ARCHITECTURE
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png)
+
+<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png" class="img-responsive" alt="">
 
 
 ### UPDATING DATA DUMP
@@ -219,4 +221,5 @@ For Manual, press the Update button.
 For Scheduled, input a time following the same format and press the Save button.
 
 Flow: Web Portal > System Menu > Update Data Dump / Update Data Dump Sched
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png)
+
+<img src="https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/DataDump.png" class="img-responsive" alt="">
