@@ -54,6 +54,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 ##### Other Useful Libraries 
 **Android Navigation: Kotlin** - Used to manage connections between different screens and layouts.  
+**Android Work Manager** - Used to enqueue background tasks for the app.
 **Esperando** - Used to connect shared data between activies.  
 **Dagger-Hilt** - Used for easier data management between activities.  
 **Karumi/Dexter** - Used to simplify permission requests and access.  
