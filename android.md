@@ -1,23 +1,23 @@
-# Project Lego Android
+# UMS Android
 
 ## Technical Documentation
 
 ### GETTING STARTED
 
-Project Lego Android was developed using Android Studio. This project uses Kotlin as the Programming Language, Android Studio Layout Editor for the Interface, and Gradle for connecting different Third-Party Libraries. The target and compiled SDK Version is 30 with a minimum SDK version of 26.
+UMS Android was developed using Android Studio. This project uses Kotlin as the Programming Language, Android Studio Layout Editor for the Interface, and Gradle for connecting different Third-Party Libraries. The target and compiled SDK Version is 30 with a minimum SDK version of 26.
 For more information on the IDE and system requirements to enable you to work on the source code, it is available [here](https://developer.android.com/)
 
 ### INSTALLATION AND DEVELOPMENT
 
-In order to start the development, first you need to start Android Studio. Import the Project Lego project and then wait for the build to finish.
+In order to start the development, first you need to start Android Studio. Import the UMS project and then wait for the build to finish.
 
 ### PROGRAMMING LANGUAGE
 
-Project Lego Android uses Kotlin for development
+UMS Android uses Kotlin for development
 
 ### MINIMUM VERSION
 
-Project Lego can run on Android Systems with minimum SDK version 26. It may encounter multiple issues on lower SDKversions.
+UMS can run on Android Systems with minimum SDK version 26. It may encounter multiple issues on lower SDKversions.
 
 ### APPLICATION ID
 
@@ -25,7 +25,7 @@ com.robinsonslandcorp.projectlego
 
 ### DEBUGGING
 
-We use a few debugging tools to test Project Lego functionalities.
+We use a few debugging tools to test UMS functionalities.
 We also use Android Virtual Device in Android Studio in order to test the Native Apps in different screen sizes and SDK Versions. 
 
 ### THIRD-PARTY LIBRARIES
@@ -371,7 +371,7 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 ### ARCHITECTURE USED
 
-Project Lego Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of a Composable file which is the UI layout definition for the screen, a NavController that is the UI controller that navigates and displays the data, and the ViewModel, a class that prepares the data for viewing in the Composables and reacts to user interactions.
+UMS Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of a Composable file which is the UI layout definition for the screen, a NavController that is the UI controller that navigates and displays the data, and the ViewModel, a class that prepares the data for viewing in the Composables and reacts to user interactions.
 
 [here](https://drive.google.com/file/d/14qTQycPw3L7csnNIkNvsJa5OWXVVHZRq/view?usp=share_link)
 
