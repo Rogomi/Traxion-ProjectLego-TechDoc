@@ -1,10 +1,10 @@
-# Project LEGO Web Frontend
+# UMS Web Frontend
 
 ## Technical Documentation
 
 ### GETTING STARTED
 
-Project LEGO Web Frontend was created using the Vue.js JavaScript framework. It makes use of different JavaScript libraries that allow the app to function and be developed in a structured manner. The frontend utilizes the Apollo GraphQL client and the Axios HTTP client to communicate with the external API. It also uses Tailwind CSS for styling.
+UMS Web Frontend was created using the Vue.js JavaScript framework. It makes use of different JavaScript libraries that allow the app to function and be developed in a structured manner. The frontend utilizes the Apollo GraphQL client and the Axios HTTP client to communicate with the external API. It also uses Tailwind CSS for styling.
 
 ### INSTALLATION AND DEVELOPMENT
 
@@ -22,7 +22,7 @@ Lastly, the user must have a text editor. The developers suggest [Visual Studio 
 
 ### PROGRAMMING LANGUAGE
 
-Project LEGO Web uses JavaScript for development.
+UMS Web uses JavaScript for development.
 
 With it being a web application, it uses HTML for markup and CSS for styling.
 
