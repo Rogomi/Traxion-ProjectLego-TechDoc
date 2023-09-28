@@ -1,10 +1,10 @@
-# Project LEGO Web Backend
+# UMS Web Backend
 
 ## Technical Documentation
 
 ### GETTING STARTED
 
-Project LEGO Web Backend was developed using the Node.JS JavaScript framework.
+UMS Web Backend was developed using the Node.JS JavaScript framework.
 
 ### INSTALLATION AND DEVELOPMENT
 
@@ -20,7 +20,7 @@ Lastly, the user must have a text editor. The developers suggest [Visual Studio 
 
 ### PROGRAMMING LANGUAGE
 
-Project LEGO Web uses JavaScript for development.
+UMS Web uses JavaScript for development.
 
 ### DEBUGGING
 
