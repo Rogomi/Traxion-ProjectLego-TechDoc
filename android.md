@@ -373,7 +373,5 @@ Most of the third-party libraries are integrated using Gradle. They can be added
 
 UMS Android follows and uses the Model-View-ViewModel Architecture (MVVM). It consists of a Composable file which is the UI layout definition for the screen, a NavController that is the UI controller that navigates and displays the data, and the ViewModel, a class that prepares the data for viewing in the Composables and reacts to user interactions.
 
-[here](https://drive.google.com/file/d/14qTQycPw3L7csnNIkNvsJa5OWXVVHZRq/view?usp=share_link)
-
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
+<img src="compose_mvvm.png" class="img-responsive" alt="">
 
