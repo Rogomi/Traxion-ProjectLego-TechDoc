@@ -1,5 +1,3 @@
-[Back](README.md)
-
 # Traxion-ProjectLego UMS
 
 ## Technical Documentation
