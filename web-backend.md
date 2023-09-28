@@ -1,5 +1,3 @@
-[Back](README.md)
-
 # Project LEGO Web Backend
 
 ## Technical Documentation
