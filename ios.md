@@ -1,4 +1,4 @@
-# Project Lego iOS
+# UMS iOS
 
 ## Technical Documentation
 
