@@ -1,4 +1,4 @@
-# Traxion-ProjectLego UMS
+# Project Lego iOS
 
 ## Technical Documentation
 
