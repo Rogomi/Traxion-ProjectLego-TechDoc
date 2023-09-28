@@ -1,6 +1,3 @@
-[Back](./README.md)
-
-
 # Project Lego Android
 
 ## Technical Documentation
