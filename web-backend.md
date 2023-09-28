@@ -222,7 +222,7 @@ As well as [Postman](https://www.postman.com/downloads/) for testing API calls.
 ### ARCHITECTURE USED
 
 #### API ARCHITECTURE
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-web.png)
+<img src="UMS-architecture-web.png" class="img-responsive" alt="">
 
 #### OVERALL ARCHITECTURE
-![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-overall.png)
+<img src="UMS-architecture-overall.png" class="img-responsive" alt="">
