@@ -1187,4 +1187,5 @@ Some of the third party libraries are installed using SPM
 
 ![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture.png)
 
-
+UMS uses the Model-View-Controller (MVC) Architecture Pattern
+![alt text](https://github.com/Rogomi/Traxion-ProjectLego-TechDoc/blob/develop/UMS-architecture-iOS.png)
